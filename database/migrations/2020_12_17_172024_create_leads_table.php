@@ -17,7 +17,7 @@ class CreateLeadsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->integer('telefono');
+            $table->string('telefono');
             $table->text('comentario')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();
