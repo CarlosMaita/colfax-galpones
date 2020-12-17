@@ -253,6 +253,14 @@
             </a>
           </li>
           @endif
+          <li class="nav-item ">
+            <a href="{{ route('leads.home') }}" class="nav-link secciones leads ">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Leads
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

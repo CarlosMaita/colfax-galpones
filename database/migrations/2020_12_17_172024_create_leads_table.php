@@ -18,7 +18,8 @@ class CreateLeadsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->integer('telefono');
-            $table->boolean('status');
+            $table->text('comentario')->nullable();
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }
