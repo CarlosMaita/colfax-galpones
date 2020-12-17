@@ -14,7 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@lading')->name('home');
-
+// about-us 
+Route::get('/about-us', function(){
+	 return view('about-us');
+	} )->name('about-us');
+// floorplants
+Route::get('/floorplants', function(){
+	return view('floorplants');
+   } )->name('floorplants');
+// location
+Route::get('/location', function(){
+	return view('location');
+   } )->name('location');
+// contact
+Route::get('/contact', function(){
+	return view('contact');
+   } )->name('contact');
 
 Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
