@@ -13,7 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@lading')->name('home');
+
+// Route::get('/', 'HomeController@lading')->name('home');
+// about-us 
+Route::get('/', function(){
+	return view('home');
+   } )->name('home');
 // about-us 
 Route::get('/about-us', function(){
 	 return view('about-us');
