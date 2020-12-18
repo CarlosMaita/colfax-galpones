@@ -15,12 +15,8 @@
 
       <!-- Brand -->
         <p>
-            <a href="#" class="footer-brand text-white">
-            <svg class="footer-brand-svg" viewBox="0 0 235 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M0 0 L 20 10 L 0 20 Z" class="text-primary" fill="currentColor"></path>
-            <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
-            <text x="40" y="70" font-family="Arial, sans-serif" font-size="60" font-weight="bold" letter-spacing="-.025em" fill="currentColor">incline.</text>
-          </svg>
+        <a class="navbar-brand py-0" href="index.html">
+          <img src="assets/img/logo/logo.png" alt="logo" height=60 width=80 class=py-0>
         </a>
       </p>
     </div>
