@@ -87,7 +87,7 @@ Home - galpones
                 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                  Landing pages for any occasion
+                 Tailor a space that suits all your needs.
                 </h1>
 
                 <!-- Subheading -->
@@ -192,7 +192,7 @@ Home - galpones
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-              Landing page variants
+             Tailor a space that suits all your needs.
             </h2>
 
             <!-- Subheading -->
@@ -309,7 +309,7 @@ Home - galpones
               
               <!-- Heading -->
               <h2 class="mb-4">
-                Panoramic city and ocean <span class="text-primary">views</span> you will enjoy
+              Brand <span class="text-primary">new</span> strategically located <br> state-of-the-art warehouse development!
               </h2>
   
             </div>
@@ -319,7 +319,7 @@ Home - galpones
   
               <!-- Subheading -->
               <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem libero adipisci odit, iure quibusdam veniam eius perferendis numquam cumque repudiandae, quisquam veritatis mollitia. Molestiae ipsa porro, id enim deleniti aspernatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               <strong>Medley Business Park</strong> is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us, we offer our clients FLEXIBLE opportunities for tailored spaces that specifically suit your needs. 
               </p>
               <p class="mb-5 mb-md-0">
                 <a href="contact.html" class="btn btn-outline-primary">
@@ -362,12 +362,12 @@ Home - galpones
   
               <!-- Heading -->
               <h2 class="text-center mb-4">
-                Inside the house
+                Convenient and FLEXIBLE spaces 
               </h2>
   
               <!-- Subheading -->
               <p class="text-center text-muted mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.
+              Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
               </p>
   
             </div>
@@ -380,33 +380,28 @@ Home - galpones
                 <div class="slider-item">
                   
                   <!-- Image -->
-                  <img src="assets/img/28.jpg" alt="..." class="img-fluid">
+                  <img src="image/front.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item">
                   
                   <!-- Image -->
-                  <img src="assets/img/29.jpg" alt="..." class="img-fluid">
+                  <img src="image/oficina.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item">
                   
                   <!-- Image -->
-                  <img src="assets/img/30.jpg" alt="..." class="img-fluid">
+                  <img src="image/mezzanine.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item">
                   
                   <!-- Image -->
-                  <img src="assets/img/31.jpg" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item">
+                  <img src="image/warehouse.png" alt="..." class="img-fluid">
                   
-                  <!-- Image -->
-                  <img src="assets/img/27.jpg" alt="..." class="img-fluid">
-  
                 </div>
+              
               </div> <!-- / .slider -->
       
             </div>
@@ -419,31 +414,33 @@ Home - galpones
                 <div class="slider-item col-6 col-md-3">
                   
                   <!-- Image -->
-                  <img src="assets/img/28.jpg" alt="..." class="img-fluid">
+                  <img src="image/front.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item col-6 col-md-3">
                   
                   <!-- Image -->
-                  <img src="assets/img/29.jpg" alt="..." class="img-fluid">
+                  <img src="image/oficina.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item col-6 col-md-3">
                   
                   <!-- Image -->
-                  <img src="assets/img/30.jpg" alt="..." class="img-fluid">
+                  <img src="image/mezzanine.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item col-6 col-md-3">
                   
                   <!-- Image -->
-                  <img src="assets/img/31.jpg" alt="..." class="img-fluid">
+                  <img src="image/warehouse.png" alt="..." class="img-fluid">
   
                 </div>
                 <div class="slider-item col-6 col-md-3">
                   
                   <!-- Image -->
-                  <img src="assets/img/27.jpg" alt="..." class="img-fluid">
+                  <img src="image/mezzanine.png" alt="..." class="img-fluid">
+  
+                </div>
   
                 </div>
               </div> <!-- / .slider -->
@@ -488,12 +485,14 @@ Home - galpones
                     
                     <!-- Heading -->
                     <h3 class="text-center mb-4">
-                      Feel home again.
+                     FOR RENT OR SALE
                     </h3>
                     
                     <!-- Content -->
                     <p class="text-muted text-center">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum vel qui natus sit quas suscipit aperiam deserunt voluptatum.
+                    Range from 4.500 SF and up
+                    14 units with conditioned office and bathroom, large industrial garage door.
+
                     </p>
   
                     <!-- Button -->
@@ -606,8 +605,12 @@ Home - galpones
             </h3>
 
             <!-- Subheading -->
+            <p class="text-muted mb-2">
+            <strong>7265 Medley Corp</strong> is an innovative development firm that is committed to creating an exceptional experience, with over 30 years of background in development and real estate. We achieve maximum sustainability, with beautiful and modern architecture, while protecting the surroundings and increasing the value of the area.
+            </p>
+
             <p class="text-muted mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel distinctio deserunt dolor culpa repellat iusto nostrum tempora placeat fuga facere mollitia adipisci, animi, reiciendis dicta quam obcaecati ad quibusdam eius?
+            <strong>Rukan</strong> is an architecture company with over 2 million square feet of space completed in a large-scale spectrum of sectors that include industrial, commercial, and residential buildings. By instilling our core value of practical creativity into each step of the building process, we offer a pragmatic approach that does not end with design. It includes permitting, testing, surveying, and inspection services so that our work never stopped before or during construction.
             </p>
 
             <!-- Team -->
@@ -625,14 +628,14 @@ Home - galpones
                     
                     <!-- Title -->
                     <h5 class="card-title">
-                      Richard Roe, <small class="text-muted">Creative Director</small>
+                    <small class="text-muted">Creative Director</small>
                     </h5>
 
                     <!-- Text -->
                     <ul class="card-text list-inline list-unstyled">
                       <li class="list-inline-item">
                         <a href="#">
-                          <i class="fab fa-github"></i>
+                          <i class="fab fa-whatsapp"></i>
                         </a>
                       </li>
                       <li class="list-inline-item ml-3">
@@ -665,14 +668,14 @@ Home - galpones
                     
                     <!-- Title -->
                     <h5 class="card-title">
-                      Ann Doe, <small class="text-muted">Designer</small>
+                    Carmen de Jongh, <small class="text-muted">Designer</small>
                     </h5>
 
                     <!-- Text -->
                     <ul class="card-text list-inline list-unstyled">
                       <li class="list-inline-item">
                         <a href="#">
-                          <i class="fab fa-github"></i>
+                          <i class="fab fa-whatsapp"></i>
                         </a>
                       </li>
                       <li class="list-inline-item ml-3">
@@ -705,14 +708,14 @@ Home - galpones
                     
                     <!-- Title -->
                     <h5 class="card-title">
-                      Jane Doe, <small class="text-muted">Copywriter</small>
+                    Tammy Roitman, <small class="text-muted">Copywriter</small>
                     </h5>
 
                     <!-- Text -->
-                    <ul class="card-text list-inline list-unstyled">
+                    <ul class="card-text list-inline list-unstyled mb-3">
                       <li class="list-inline-item">
                         <a href="#">
-                          <i class="fab fa-github"></i>
+                          <i class="fab fa-whatsapp"></i>
                         </a>
                       </li>
                       <li class="list-inline-item ml-3">
@@ -733,6 +736,21 @@ Home - galpones
 
               </div>
             </div> <!-- / .row -->
+
+        <!-- Text-Team -->
+        <div>
+         <h3 class="mb-4">
+          Vacancy rates less than 4% for the past 10 years
+        </h3>
+        </div>
+        <!-- Subtexto -->
+            <p class="text-muted mb-2">
+            Medley Business Park is located in the Miami-Dade industrial market and Medley Industrial submarket, which are <strong>currently exhibiting occupancy rates of 96.2% and 97.1%, respectively.</strong>
+            </p>
+            <p class="text-muted mb-3">
+            The South Florida industrial market is <strong>one of the strongest markets in the country</strong> with continued growth projected over the next few years.
+            </p>
+            <h4 class="mb-5">An Investment within your reach</h4>
 
           </div>
         </div> <!-- / .row -->
