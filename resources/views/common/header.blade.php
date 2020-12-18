@@ -172,7 +172,33 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About Us
+                Gallery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarComponents">
+                <a class="dropdown-item  active " href="components-theme.html">
+                  Theme
+                </a>
+                <a class="dropdown-item " href="components-bootstrap.html">
+                  Bootstrap
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarComponents">
+                <a class="dropdown-item  active " href="components-theme.html">
+                  Theme
+                </a>
+                <a class="dropdown-item " href="components-bootstrap.html">
+                  Bootstrap
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarComponents">
                 <a class="dropdown-item  active " href="components-theme.html">
