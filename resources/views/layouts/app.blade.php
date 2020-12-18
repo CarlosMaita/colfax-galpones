@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    {{-- titulo  --}}
-    <title>@yield('title')</title>
+    @yield('metas')
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
+    <!-- Fonts Plantilla -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    {{-- fonts  --}}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&family=Source+Serif+Pro&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="{{asset('vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
 
-      <!-- Favicons -->
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
-      <link rel="manifest" href="assets/ico/site.webmanifest">
-      <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
-      <link rel="shortcut icon" href="assets/ico/favicon.ico">
-      <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
-      <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
+  
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="{{asset('assets/libs/flickity/dist/flickity.min.css')}}">
@@ -44,6 +46,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
 
     @yield('captcha')
+    {{-- titulo  --}}
+    <title>@yield('title')</title>
 </head>
 <body>
     <div id="app" > 
