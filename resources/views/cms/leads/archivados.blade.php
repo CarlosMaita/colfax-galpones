@@ -1,13 +1,13 @@
 @extends('cms.layout.main')
 @section('title')
-    Leads
+    Leads archivados
 @endsection
 
 
 @section('content')
 <section class="mt-4">
 	<div>
-		<h1>Leads</h1>
+		<h1>Leads archivados</h1>
 	</div>
 
 	@if (session('message'))
@@ -34,15 +34,14 @@
 	                <td>{{ $lead->email }}</td>
 	                <td>{{ $lead->telefono}}</td>
 	                <td>
-	                	<button id="{{$lead->id}}" class="btn btn-sm btn-outline-primary comentarios" data-toggle="modal" data-target="#modalComentarios">Ver comentarios</button>
-	                    <a href="{{route('leads.archivar', $lead->id)}}" class="btn btn-sm btn-outline-primary">Archivar</a>
+	                	
 	                </td>
 	            </tr>
 	            @endforeach
 	        </tbody>
 	    </table>
 	</div>
-	
+
 	{{$leads->links()}}
 </section>
 

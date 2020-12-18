@@ -53,7 +53,6 @@
 	                	<td>{{$articulo->date}}</td>
 	                	<td>
 	                		<a href="{{route('blog.article.show', $articulo->id)}}" class="btn btn-sm btn-outline-primary">Editar</a>
-	                		<button type="button" id="{{$articulo->id}}" class="btn btn-sm btn-outline-primary comentarios" data-toggle="modal" data-target="#modalComentarios">Comentarios</button>
 	                		<button type="button" id="{{$articulo->id}}" class="btn btn-sm btn-outline-danger eliminar_button" data-toggle="modal" data-target="#modalEliminar">Eliminar</button>
 	                	</td>
 	                </tr>

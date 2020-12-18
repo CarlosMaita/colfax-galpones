@@ -4,6 +4,43 @@
 Contacto - galpones     
 @endsection
 
+
+@section('captcha')
+    {!! htmlScriptTagJsApi([
+        'action' => 'homepage'
+    ]) !!}
+@endsection
+
+@section('content')
+	
+<!-- BREADCRUMB
+================================================== -->
+<nav class="breadcrumb" style="margin-top: 0">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col">
+        
+        <!-- Heading -->
+        <h5 class="breadcrumb-heading">
+          Contact
+        </h5>
+
+      </div>
+      <div class="col-auto">
+
+        <!-- Breadcrumb -->
+        <span class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </span>
+        <span class="breadcrumb-item active">
+          Contact
+        </span>
+      
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</nav>
+
 {{-- location  --}}
 @section('breadcrumb')
 
@@ -43,6 +80,14 @@ Contacto - galpones
 
   <!-- Content -->
   <div class="container">
+    @if (session('message'))
+        <div class="alert alert-success" role="alert">
+            {{ session('message') }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+    @endif
     <div class="row">
       <div class="col-md-2">
 
@@ -123,7 +168,7 @@ Contacto - galpones
               
               <!-- Message -->
               <label>Your comments</label>
-              <textarea class="form-control" name="contact-message" rows="7"></textarea>
+              <textarea class="form-control" name="comentario" required rows="7"></textarea>
               
             </div>
           </div> <!-- / .form-row -->

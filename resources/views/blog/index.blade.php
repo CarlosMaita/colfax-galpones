@@ -13,24 +13,17 @@
           <div class="col-12 col-md-6 offset-xl-1 order-md-2">
             
             <!-- Image -->
-            <img src="assets/img/56.jpg" alt="..." class="img-fluid img-incline-left mb-5 mb-md-0">
+            <img src="{{asset('storage/'.$recent_post->picture)}}" alt="..." class="img-fluid img-incline-left mb-5 mb-md-0">
 
           </div>
           <div class="col-12 col-md-6 col-xl-5 order-md-1">
 
             <!-- Meta -->
             <div class="row align-items-center no-gutters mb-4">
-              <div class="col-auto">
-                
-                <div class="avatar mr-3">
-                  <img src="assets/img/17.jpg" alt="..." class="img-cover rounded-circle">
-                </div>
-
-              </div>
               <div class="col">
                 
                 <p class="mb-0 text-xs text-muted">
-                  by <strong class="text-body">Judy Doe</strong> 2 hours ago
+                  by <strong class="text-body">{{$recent_post->author->name}}</strong> {{$recent_post->created_at->diffForHumans()}}
                 </p>
 
               </div>
@@ -38,16 +31,20 @@
             
             <!-- Heading -->
             <h1 class="mb-4 font-weight-bold">
-              What are the big reasons for marketing your business
+              {{$recent_post->title}}
             </h1>
 
             <!-- Text -->
             <p class="mb-5 text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus odio nesciunt harum neque deserunt deleniti nemo, explicabo id accusamus voluptatum dolor.
+              @if(strlen($recent_post->content) < 66)
+                {!!$recent_post->content!!}
+              @else
+                {!!substr($recent_post->content,0, 66)!!}
+              @endif
             </p>
 
             <!-- Button -->
-            <a href="blog-post.html" class="btn btn-outline-primary">
+            <a href="{{route('blog.show', $recent_post->slug)}}" class="btn btn-outline-primary">
               Read more <i class="fas fa-arrow-right ml-2"></i>
             </a>
 
@@ -61,24 +58,17 @@
     <section>
       <div class="container section pb-0">
         <div class="row align-items-stretch">
-          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-            
-            <a class="card h-100" href="blog-post.html">
+          @foreach($posts as $post)
+          <div class="col-12 col-lg-4 mb-3">
+            <a class="card h-100" href="{{route('blog.show', $post->slug)}}">
               <div class="card-body">
 
                 <!-- Meta -->
                 <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/16.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
                   <div class="col">
                     
                     <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">John Doe</strong> 5 hours ago
+                       <strong class="text-body">{{$post->author->name}}</strong> {{$post->created_at->diffForHumans()}}
                     </p>
 
                   </div>
@@ -86,92 +76,23 @@
                 
                 <!-- Heading -->
                 <h4>
-                  Enhance your brand potential with giant advertising
+                   {{$post->title}}
                 </h4>
 
                 <!-- Text -->
                 <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  @if(strlen($post->content) < 56)
+                    {!!$post->content!!}
+                  @else
+                    {!!substr($post->content,0, 56)!!}
+                  @endif
                 </p>
 
               </div>
             </a>
 
           </div>
-          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-            
-            <a class="card h-100" href="blog-post.html">
-              <div class="card-body">
-
-                <!-- Meta -->
-                <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/18.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col">
-                    
-                    <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">Jane Roe</strong> 1 day ago
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-                
-                <!-- Heading -->
-                <h4>
-                  Promotional advertising speciality you've waited enough
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a>
-
-          </div>
-          <div class="col-12 col-lg-4">
-            
-            <a class="card h-100" href="blog-post.html">
-              <div class="card-body">
-
-                <!-- Meta -->
-                <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/17.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col">
-                    
-                    <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">Judy Doe</strong> 2 days ago
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-                
-                <!-- Heading -->
-                <h4>
-                  Choosing the best audio player software for your computer
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a>
-
-          </div>
+          @endforeach
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
@@ -190,169 +111,51 @@
 
             <!-- Sidenav -->
             <nav class="sidenav d-flex flex-column mb-5 mb-md-0">
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Startups
-              </a>
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Apps
-              </a>
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Gadgets
-              </a>
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Events
-              </a>
-              <a class="text-uppercase text-xs" href="#!">
-                Videos
-              </a>
+              @foreach($categorias as $categoria)
+                <a class="text-uppercase text-xs mb-2" href="{{route('blog.category.show', $categoria->slug)}}" title="{{$categoria->description}}">
+                  {{$categoria->name}}
+                </a>
+              @endforeach
             </nav>
 
           </div>
           <div class="col-12 col-md-9 col-lg-10 order-md-1">
-            
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/22.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
+            @foreach($random_posts as $random_post)
+              <a class="row align-items-center text-nounderline" href="{{route('blog.show', $random_post->slug)}}">
+                <div class="col-12 col-md-3">
+                  
+                  <!-- Image -->
+                  <img src="{{asset('storage/'.$random_post->picture)}}" alt="..." class="img-fluid mb-3 mb-md-0">
 
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">John Doe</strong> 5 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  Why do you need to join an affiliate marketing network
-                </h4>
+                </div>
+                <div class="col-12 col-md-9">
+                  
+                  <!-- Meta -->
+                  <p class="mb-2 text-xs text-muted">
+                    by <strong class="text-body">{{$random_post->author->name}}</strong>{{$random_post->created_at->diffForHumans()}}
+                  </p>
+                  
+                  <!-- Heading -->
+                  <h4>
+                    {{$random_post->title}}
+                  </h4>
 
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
+                  <!-- Text -->
+                  <p class="mb-0 text-sm text-muted">
+                    @if(strlen($random_post->content) < 56)
+                      {!!$random_post->content!!}
+                    @else
+                      {!!substr($random_post->content,0, 56)!!}
+                    @endif
+                  </p>
 
-              </div>
-            </a> <!-- / .row -->
+                </div>
+              </a>
 
-            <hr class="my-4">
-
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/24.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
-
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">Judy Doe</strong> 5 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  Free classifieds using them to promote your stuff online
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row -->
-
-            <hr class="my-4">
-
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/59.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
-
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">Jane Roe</strong> 6 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  Are you ready to buy a home theater audio system
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row -->
-
-            <hr class="my-4">
-
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/60.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
-
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">John Doe</strong> 7 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  3 ways to persuade people thinking about buying
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row -->
-
-            <hr class="my-4">
-
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/61.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
-
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">Judy Doe</strong> 2 weeks ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  The golden rules graphic designer don't want you to know about
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row -->
-
+              @if(!$loop->last)
+                <hr class="my-4">
+              @endif 
+            @endforeach
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
