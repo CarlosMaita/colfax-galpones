@@ -209,6 +209,17 @@
                 </a>
               </div>
             </li>
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="navbarComponents" role="button"  aria-haspopup="true" aria-expanded="false">
+                EN
+              </a>
+            </li>
+            
           </ul>
 
         </div> <!-- / .navbar-collapse -->
@@ -225,7 +236,6 @@
               Theme components
             </h5>
           </div>
-          
           <div class="col-auto">
             <!-- Breadcrumb -->
             <span class="breadcrumb-item">
