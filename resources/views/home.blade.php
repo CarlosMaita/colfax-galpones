@@ -37,155 +37,262 @@ Home - galpones
   
      
       <!-- HERO
-      ================================================== -->
-      <section class="section section-top section-full">
-  
-        <!-- Cover -->
-        <div class="bg-cover" style="background-image: url(assets/img/38.jpg)"></div>
-  
-        <!-- Overlay -->
-        <div class="bg-overlay"></div>
-  
-        <!-- Triangles -->
-        <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-        <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
-  
-        <!-- Content -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-lg-5 align-self-end">
-  
-              <!-- Preheading -->
-              <p class="font-weight-medium text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
-                by Simpleqode
-              </p>
-              
-              <!-- Heading -->
-              <h1 class="text-white mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
-                Luxury villa located in the heart of West Hollywood
-              </h1>
-  
-              <!-- Subheading -->
-              <p class="text-white text-muted mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis provident et ab, ullam in quidem nostrum quo sunt beatae odio fugit.
-              </p>
-  
-              <!-- Button -->
-              <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-                <a href="contact.html" target="_blank" class="btn btn-outline-primary text-white">
-                  Schedule a showing
-                </a>
-              </div>
-  
-            </div>
-            <div class="col-md-4 col-lg-7 align-self-center d-flex justify-content-end">
-              
-              <!-- Heading -->
-              <h4 class="text-vertical text-white mb-0">
-                <span>Incline real estate</span>
-              </h4>
-  
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-  
-      </section>
-  
-      <!-- FEATURES
-      ================================================== -->
-      <section class="section">
-  
-        <!-- Content -->
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
+    ================================================== -->
+    <section class="section section-top section-full">
+
+      <!-- Slider -->
+      <div class="bg-slider">
+        <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg">
+          <div class="slider-item">
             
-              <!-- Heading -->
-              <h2 class="mb-4 text-center">
-                Live like a celebrity
-              </h2>
-  
-              <!-- Subheading -->
-              <p class="text-center text-muted text-left mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.
-              </p>
+            <!-- Cover -->
+            <div class="bg-cover" style="background-image: url(assets/img/48.jpg)"></div>
+
+          </div>
+          <div class="slider-item">
             
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-md-4">
-  
-              <!-- Item -->
-              <div class="mb-5 mb-md-0">
-                
-                <!-- Icon -->
-                <div class="text-center text-primary mb-4">
-                  <span class="icon-bed icon-2x"></span>
-                </div>
-  
-                <!-- Heading -->
-                <h4 class="text-center mb-3">
-                  Five bedrooms
-                </h4>
-  
-                <!-- Content -->
-                <p class="text-center text-muted mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, enim earum quas placeat est facilis.
+            <!-- Cover -->
+            <div class="bg-cover" style="background-image: url(assets/img/49.jpg)"></div>
+
+          </div>
+          <div class="slider-item">
+            
+            <!-- Cover -->
+            <div class="bg-cover" style="background-image: url(assets/img/50.jpg)"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="bg-overlay"></div>
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-8 col-lg-7 order-md-2">
+
+            <!-- Slider -->
+            <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade mb-5 mb-md-0" data-bind="slider" data-target="#hero-slider-bg">
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  by Simpleqode
                 </p>
-  
-              </div>
-  
-            </div>
-            <div class="col-md-4">
-  
-              <!-- Item -->
-              <div class="mb-5 mb-md-0">
                 
-                <!-- Icon -->
-                <div class="text-center text-primary mb-4">
-                  <span class="icon-pool icon-2x"></span>
-                </div>
-  
                 <!-- Heading -->
-                <h4 class="text-center mb-3">
-                  Backyard pool
-                </h4>
-  
-                <!-- Content -->
-                <p class="text-center text-muted mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, enim earum quas placeat est facilis.
+                <h1 class="text-white text-center mb-4">
+                  Landing pages for any occasion
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                  Incline is set of landing and support pages aimed at helping companies promote new products and business launches.
                 </p>
-  
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
+                    Purchase now
+                  </a>
+                </p>
+
               </div>
-  
-            </div>
-            <div class="col-md-4">
-  
-              <!-- Item -->
-              <div>
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  by Simpleqode
+                </p>
                 
-                <!-- Icon -->
-                <div class="text-center text-primary mb-4">
-                  <span class="icon-drawing icon-2x"></span>
-                </div>
-  
                 <!-- Heading -->
-                <h4 class="text-center mb-3">
-                  3000 square feet
-                </h4>
-  
-                <!-- Content -->
-                <p class="text-center text-muted mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, enim earum quas placeat est facilis.
+                <h1 class="text-white text-center mb-4">
+                  Powerful design tool 
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                  Create beautiful websites from scratch with multiple pre-built pages and styled components.
                 </p>
-  
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
+                    Purchase now
+                  </a>
+                </p>
+
               </div>
-  
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  by Simpleqode
+                </p>
+                
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Build anything with Incline
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                  Create beautiful websites from scratch with multiple pre-built pages and styled components.
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
+                    Purchase now
+                  </a>
+                </p>
+
+              </div>
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-  
-      </section>
+
+          </div>
+          <div class="col-6 col-md-2 order-md-1">
+
+            <!-- Controls -->
+            <div class="text-left">
+              <a href="#hero-slider" class="slider-control" data-slide="previous">
+                <span class="icon-arrow-left icon-2x"></span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-6 col-md-2 order-md-3">
+
+            <!-- Controls -->
+            <div class="text-right">
+              <a href="#hero-slider" class="slider-control" data-slide="next">
+                <span class="icon-arrow-right icon-2x"></span>
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+ <!-- PAGES
+    ================================================== -->
+    <section class="section" id="pages">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+
+            <!-- Heading -->
+            <h2 class="text-center mb-4">
+              Landing page variants
+            </h2>
+
+            <!-- Subheading -->
+            <p class="text-muted text-center mb-5">
+              Incline comes with several professionally designed landing pages that can be easily adapted for any project.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-md-4 p-1">
+        
+            <!-- Item -->
+            <a href="app.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/45.png" alt="App landing" class="img-fluid">
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4 p-1">
+        
+            <!-- Item -->
+            <a href="company.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/90.png" alt="App landing" class="img-fluid">
+              </div>
+
+            
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4 p-1">
+        
+            <!-- Item -->
+            <a href="fullpage.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/57.png" alt="Fullpage scrolling" class="img-fluid">
+              </div>
+
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4 p-1">
+        
+            <!-- Item -->
+            <a href="product.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/44.png" alt="App landing" class="img-fluid">
+              </div>
+
+           
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4 p-1">
+        
+            <!-- Item -->
+            <a href="real-estate.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/46.png" alt="App landing" class="img-fluid">
+              </div>
+
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4 p-1">
+        
+            <!-- Item -->
+            <a href="restaurant.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/91.png" alt="App landing" class="img-fluid">
+              </div>
+
+
+            </a> <!-- / .card -->
+
+          </div>
+         
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    
   
       <!-- ABOUT
       ================================================== -->
@@ -347,80 +454,7 @@ Home - galpones
   
       </section>
   
-      <!-- CTA
-      ================================================== -->
-      <section class="section bg-dark">
-  
-        <!-- Pattern -->
-        <div class="bg-triangle bg-triangle-light bg-triangle-top bg-triangle-right"></div>
-        <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-  
-        <!-- Content -->
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-8">
-              
-              <!-- Heading -->
-              <h3 class="text-white mb-4">
-                Schedule a free showing tomorrow
-              </h3>
-  
-              <!-- Content -->
-              <p class="text-white text-muted mb-4 mb-md-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolores, voluptates atque dicta vero quibusdam laudantium saepe sequi harum.
-              </p>
-  
-            </div>
-            <div class="col-md-4">
-              
-              <!-- Button -->
-              <a href="contact.html" class="btn btn-outline-primary text-white">
-                Get in touch with us
-              </a>
-  
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-  
-      </section>
-  
-      <!-- ABOUT
-      ================================================== -->
-      <section class="section">
-  
-        <!-- Content -->
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-lg-5 offset-lg-1">
-              
-              <!-- Image -->
-              <div class="img-effect img-effect-solid mb-5 mb-md-0">
-                <img src="assets/img/41.jpg" class="img-fluid" alt="...">
-              </div>
-  
-            </div>
-            <div class="col-md-6 col-lg-4 offset-lg-1">
-  
-              <!-- Heading -->
-              <h2 class="mb-4">
-                Everything you need to enjoy your living
-              </h2>
-  
-              <!-- Content -->
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores, aperiam. Excepturi assumenda non quasi ipsa quidem.
-              </p>
-  
-              <!-- Button -->
-              <a href="#modal-video" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
-                <i class="fas fa-play"></i>
-              </a> Video demo
-              
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-  
-      </section>
+    
   
       <!-- PROMO
       ================================================== -->
@@ -477,39 +511,236 @@ Home - galpones
         </div> <!-- / .container -->
   
       </section>
-  
-      <!-- MAP
-      ================================================== -->
-      <section class="section">
-  
-        <!-- Content -->
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-  
-              <!-- Heading -->
-              <h2 class="text-center mb-4">
-                Find the house on the map
-              </h2>
-  
-              <!-- Subheading -->
-              <p class="text-center text-muted mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repellendus dolores, error.
-              </p>
+
+
+    <!-- HEADER
+    ================================================== -->
+    <section class="section pb-0">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
             
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-12">
-  
-              <!-- Map -->
-              <div class="map">
-                <div class="map-container" data-markers="[[34.0872254,-118.4046315]]" data-zoom="8"></div>
+            <!-- Header -->
+            <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="section pb-0">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            
+            <!-- Title -->
+            <h6 class="title">
+              Two words about our company
+            </h6>
+
+          </div>
+          <div class="col-md-5">
+            
+            <!-- Heading -->
+            <h3 class="mb-4">
+              We help people find great products at a <span class="text-primary">reasonable</span> price
+            </h3>
+
+            <!-- Content -->
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos excepturi, eveniet, accusamus magnam unde mollitia facere similique corrupti veniam odit.
+              </p>
+            </blockquote>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellat, consectetur eligendi necessitatibus reiciendis reprehenderit porro expedita consequuntur vitae dolorem beatae commodi adipisci cupiditate qui quisquam blanditiis praesentium labore enim.
+            </p>
+
+          </div>
+          <div class="col-md-5">
+            
+            <!-- Content -->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum vero corrupti voluptates, aperiam est asperiores, ea odio, maxime eos corporis ut magni.
+            </p>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dolor debitis soluta, excepturi, laboriosam dolorum non, beatae veniam ipsa eum ad quia expedita minus explicabo placeat itaque voluptate, quos culpa!
+            </p>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti laboriosam sit natus totam libero at accusantium excepturi doloremque quae, vitae dignissimos soluta quod nesciunt, provident adipisci quas inventore odit impedit!
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- TEAM
+    ================================================== -->
+    <section class="section pb-0">
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            
+            <!-- Title -->
+            <h6 class="title">
+              Our team
+            </h6>
+
+          </div>
+          <div class="col-md-10">
+            
+            <!-- Heading -->
+            <h3 class="mb-4">
+              People behind the scenes
+            </h3>
+
+            <!-- Subheading -->
+            <p class="text-muted mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel distinctio deserunt dolor culpa repellat iusto nostrum tempora placeat fuga facere mollitia adipisci, animi, reiciendis dicta quam obcaecati ad quibusdam eius?
+            </p>
+
+            <!-- Team -->
+            <div class="row">
+              <div class="col-md-4">
+                
+                <!-- Card -->
+                <div class="card card-sm border-0 mb-3 mb-md-0">
+                  
+                  <!-- Image -->
+                  <img src="assets/img/16.jpg" alt="..." class="card-img-top">
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    
+                    <!-- Title -->
+                    <h5 class="card-title">
+                      Richard Roe, <small class="text-muted">Creative Director</small>
+                    </h5>
+
+                    <!-- Text -->
+                    <ul class="card-text list-inline list-unstyled">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item ml-3">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item ml-3">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div> <!-- / .card -->
+
               </div>
-              
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
+              <div class="col-md-4">
+                
+                <!-- Card -->
+                <div class="card card-sm border-0 mb-3 mb-md-0">
+                  
+                  <!-- Image -->
+                  <img src="assets/img/17.jpg" alt="..." class="card-img-top">
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    
+                    <!-- Title -->
+                    <h5 class="card-title">
+                      Ann Doe, <small class="text-muted">Designer</small>
+                    </h5>
+
+                    <!-- Text -->
+                    <ul class="card-text list-inline list-unstyled">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item ml-3">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item ml-3">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div> <!-- / .card -->
+
+              </div>
+              <div class="col-md-4">
+                
+                <!-- Card -->
+                <div class="card card-sm border-0 mb-3 mb-md-0">
+                  
+                  <!-- Image -->
+                  <img src="assets/img/18.jpg" alt="..." class="card-img-top">
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    
+                    <!-- Title -->
+                    <h5 class="card-title">
+                      Jane Doe, <small class="text-muted">Copywriter</small>
+                    </h5>
+
+                    <!-- Text -->
+                    <ul class="card-text list-inline list-unstyled">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item ml-3">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item ml-3">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div> <!-- / .card -->
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+
+     
   
-      </section>
 @endsection
