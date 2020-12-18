@@ -49,175 +49,53 @@
 
           <!-- Links -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Home
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarWelcome">
-                <a class="dropdown-item " href="index.html">
-                  Header: Image
+              <li class="nav-item ">
+                <a href="{{route('home')}}" class="nav-link">
+                  Home
                 </a>
-                <a class="dropdown-item " href="index-header-carousel.html">
-                  Header: Carousel
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('location')}}" class="nav-link">
+                  Location
                 </a>
-                <a class="dropdown-item " href="index-header-parallax.html">
-                  Header: Parallax
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('floorplants')}}" class="nav-link">
+                  floorplants
                 </a>
-                <a class="dropdown-item " href="index-header-video.html">
-                  Header: Video
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('gallery')}}" class="nav-link">
+                  Gallery
                 </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Location
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarLandings">
-                <a class="dropdown-item " href="app.html">
-                  App
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('blog')}}" class="nav-link">
+                  Blog
                 </a>
-                <a class="dropdown-item " href="company.html">
-                  Company
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('contact')}}" class="nav-link">
+                  Contact
                 </a>
-                <a class="dropdown-item " href="fullpage.html">
-                  Fullpage
-                </a>
-                <a class="dropdown-item " href="product.html">
-                  Product
-                </a>
-                <a class="dropdown-item " href="real-estate.html">
-                  Real estate
-                </a>
-                <a class="dropdown-item " href="restaurant.html">
-                  Restaurant
-                </a>
-                <a class="dropdown-item " href="service.html">
-                  Service
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Floorplant
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarPages">
-                <li class="dropright">
-                  <a class="dropdown-item dropdown-toggle" href="#" id="pagesBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Blog
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="pagesBlog">
-                    <a class="dropdown-item " href="blog.html">
-                      Blog
-                    </a>
-                    <a class="dropdown-item " href="blog-post.html">
-                      Blog: Post
-                    </a>
-                  </div>
-                </li>
-                <li class="dropright">
-                  <a class="dropdown-item dropdown-toggle" href="#" id="pagesShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Shop
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="pagesShop">
-                    <a class="dropdown-item " href="shop.html">
-                      Shop
-                    </a>
-                    <a class="dropdown-item " href="shop-item.html">
-                      Shop: Item
-                    </a>
-                    <a class="dropdown-item " href="cart.html">
-                      Shop: Cart
-                    </a>
-                    <a class="dropdown-item " href="checkout.html">
-                      Shop: Checkout
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="about.html">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="contact.html">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="faq.html">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="pricing.html">
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="sign-in.html">
-                    Sign In
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="sign-up.html">
-                    Sign Up
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="404.html">
-                    404
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Gallery
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarComponents">
-                <a class="dropdown-item  active " href="components-theme.html">
-                  Theme
-                </a>
-                <a class="dropdown-item " href="components-bootstrap.html">
-                  Bootstrap
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarComponents">
-                <a class="dropdown-item  active " href="components-theme.html">
-                  Theme
-                </a>
-                <a class="dropdown-item " href="components-bootstrap.html">
-                  Bootstrap
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarComponents">
-                <a class="dropdown-item  active " href="components-theme.html">
-                  Theme
-                </a>
-                <a class="dropdown-item " href="components-bootstrap.html">
-                  Bootstrap
-                </a>
-              </div>
-            </li>
+              </li>
             <li class="nav-item-divider">
               <span class="nav-link">
                 <span></span>
               </span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="navbarComponents" role="button"  aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 EN
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarComponents" style="min-width: 50px; width: 100px;">
+                <a class="dropdown-item " href="components-theme.html">
+                  EN
+                </a>
+                <a class="dropdown-item " href="components-bootstrap.html">
+                  ES
+                </a>
+              </div>
             </li>
             
           </ul>
