@@ -104,28 +104,6 @@
   
       </div> <!-- / .container -->    
     </nav>
-    <nav class="breadcrumb">
-      <div class="container">
-        <div class="row align-items-center">
 
-          <div class="col">
-            <!-- Heading -->
-            <h5 class="breadcrumb-heading">
-              Theme components
-            </h5>
-          </div>
-          <div class="col-auto">
-            <!-- Breadcrumb -->
-            <span class="breadcrumb-item">
-              <a href="index.html">@yield('location', 'Home')</a>
-            </span>
-            </div>
-            <div class="col-auto">
-            <span class="breadcrumb-item active">
-              Theme components
-            </span>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </nav>
+    
     

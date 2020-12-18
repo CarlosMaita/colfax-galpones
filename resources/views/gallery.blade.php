@@ -1,15 +1,45 @@
 @extends('layouts.app')
 
+{{-- titulo  --}}
 @section('title')
 Gallery - galpones     
 @endsection
 
+
+{{-- location  --}}
+@section('breadcrumb')
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="breadcrumb">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col">
+            <!-- Heading -->
+            <h5 class="breadcrumb-heading">
+              Gallery
+            </h5>
+          </div>
+          <div class="col-auto d-flex">
+             <!-- Breadcrumb -->
+            <span class="breadcrumb-item">
+              <a href="{{route('home')}}">Home</a>
+            </span>
+            <span class="breadcrumb-item active">
+              Gallery
+            </span> 
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+@endsection
+
+    
+{{-- contenido  --}}
 @section('content')
-
-
-
 <section class="section">
-    @section('location', 'Gallery')
       <!-- Line 
       <div class="line line-top"></div>-->
 
