@@ -65,6 +65,7 @@ Route::middleware('cms')->group(function () {
 	Route::get('/cms/leads', 'Cms\LeadsController@index')->name('leads.home');
 
 	Route::get('/cms/lead/archivar/{id}', 'Cms\LeadsController@archivarLeads')->name('leads.archivar');
+	Route::get('/cms/lead/cometario/{id}', 'Cms\LeadsController@obtenerComentario');
 });
 
 /*---------------ADMINISTRADORES --------------*/

@@ -61,9 +61,10 @@
     <section>
       <div class="container section pb-0">
         <div class="row align-items-stretch">
+          @foreach($posts as $post)
           <div class="col-12 col-lg-4 mb-3 mb-lg-0">
             
-            <a class="card h-100" href="blog-post.html">
+            <a class="card h-100" href="{{route('blog.show', $post->slug)}}">
               <div class="card-body">
 
                 <!-- Meta -->
@@ -71,14 +72,14 @@
                   <div class="col-auto">
                     
                     <div class="avatar mr-3">
-                      <img src="assets/img/16.jpg" alt="..." class="img-cover rounded-circle">
+                      <img src="{{asset('storage/'.$post->picture)}}" alt="..." class="img-cover rounded-circle">
                     </div>
 
                   </div>
                   <div class="col">
                     
                     <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">John Doe</strong> 5 hours ago
+                       <strong class="text-body">{{$post->author->name}}</strong> {{$post->created_at->diffForHumans()}}
                     </p>
 
                   </div>
@@ -86,92 +87,23 @@
                 
                 <!-- Heading -->
                 <h4>
-                  Enhance your brand potential with giant advertising
+                   {{$post->title}}
                 </h4>
 
                 <!-- Text -->
                 <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  @if(strlen($post->content) < 56)
+                    {!!$post->content!!}
+                  @else
+                    {!!substr($post->content,0, 56)!!}
+                  @endif
                 </p>
 
               </div>
             </a>
 
           </div>
-          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-            
-            <a class="card h-100" href="blog-post.html">
-              <div class="card-body">
-
-                <!-- Meta -->
-                <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/18.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col">
-                    
-                    <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">Jane Roe</strong> 1 day ago
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-                
-                <!-- Heading -->
-                <h4>
-                  Promotional advertising speciality you've waited enough
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a>
-
-          </div>
-          <div class="col-12 col-lg-4">
-            
-            <a class="card h-100" href="blog-post.html">
-              <div class="card-body">
-
-                <!-- Meta -->
-                <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/17.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col">
-                    
-                    <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">Judy Doe</strong> 2 days ago
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-                
-                <!-- Heading -->
-                <h4>
-                  Choosing the best audio player software for your computer
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a>
-
-          </div>
+          @endforeach
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
@@ -190,21 +122,11 @@
 
             <!-- Sidenav -->
             <nav class="sidenav d-flex flex-column mb-5 mb-md-0">
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Startups
-              </a>
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Apps
-              </a>
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Gadgets
-              </a>
-              <a class="text-uppercase text-xs mb-2" href="#!">
-                Events
-              </a>
-              <a class="text-uppercase text-xs" href="#!">
-                Videos
-              </a>
+              @foreach($categorias as $categoria)
+                <a class="text-uppercase text-xs mb-2" href="{{route('blog.category.show', $categoria->slug)}}" title="{{$categoria->description}}">
+                  {{$categoria->name}}
+                </a>
+              @endforeach
             </nav>
 
           </div>

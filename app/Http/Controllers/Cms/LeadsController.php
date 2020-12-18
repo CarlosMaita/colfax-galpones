@@ -31,4 +31,11 @@ class LeadsController extends Controller
 
     	return back()->with('message', 'Lead Archivado con éxito!');
     }
+
+
+    public function obtenerComentario($id)
+    {
+        $lead = Lead::find($id);
+        return response()->json($lead, 200);
+    }
 }

@@ -4,6 +4,12 @@
 Contacto - galpones     
 @endsection
 
+@section('captcha')
+    {!! htmlScriptTagJsApi([
+        'action' => 'homepage'
+    ]) !!}
+@endsection
+
 @section('content')
 	
 <!-- BREADCRUMB
@@ -34,32 +40,20 @@ Contacto - galpones
   </div> <!-- / .container -->
 </nav>
 
-<!-- MAP
-================================================== -->
-<section class="section pb-0">
-
-  <!-- Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-
-        <!-- Map -->
-        <div class="map">
-          <div class="map-container" data-markers="[[40.7127753,-74.0059728]]" data-zoom="12"></div>
-        </div>
-        
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-
-</section>
-
 <!-- FORM
 ================================================== -->
 <section class="section pb-0">
 
   <!-- Content -->
   <div class="container">
+    @if (session('message'))
+        <div class="alert alert-success" role="alert">
+            {{ session('message') }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+    @endif
     <div class="row">
       <div class="col-md-2">
 
@@ -140,7 +134,7 @@ Contacto - galpones
               
               <!-- Message -->
               <label>Your comments</label>
-              <textarea class="form-control" name="contact-message" rows="7"></textarea>
+              <textarea class="form-control" name="comentario" rows="7"></textarea>
               
             </div>
           </div> <!-- / .form-row -->
