@@ -134,7 +134,7 @@ Contacto - galpones
               
               <!-- Message -->
               <label>Your comments</label>
-              <textarea class="form-control" name="comentario" rows="7"></textarea>
+              <textarea class="form-control" name="comentario" required rows="7"></textarea>
               
             </div>
           </div> <!-- / .form-row -->

@@ -40,9 +40,6 @@ Route::get('/gallery', function(){
 	return view('gallery');
 	} )->name('gallery');
 
-Route::get('/blog-post', function(){
-	return view('blog.post');
-   });
 
 Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');

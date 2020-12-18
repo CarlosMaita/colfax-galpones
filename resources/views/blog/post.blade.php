@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	<!-- regresar variable de nombre al cargar los datos del post -->
+	{{$post->title}}
 @endsection
 
 
@@ -45,15 +45,8 @@
             <div class="row align-items-center justify-content-center no-gutters mb-4">
               <div class="col-auto">
                 
-                <div class="avatar mr-3">
-                  <img src="assets/img/17.jpg" alt="..." class="img-cover rounded-circle">
-                </div>
-
-              </div>
-              <div class="col-auto">
-                
                 <p class="mb-0 text-xs text-muted">
-                  by <strong class="text-body">Judy Doe</strong> 2 hours ago
+                  by <strong class="text-body">{{$post->author->name}}</strong> {{$post->created_at->diffForHumans()}}
                 </p>
 
               </div>
@@ -61,7 +54,7 @@
             
             <!-- Heading -->
             <h1 class="mb-5 font-weight-bold text-center">
-              What are the big reasons for marketing your business
+              {{$post->title}}
             </h1>
             
           </div>
@@ -70,31 +63,16 @@
           <div class="col-12">
             
             <!-- Image -->
-            <img src="assets/img/56.jpg" alt="..." class="img-fluid mb-3">
-
-            <!-- Caption -->
-            <p class="text-center text-sm text-muted mb-5">
-              Sint cum consectetur error mollitia at, eius illo. Deleniti, magnam.
-            </p>
+            <img src="{{asset('storage/'.$post->picture)}}" alt="..." class="img-fluid mb-3">
 
           </div>
         </div> <!-- / .row -->
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10 col-xl-8">
 
-            <blockquote class="blockquote">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-              </p>
-            </blockquote>
-
-            <p>
-              Lorem ipsum dolor sit amet, <a href="#!">consectetur adipisicing</a> elit. Accusantium, culpa iure ut quae. Consequuntur cumque voluptate assumenda placeat ipsum odit veritatis cupiditate, ea quam eaque, maxime nemo sint. In, fuga.
-            </p>
-
-            <p class="mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum dolores modi numquam! Placeat consequatur quisquam, ad hic dolore dolorum asperiores provident dolor, aspernatur expedita excepturi consectetur ullam <a href="#!">magni quod</a>.
-            </p>
+            <article>
+            	{!!$post->content!!}
+            </article>
 
             <!-- Social -->
             <div class="row align-items-center py-3 my-5 border-top border-bottom">
@@ -106,10 +84,13 @@
 
               </div>
               <div class="col-auto">
-                <a href="#!" class="text-lg text-nounderline mx-2">
+              	<a href="#!" id="whastapp" class="text-lg text-nounderline mx-2">
+              		<i class="fab fa-whatsapp"></i>
+              	</a>
+                <a href="#!" id="twitter" class="text-lg text-nounderline mx-2">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#!" class="text-lg text-nounderline mx-2">
+                <a href="#!" id="facebook" class="text-lg text-nounderline mx-2">
                   <i class="fab fa-facebook"></i>
                 </a>
                 <a href="#!" class="text-lg text-nounderline mx-2">
@@ -128,6 +109,7 @@
     <section class="section">
       <div class="container">
         <div class="row align-items-stretch">
+        @foreach($random_posts as $random_post)
           <div class="col-12 col-lg-4 mb-3 mb-lg-0">
             
             <a class="card h-100" href="blog-post.html">
@@ -135,17 +117,10 @@
 
                 <!-- Meta -->
                 <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/16.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
                   <div class="col">
                     
                     <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">John Doe</strong> 5 hours ago
+                      by <strong class="text-body">{{$random_post->author->name}}</strong> {{$random_post->created_at->diffForHumans()}}
                     </p>
 
                   </div>
@@ -153,99 +128,58 @@
                 
                 <!-- Heading -->
                 <h4>
-                  Enhance your brand potential with giant advertising
+                  {{$random_post->title}}
                 </h4>
 
                 <!-- Text -->
                 <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  @if(strlen($random_post->content) < 56)
+                      {!!$random_post->content!!}
+                    @else
+                      {!!substr($random_post->content,0, 56)!!}
+                    @endif
                 </p>
-
               </div>
             </a>
-
           </div>
-          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-            
-            <a class="card h-100" href="blog-post.html">
-              <div class="card-body">
-
-                <!-- Meta -->
-                <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/18.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col">
-                    
-                    <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">Jane Roe</strong> 1 day ago
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-                
-                <!-- Heading -->
-                <h4>
-                  Promotional advertising speciality you've waited enough
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a>
-
-          </div>
-          <div class="col-12 col-lg-4">
-            
-            <a class="card h-100" href="blog-post.html">
-              <div class="card-body">
-
-                <!-- Meta -->
-                <div class="row align-items-center no-gutters mb-4">
-                  <div class="col-auto">
-                    
-                    <div class="avatar mr-3">
-                      <img src="assets/img/17.jpg" alt="..." class="img-cover rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col">
-                    
-                    <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">Judy Doe</strong> 2 days ago
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-                
-                <!-- Heading -->
-                <h4>
-                  Choosing the best audio player software for your computer
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a>
-
-          </div>
+        @endforeach
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
 
 
 
+    <script type="text/javascript">
+    //-------- COMPARTIR CON REDES SOCIALES ------------
+    	const facebook = document.getElementById('facebook'),
+    		  twitter = document.getElementById('twitter'),
+    		  whastapp = document.getElementById('whastapp')
 
+    	let dir = window.location;
+    	let dir2 = encodeURIComponent(dir);
+    	let tit = window.document.title;
+    	let tit2 = encodeURIComponent(tit);
+
+    	facebook.addEventListener('click', (e) => {
+    		e.preventDefault()
+    		url = `http://www.facebook.com/share.php?u=${dir2}&t=${tit2}`
+    		window.open(url, '','width=600,height=400,left=50,top=50')
+    	})
+
+    	twitter.addEventListener('click', (e) => {
+    		e.preventDefault();
+    		url= `http://twitter.com/?status=${tit2}%20${dir}`
+    		window.open(url, '', 'width=600,height=400,left=50,top=50')
+    	})
+
+
+    	whastapp.addEventListener('click', (e) => {
+			e.preventDefault();
+			location.href = `https://wa.me/?text=${encodeURIComponent(window.location)}`
+		})
+
+
+    </script> -->
 
 
 
