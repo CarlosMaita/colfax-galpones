@@ -34,7 +34,11 @@ Route::get('/location', function(){
 // contact
 Route::get('/contact', function(){
 	return view('contact');
-   })->name('contact');
+   } )->name('contact');
+// Gallery
+Route::get('/gallery', function(){
+	return view('gallery');
+	} )->name('gallery');
 
 Route::get('/blog-post', function(){
 	return view('blog.post');

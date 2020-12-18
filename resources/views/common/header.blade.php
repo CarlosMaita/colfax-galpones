@@ -1,75 +1,131 @@
+<nav class="navbar navbar-expand-xl navbar-light  fixed-top">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand py-0" href="index.html">
+          <img src="assets/img/logo/logo.png" alt="logo" height=60 width=80 class=py-0>
+        </a>
   
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    @if(isset($logo))
-                        <img src="{{asset('storage/'.$logo->image)}}" width="40" height="40" alt="logo">
-                    @else
-                        LOGO
-                    @endif
+          <!-- Social -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-whatsapp"></i> 
+                <span class="d-xl-none ml-2">
+                  Whatsapp
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-twitter"></i> 
+                <span class="d-xl-none ml-2">
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-instagram"></i> 
+                <span class="d-xl-none ml-2">
+                  Instagram
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a href="{{route('home')}}" class="nav-link">
+                  Home
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('location')}}" class="nav-link">
+                  Location
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('floorplants')}}" class="nav-link">
+                  floorplants
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('gallery')}}" class="nav-link">
+                  Gallery
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('blog')}}" class="nav-link">
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="{{route('contact')}}" class="nav-link">
+                  Contact
+                </a>
+              </li>
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                EN
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarComponents" style="min-width: 50px; width: 100px;">
+                <a class="dropdown-item " href="components-theme.html">
+                  EN
+                </a>
+                <a class="dropdown-item " href="components-bootstrap.html">
+                  ES
+                </a>
+              </div>
+            </li>
+            
+          </ul>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="{{route('about-us')}}" class="nav-link">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{route('location')}}" class="nav-link">Location</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{route('floorplants')}}" class="nav-link">floorplants</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{route('contact')}}" class="nav-link">contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{route('blog')}}" class="nav-link">Blog</a>
-                        </li>
-                        {{-- language  --}}
-                        <li class="nav-item">
-                            <a href="{{route('blog')}}" class="nav-link">Blog</a>
-                        </li>
-                    </ul>
+        </div> <!-- / .navbar-collapse -->
+  
+      </div> <!-- / .container -->    
+    </nav>
+    <nav class="breadcrumb">
+      <div class="container">
+        <div class="row align-items-center">
 
-                    <!-- Right Side Of Navbar -->
-                    <!--ul class="navbar-nav ml-auto"-->
-                        <!-- Authentication Links -->
-                        @guest
-                            <!--li-- class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </!--li-->
-                            @if (Route::has('register'))
-                                <!--li-- class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </!--li-->
-                            @endif
-                        @else
-                            <!--li-- class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <!--div-- class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </!--div-->
-                            <!--/li-->
-                        @endguest
-                    <!--/ul-->
-                </div>
+          <div class="col">
+            <!-- Heading -->
+            <h5 class="breadcrumb-heading">
+              Theme components
+            </h5>
+          </div>
+          <div class="col-auto">
+            <!-- Breadcrumb -->
+            <span class="breadcrumb-item">
+              <a href="index.html">@yield('location', 'Home')</a>
+            </span>
             </div>
-        </nav>
+            <div class="col-auto">
+            <span class="breadcrumb-item active">
+              Theme components
+            </span>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+    
