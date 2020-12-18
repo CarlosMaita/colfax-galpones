@@ -8,7 +8,7 @@ Contacto - galpones
 	
 <!-- BREADCRUMB
 ================================================== -->
-<nav class="breadcrumb" style="margin-top: 0">
+<nav class="breadcrumb">
   <div class="container">
     <div class="row align-items-center">
       <div class="col">

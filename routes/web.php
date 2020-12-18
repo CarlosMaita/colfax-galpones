@@ -34,7 +34,11 @@ Route::get('/location', function(){
 // contact
 Route::get('/contact', function(){
 	return view('contact');
-   } )->name('contact');
+   })->name('contact');
+
+Route::get('/blog-post', function(){
+	return view('blog.post');
+   });
 
 Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
@@ -54,6 +58,9 @@ Route::post('/admin/logout', 'Cms\LoginController@logout')->name('login.logout')
 
 Route::middleware('cms')->group(function () {
 	Route::get('/cms', 'Cms\IndexController@index')->name('cms.home');
+	Route::get('/cms/leads', 'Cms\LeadsController@index')->name('leads.home');
+
+	Route::get('/cms/lead/archivar/{id}', 'Cms\LeadsController@archivarLeads')->name('leads.archivar');
 });
 
 /*---------------ADMINISTRADORES --------------*/
@@ -132,3 +139,7 @@ Route::middleware('blog')->group(function () {
 /*--------------- ENVIO DE COMENTARIOS --------------*/
 
 	Route::post('/send/comment', 'Cms\blog\BlogCommentController@addComment');
+
+/*--------------- REGISTRAR LEADS VÍA CONTACTO --------------*/
+
+	Route::post('/add/lead', 'Cms\LeadsController@agregarLead')->name('lead.add');
