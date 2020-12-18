@@ -56,6 +56,8 @@
             {{-- void --}}
         @else
             @include('common.header')
+            {{-- page location --}}
+            @yield('breadcrumb','')
         @endif
         {{-- contenido --}}
         <main class="" style="min-height: 90vh">

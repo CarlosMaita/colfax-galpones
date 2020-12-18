@@ -4,55 +4,38 @@
 Contacto - galpones     
 @endsection
 
+{{-- location  --}}
+@section('breadcrumb')
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="breadcrumb">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col">
+            <!-- Heading -->
+            <h5 class="breadcrumb-heading">
+              Contact
+            </h5>
+          </div>
+          <div class="col-auto d-flex">
+             <!-- Breadcrumb -->
+            <span class="breadcrumb-item">
+              <a href="{{route('home')}}">Home</a>
+            </span>
+            <span class="breadcrumb-item active">
+              Contact
+            </span> 
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+@endsection
+
 @section('content')
 	
-<!-- BREADCRUMB
-================================================== -->
-<nav class="breadcrumb" style="margin-top: 0">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col">
-        
-        <!-- Heading -->
-        <h5 class="breadcrumb-heading">
-          Contact
-        </h5>
-
-      </div>
-      <div class="col-auto">
-
-        <!-- Breadcrumb -->
-        <span class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </span>
-        <span class="breadcrumb-item active">
-          Contact
-        </span>
-      
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</nav>
-
-<!-- MAP
-================================================== -->
-<section class="section pb-0">
-
-  <!-- Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-
-        <!-- Map -->
-        <div class="map">
-          <div class="map-container" data-markers="[[40.7127753,-74.0059728]]" data-zoom="12"></div>
-        </div>
-        
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-
-</section>
 
 <!-- FORM
 ================================================== -->
