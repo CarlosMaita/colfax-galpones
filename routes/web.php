@@ -35,6 +35,10 @@ Route::get('/location', function(){
 Route::get('/contact', function(){
 	return view('contact');
    } )->name('contact');
+// Gallery
+Route::get('/gallery', function(){
+	return view('gallery');
+	} )->name('gallery');
 
 Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');

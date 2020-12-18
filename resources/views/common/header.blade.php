@@ -229,7 +229,7 @@
           <div class="col-auto">
             <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="index.html">@yield('location', 'Home')</a>
             </span>
             </div>
             <div class="col-auto">
