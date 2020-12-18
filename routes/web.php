@@ -59,7 +59,10 @@ Route::post('/admin/logout', 'Cms\LoginController@logout')->name('login.logout')
 
 Route::middleware('cms')->group(function () {
 	Route::get('/cms', 'Cms\IndexController@index')->name('cms.home');
+
+	/*--------------- LEADS --------------*/
 	Route::get('/cms/leads', 'Cms\LeadsController@index')->name('leads.home');
+	Route::get('/cms/leads/archivados', 'Cms\LeadsController@leadsArchivados')->name('leads.archivados');
 
 	Route::get('/cms/lead/archivar/{id}', 'Cms\LeadsController@archivarLeads')->name('leads.archivar');
 	Route::get('/cms/lead/cometario/{id}', 'Cms\LeadsController@obtenerComentario');

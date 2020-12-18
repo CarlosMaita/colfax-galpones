@@ -253,14 +253,30 @@
             </a>
           </li>
           @endif
-          <li class="nav-item ">
-            <a href="{{ route('leads.home') }}" class="nav-link secciones leads ">
-              <i class="nav-icon fas fa-th"></i>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link secciones leads">
+              <i class="nav-icon fas fa-copy "></i>
               <p>
                 Leads
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-          </li>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('leads.home') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sin archivar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('leads.archivados')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Archivados</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

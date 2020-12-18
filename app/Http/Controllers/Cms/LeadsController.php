@@ -15,6 +15,15 @@ class LeadsController extends Controller
     	return view('cms.leads.index', compact('leads', 'secName'));
     }
 
+
+    public function leadsArchivados()
+    {
+        $leads = Lead::where('status', 1)->paginate(20);
+        $secName = 'leads';
+
+        return view('cms.leads.archivados', compact('leads', 'secName'));
+    }
+
     public function agregarLead(Request $request)
     {
         $lead = Lead::create($request->all());
