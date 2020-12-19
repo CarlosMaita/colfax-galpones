@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-  
 {{-- location  --}}
 @section('breadcrumb')
 
@@ -31,7 +30,7 @@
     </nav>
 @endsection
 
-@section('content')
+
 
 
 @section('content')

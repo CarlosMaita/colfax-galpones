@@ -9,8 +9,6 @@ Contacto - galpones
         'action' => 'homepage'
     ]) !!}
 @endsection
-
-@section('content')
   
 {{-- location  --}}
 @section('breadcrumb')
@@ -43,7 +41,6 @@ Contacto - galpones
 @endsection
 
 @section('content')
-	
 
 <!-- FORM
 ================================================== -->
