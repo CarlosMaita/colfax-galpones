@@ -25,7 +25,7 @@
 	        <th>Nombre</th>
 	        <th>Correo</th>
 	        <th>telefono</th>
-	        <th>Acciones</th>
+	        {{-- <th>Acciones</th> --}}
 	        <tbody>
 	        @foreach ($leads as $lead)
 	            <tr>
@@ -33,9 +33,7 @@
 	                <td>{{ $lead->name }}</td>
 	                <td>{{ $lead->email }}</td>
 	                <td>{{ $lead->telefono}}</td>
-	                <td>
-	                	
-	                </td>
+	                {{-- <td></td> --}}
 	            </tr>
 	            @endforeach
 	        </tbody>
