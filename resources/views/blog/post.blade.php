@@ -4,35 +4,41 @@
 	{{$post->title}}
 @endsection
 
+@section('breadcrumb')
 
-@section('content')
-<!-- BREADCRUMBS
+    <!-- BREADCRUMB
     ================================================== -->
-    <nav class="breadcrumb" style="margin-top: 0">
+    <nav class="breadcrumb">
       <div class="container">
         <div class="row align-items-center">
+
           <div class="col">
-            
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Blog post
+				Blog post
             </h5>
-
           </div>
-          <div class="col-auto">
-
-            <!-- Breadcrumb -->
+          <div class="col-auto d-flex">
+             <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="index.html">Home</a>
-            </span>
+              <a href="{{route('home')}}">Home</a>
+			</span>
+			<!-- Breadcrumb -->
+            <span class="breadcrumb-item">
+				<a href="{{route('blog')}}">Blog</a>
+			  </span>
             <span class="breadcrumb-item active">
-              Blog post
-            </span>
-          
+				{{$post->title}}
+            </span> 
           </div>
+
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </nav>
+@endsection
+
+
+@section('content')
 
     <!-- POST
     ================================================== -->

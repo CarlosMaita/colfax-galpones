@@ -4,7 +4,6 @@
 Contacto - galpones     
 @endsection
 
-
 @section('captcha')
     {!! htmlScriptTagJsApi([
         'action' => 'homepage'
@@ -12,35 +11,7 @@ Contacto - galpones
 @endsection
 
 @section('content')
-	
-<!-- BREADCRUMB
-================================================== -->
-<nav class="breadcrumb" style="margin-top: 0">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col">
-        
-        <!-- Heading -->
-        <h5 class="breadcrumb-heading">
-          Contact
-        </h5>
-
-      </div>
-      <div class="col-auto">
-
-        <!-- Breadcrumb -->
-        <span class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </span>
-        <span class="breadcrumb-item active">
-          Contact
-        </span>
-      
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</nav>
-
+  
 {{-- location  --}}
 @section('breadcrumb')
 
