@@ -68,33 +68,34 @@ Gallery - galpones
               <div class="slider-item">
                 
                 <!-- Image -->
-                <img src="assets/img/28.jpg" alt="..." class="img-fluid">
+                <img src="image/front.png" alt="..." class="img-fluid" >
 
               </div>
               <div class="slider-item">
                 
                 <!-- Image -->
-                <img src="assets/img/29.jpg" alt="..." class="img-fluid">
+                <img src="image/oficina.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item">
                 
                 <!-- Image -->
-                <img src="assets/img/30.jpg" alt="..." class="img-fluid">
+                <img src="image/warehouse.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item">
                 
                 <!-- Image -->
-                <img src="assets/img/31.jpg" alt="..." class="img-fluid">
+                <img src="image/mezzanine.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item">
                 
                 <!-- Image -->
-                <img src="assets/img/27.jpg" alt="..." class="img-fluid">
+                <img src="image/satelital-zona.png" alt="..." class="img-fluid">
 
               </div>
+              
             </div> <!-- / .slider -->
     
           </div>
@@ -107,31 +108,33 @@ Gallery - galpones
               <div class="slider-item col-6 col-md-3">
                 
                 <!-- Image -->
-                <img src="assets/img/28.jpg" alt="..." class="img-fluid">
+                <img src="image/front.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item col-6 col-md-3">
                 
                 <!-- Image -->
-                <img src="assets/img/29.jpg" alt="..." class="img-fluid">
+                <img src="image/oficina.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item col-6 col-md-3">
                 
                 <!-- Image -->
-                <img src="assets/img/30.jpg" alt="..." class="img-fluid">
+                <img src="image/mezzanine.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item col-6 col-md-3">
                 
                 <!-- Image -->
-                <img src="assets/img/31.jpg" alt="..." class="img-fluid">
+                <img src="image/warehouse.png" alt="..." class="img-fluid">
 
               </div>
               <div class="slider-item col-6 col-md-3">
                 
                 <!-- Image -->
-                <img src="assets/img/27.jpg" alt="..." class="img-fluid">
+                <img src="image/satelital-zona.png" alt=""..." class="img-fluid">
+
+              </div>
 
               </div>
             </div> <!-- / .slider -->
