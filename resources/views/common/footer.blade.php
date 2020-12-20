@@ -25,17 +25,17 @@
       <!-- Links -->
       <ul class="list-unstyled list-inline text-md-right">
         <li class="list-inline-item mr-2">
-          <a href="#" class="text-white">
-            Terms and conditions
+          <a href="{{route('Gallery')}}" class="text-white">
+            Gallery
           </a>
         </li>
         <li class="list-inline-item mr-2">
-          <a href="#" class="text-white">
-            Privacy policy
+          <a href="{{route('blog')}}" class="text-white">
+            Blog
           </a>
         </li>
         <li class="list-inline-item">
-          <a href="#" class="text-white">
+          <a href="{{route('contact')}}" class="text-white">
             Contact us
           </a>
         </li>
@@ -49,7 +49,7 @@
       <!-- Copyright -->
       <p class="text-white text-muted">
         <small>
-          &copy; Copyright <span class="current-year"></span> Simpleqode. All rights reserved.
+          &copy; Copyright <span class="current-year"></span> Medley Business Park. All rights reserved.
         </small>
       </p>
 
