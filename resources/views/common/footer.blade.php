@@ -25,7 +25,7 @@
       <!-- Links -->
       <ul class="list-unstyled list-inline text-md-right">
         <li class="list-inline-item mr-2">
-          <a href="{{route('Gallery')}}" class="text-white">
+          <a href="{{route('gallery')}}" class="text-white">
             Gallery
           </a>
         </li>
