@@ -329,8 +329,9 @@ Home - galpones
               
               <!-- Heading -->
               <h2 class="mb-4">
-              Brand <span class="text-primary">new</span> strategically located <br> state-of-the-art warehouse development!
+                Panoramic city and ocean <span class="text-primary">views</span> you will enjoy
               </h2>
+
   
             </div>
           </div> <!-- / .row -->
@@ -339,8 +340,9 @@ Home - galpones
   
               <!-- Subheading -->
               <p class="text-muted">
-               <strong>Medley Business Park</strong> is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us, we offer our clients FLEXIBLE opportunities for tailored spaces that specifically suit your needs. 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem libero adipisci odit, iure quibusdam veniam eius perferendis numquam cumque repudiandae, quisquam veritatis mollitia. Molestiae ipsa porro, id enim deleniti aspernatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
               </p>
+
               <p class="mb-5 mb-md-0">
                 <a href="contact.html" class="btn btn-outline-primary">
                   Get in touch with us
@@ -382,13 +384,14 @@ Home - galpones
   
               <!-- Heading -->
               <h2 class="text-center mb-4">
-                Convenient and FLEXIBLE spaces 
+                Inside the house
               </h2>
   
               <!-- Subheading -->
               <p class="text-center text-muted mb-5">
-              Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.
               </p>
+
   
             </div>
           </div> <!-- / .row -->
@@ -505,15 +508,14 @@ Home - galpones
                     
                     <!-- Heading -->
                     <h3 class="text-center mb-4">
-                     FOR RENT OR SALE
+                      Feel home again.
                     </h3>
                     
                     <!-- Content -->
                     <p class="text-muted text-center">
-                    Range from 4.500 SF and up
-                    14 units with conditioned office and bathroom, large industrial garage door.
-
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum vel qui natus sit quas suscipit aperiam deserunt voluptatum.
                     </p>
+
   
                     <!-- Button -->
                     <a href="contact.html" class="btn btn-outline-primary">
@@ -767,10 +769,12 @@ Home - galpones
             <p class="text-muted mb-2">
             Medley Business Park is located in the Miami-Dade industrial market and Medley Industrial submarket, which are <strong>currently exhibiting occupancy rates of 96.2% and 97.1%, respectively.</strong>
             </p>
+
             <p class="text-muted mb-3">
             The South Florida industrial market is <strong>one of the strongest markets in the country</strong> with continued growth projected over the next few years.
             </p>
-            <h4 class="mb-5">An Investment within your reach</h4>
+
+            <p class="text-muted mb-5"><strong>An Investment within your reach</strong></p>
 
           </div>
         </div> <!-- / .row -->
