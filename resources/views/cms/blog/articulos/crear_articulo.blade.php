@@ -47,9 +47,15 @@
 		
 		<div class="form-group col-12">
 			<h5>Keywords <small><strong>(agregar palabras claves separadas por coma)</strong></small></h5>
-			<input class="form-control" id="title" maxlength="191" required type="text" name="clave" autocomplete="off">
+			<input class="form-control" id="keywords" maxlength="191" required type="text" name="clave" autocomplete="off">
 		</div>
 
+		<div class="form-group col-12">
+			<h5>Descripción corta</h5>
+			<input class="form-control" id="description_corta" maxlength="90" required type="text" name="description" autocomplete="off">
+		</div>
+
+		
 		<div class="form-group col-12">
 			<h5>Contenido</h5>
 			<textarea class="ckeditor" id="content" required name="content"></textarea>
@@ -113,6 +119,8 @@
 			categoria = document.getElementById('categoria'),
 			fecha = document.getElementById('date'),
 			verify_access = document.getElementById('verify_access'),
+			keywords = document.getElementById('keywords'),
+			description_corta = document.getElementById('description_corta'),
 			imagen = document.getElementById('picture');
 
 		container.innerHTML = ''
@@ -137,6 +145,10 @@
 		}if(verify_access.value == 0)
 		{
 			errors.push('Debes agregar un titulo valido')
+		}if(keywords.value == ''){
+			errors.push('Debes agregar minimo un keyword')
+		}if(description_corta.value == ''){
+			errors.push('Debes agregar minimo una descripción corta')
 		}
 
 		if(errors.length > 0)

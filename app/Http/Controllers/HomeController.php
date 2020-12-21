@@ -54,11 +54,11 @@ class HomeController extends Controller
                 {
                     $verificador = false;
                 }
+             }
 
-                if($all_post->id == $recent_post->id )
-                {
-                    $verificador = false;
-                }
+             if($all_post->id == $recent_post->id )
+             {
+                $verificador = false;
              }
 
              if($verificador)
@@ -110,11 +110,11 @@ class HomeController extends Controller
                 {
                     $verificador = false;
                 }
+             }
 
-                if($all_post->id == $recent_post->id )
-                {
-                    $verificador = false;
-                }
+             if($all_post->id == $recent_post->id )
+             {
+                 $verificador = false;
              }
 
              if($verificador)

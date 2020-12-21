@@ -73,6 +73,7 @@ class ArticleController extends Controller
     		'category_id' => $request->category_id,
     		'autor_id' => auth()->user()->id,
     		'date' => $request->date,
+            'description' => $request->description,
     		'picture' => $file,
     	]);
 
@@ -149,6 +150,7 @@ class ArticleController extends Controller
     				'content' => $request->content,
     				'category_id' => $request->category_id,
     				'date' => $request->date,
+                    'description' => $request->description,
     				'picture' => $file,
     			]);
     		}else {
@@ -162,6 +164,7 @@ class ArticleController extends Controller
     			'content' => $request->content,
     			'category_id' => $request->category_id,
     			'date' => $request->date,
+                'description' => $request->description,
     			'keywords' => 'vacio',
     		]);
     	}
