@@ -38,8 +38,32 @@ Calculadora - galpones
 
    <!-- CALCUADORA
    ================================================== -->
-   <section>
-   	<div></div>
+   <section class="container section">
+   	<div class="row">
+   		<div class="col-lg-6">
+   			<div class="form-group">
+   				<h6>Home price</h6>
+   				<input class="form-control" type="number" name="">
+   			</div>
+   			<div class="form-group">
+   				<h6>Down Payment</h6>
+   				<input class="form-control" type="number" name="">
+   			</div>
+   			<div class="form-group">
+   				<h6>Loan program</h6>
+   				<select class="form-control">
+   					<option></option>
+   				</select>
+   			</div>
+   			<div class="form-group">
+   				<h6>Interes rate</h6>
+   				<input class="form-control" type="number" name="">
+   			</div>
+   		</div>
+   		<div class="col-lg-6">
+   			
+   		</div>
+   	</div>
    </section>
 
    <!-- LINKS
