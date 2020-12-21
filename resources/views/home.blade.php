@@ -196,9 +196,29 @@ Home - galpones
             </h2>
 
             <!-- Subheading -->
-            <p class="text-muted text-center mb-5">
-              Incline comes with several professionally designed landing pages that can be easily adapted for any project.
+            <p class="text-muted mb-3">
+            <strong> Brand new strategically located state-of-the-art warehouse developments</strong>
             </p>
+
+            <p class="text-muted mb-3">
+            <strong class="text-lg">Medley Business Park</strong> is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us, we offer our clients FLEXIBLE opportunities for tailored spaces that specifically suit your needs. 
+            </p>
+
+            <p class="text-muted mb-3">
+            Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
+            </p>
+
+            <p class="text-muted mb-3">
+            <strong class="text-lg">Convenient and FLEXIBLE spaces </strong>
+            </p>
+
+            <p class="text-muted mb-5">
+            <strong>FOR RENT OR SALE</strong>  
+            Range from 4.500 SF and up
+            14 units with conditioned office and bathroom, large industrial garage door.
+
+            </p>
+
 
           </div>
         </div> <!-- / .row -->
