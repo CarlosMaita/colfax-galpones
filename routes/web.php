@@ -15,38 +15,56 @@ use Illuminate\Support\Facades\Route;
 
 
 // Route::get('/', 'HomeController@lading')->name('home');
+
+/*-------------- MIDDLEWARE DE TRADUCCION ----*/
+Route::middleware('lang')->group(function () {
 // about-us 
-Route::get('/', function(){
-	return view('home');
-   } )->name('home');
-// about-us 
-Route::get('/about-us', function(){
-	 return view('about-us');
+	Route::get('/', function(){
+		return view('home');
+   	} )->name('home');
+
+	// about-us 
+	Route::get('/about-us', function(){
+		 return view('about-us');
 	} )->name('about-us');
-// floorplants
-Route::get('/floorplants', function(){
-	return view('floorplants');
-   } )->name('floorplants');
-// location
-Route::get('/location', function(){
-	return view('location');
-   } )->name('location');
-// contact
-Route::get('/contact', function(){
-	return view('contact');
-   } )->name('contact');
-// Gallery
-Route::get('/gallery', function(){
-	return view('gallery');
+	// floorplants
+	Route::get('/floorplants', function(){
+		return view('floorplants');
+	} )->name('floorplants');
+	// location
+	Route::get('/location', function(){
+		return view('location');
+	} )->name('location');
+	// contact
+	Route::get('/contact', function(){
+		return view('contact');
+	} )->name('contact');
+	// Gallery
+	Route::get('/gallery', function(){
+		return view('gallery');
 	} )->name('gallery');
 
 
-Route::get('/blog', 'HomeController@blog')->name('blog');
-Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
-Route::get('/autor/{name}', 'HomeController@blogByAuthor')->name('blog.autor');
-Route::get('/blog-categorias/{slug}', 'HomeController@blogByCategories')->name('blog.category.show');
-Route::get('/blog-keywords/{name}', 'HomeController@blogByTag')->name('blog.tag.show');
-Auth::routes();
+	Route::get('/blog', 'HomeController@blog')->name('blog');
+	Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
+	Route::get('/autor/{name}', 'HomeController@blogByAuthor')->name('blog.autor');
+	Route::get('/blog-categorias/{slug}', 'HomeController@blogByCategories')->name('blog.category.show');
+	Route::get('/blog-keywords/{name}', 'HomeController@blogByTag')->name('blog.tag.show');
+	Auth::routes();
+});
+
+
+
+
+
+
+
+/* ---------- CAMBIAR IDIOMA ------------ */
+Route::get('/lang/{lang}', function($lang) {
+	Session::put('locale',$lang);
+	return back();
+})->name('lang');
+
 
 /*---------------Login --------------*/
 Route::get('/admin', 'Cms\LoginController@index');
