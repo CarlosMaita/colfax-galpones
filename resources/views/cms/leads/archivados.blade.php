@@ -1,13 +1,13 @@
 @extends('cms.layout.main')
 @section('title')
-    Leads Filed
+    Leads archived
 @endsection
 
 
 @section('content')
 <section class="mt-4">
 	<div>
-		<h1>Leads filed</h1>
+		<h1>Leads Archieved</h1>
 	</div>
 
 	@if (session('message'))

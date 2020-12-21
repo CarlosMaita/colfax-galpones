@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-4 form-group px-1">
                     <select id="create_rol" class="form-control" name="role_id">
-                        <option value="0">Select rol</option>
+                        <option value="0">Select role</option>
                         @foreach ($roles as $rol)
                             <option value="{{ $rol->id }}">{{ $rol->title }}</option>
                         @endforeach
@@ -69,7 +69,7 @@
             <table class="table table-striped table-sm">
                 <th>Name</th>
                 <th>Email</th>
-                <th>Rol</th>
+                <th>Role</th>
                 <th>Actions</th>
                 <tbody>
                     @foreach ($usuarios as $user)

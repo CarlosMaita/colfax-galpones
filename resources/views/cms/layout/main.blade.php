@@ -272,7 +272,7 @@
               <li class="nav-item">
                 <a href="{{route('leads.archivados')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Filed</p>
+                  <p>Archived</p>
                 </a>
               </li>
             </ul>
