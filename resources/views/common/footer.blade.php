@@ -20,7 +20,7 @@
         </a>
       </p>
     </div>
-    <div class="col-md">
+    <div class="col-md text-md-center">
   
       <!-- Links -->
       <ul class="list-unstyled list-inline text-md-right">
@@ -42,8 +42,36 @@
       </ul>
 
     </div>
+
+    <div class="col-md-left">
+      <!-- Contacto -->
+      <p class="text-white text-muted">
+        <small>
+          Carmen de Jongh <br>
+          + (305) 333-7899
+
+        </small>
+     </p>
+    </div>
+
+
+
   </div> <!-- / .row -->
   <div class="row align-items-center">
+
+  <div class="col-md">
+  
+    <!-- Contacto -->
+    <p class="text-white text-muted">
+    <small>
+    Tammy Roitman <br>
+    +1 (786) 678-1052
+
+    </small>
+    </p>
+  </div>
+
+
     <div class="col-md">
   
       <!-- Copyright -->
