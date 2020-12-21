@@ -1,15 +1,15 @@
 @extends('cms.layout.main')
 @section('title')
-    Blog | Crear Articulo
+    Blog | Create Article
 @endsection
 
 
 @section('content')
 <section>
 	<div class="d-flex justify-content-between">
-		<h1>Crear Articulo</h1>
+		<h1>Create Article</h1>
 		<div>
-			<a href="{{route('blog.articles')}}" class="btn btn-outline-primary">Volver</a>
+			<a href="{{route('blog.articles')}}" class="btn btn-outline-primary">Back</a>
 		</div>
 	</div>
 
@@ -37,7 +37,7 @@
 	<form method="POST" id="form" action="{{route('blog.article.store')}}" enctype="multipart/form-data">
 		@csrf
 		<div class="form-group col-12">
-			<h5>Titulo</h5>
+			<h5>Title</h5>
 			<input class="form-control" id="title" maxlength="191" required type="text" name="title" autocomplete="off">
 			<small style="display: none;" id="url_verify"></small>
 		</div>
@@ -46,28 +46,28 @@
 		
 		
 		<div class="form-group col-12">
-			<h5>Keywords <small><strong>(agregar palabras claves separadas por coma)</strong></small></h5>
+			<h5>Keywords <small><strong>(add keywords separated by commas)</strong></small></h5>
 			<input class="form-control" id="keywords" maxlength="191" required type="text" name="clave" autocomplete="off">
 		</div>
 
 		<div class="form-group col-12">
-			<h5>Descripción corta</h5>
+			<h5>Short description</h5>
 			<input class="form-control" id="description_corta" maxlength="90" required type="text" name="description" autocomplete="off">
 		</div>
 
 		
 		<div class="form-group col-12">
-			<h5>Contenido</h5>
+			<h5>Content</h5>
 			<textarea class="ckeditor" id="content" required name="content"></textarea>
 		</div>
 
 		<div class="form-group col-4">
-			<h5>Fecha</h5>
-			<input type="date" id="date" required name="date">
+			<h5>Date</h5>
+			<input class="form-control" type="date" id="date" required name="date">
 		</div>
 
 		<div class="form-group col-12">
-			<h5>Categoria</h5>
+			<h5>Category</h5>
 			<select class="form-control" id="categoria" required name="category_id">
 				<option value="0">Selecciona una categoria</option>
 				@foreach($categorias as $categoria)
@@ -81,7 +81,7 @@
 			<input type="file" name="picture" id="picture">
 		</div>
 		<div class="col-12">
-			<input type="submit" id="form_submit" class="btn btn-primary" value="Crear Articulo">
+			<input type="submit" id="form_submit" class="btn btn-primary" value="Create Article">
 		</div>
 		<div class="form-group col-12" style="visibility: hidden;">
 			<input class="form-control" id="url" maxlength="191" type="text" autocomplete="off" name="slug">
@@ -129,26 +129,26 @@
 
 		if(title.value == '')
 		{
-			errors.push('Debes colocar un titulo')
+			errors.push('You must add a title')
 		}if(CKEDITOR.instances.content.getData() == '')
 		{
-			errors.push('Debes colocar un contenido')
+			errors.push('You must add a content')
 		}if(imagen.files.length <= 0)
 		{
-			errors.push('Debes agregar una imagen');
+			errors.push('You must add an image');
 		}if(categoria.selectedIndex == 0)
 		{
-			errors.push('Debes agregar una categoria')
+			errors.push('You must add a category')
 		}if(fecha.value == "")
 		{
-			errors.push('Debes agregar una fecha')
+			errors.push('You must add a date')
 		}if(verify_access.value == 0)
 		{
-			errors.push('Debes agregar un titulo valido')
+			errors.push('You must add a valid title')
 		}if(keywords.value == ''){
-			errors.push('Debes agregar minimo un keyword')
+			errors.push('You must add at least one keyword')
 		}if(description_corta.value == ''){
-			errors.push('Debes agregar minimo una descripción corta')
+			errors.push('You must add a short description')
 		}
 
 		if(errors.length > 0)
@@ -217,12 +217,12 @@
 
 		if(status == 'aceptado')
 		{
-			container.textContent = 'titulo permitido para ser utilizado';
+			container.textContent = 'Title allowed for use';
 			container.style.color = 'green';
 			verify_access.value = 1;
 		}else if(status == 'negado')
 		{
-			container.textContent = 'Este titulo ya se encuentra en uso, utilice un titulo diferente!';
+			container.textContent = 'This title is in use, please choose another';
 			container.style.color = 'red';
 			verify_access.value = 0;
 		}

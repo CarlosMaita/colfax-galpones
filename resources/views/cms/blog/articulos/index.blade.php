@@ -1,15 +1,15 @@
 @extends('cms.layout.main')
 @section('title')
-    Blog | Articulos
+    Blog | Articles
 @endsection
 
 
 @section('content')
 <section>
 	<div class="d-flex justify-content-between">
-		<h1>Blog Articulos</h1>
+		<h1>Blog Articles</h1>
 		<div>
-			<a href="{{route('blog.article.create')}}"  class="btn btn-outline-primary">Crear Articulo</a>
+			<a href="{{route('blog.article.create')}}"  class="btn btn-outline-primary">Create Article</a>
 		</div>
 	</div>
 
@@ -26,13 +26,13 @@
 	        <thead>
 	            <tr>
 	                <th>#</th>
-	                <th>Imagen</th>
-	                <th>Titulo</th>
+	                <th>Image</th>
+	                <th>Title</th>
 	                <th>Keywords</th>
-	                <th>Autor</th>
-	                <th>Categoria</th>
-	                <th>Fecha</th>
-	                <th>Acciones</th>
+	                <th>Author</th>
+	                <th>Category</th>
+	                <th>Date</th>
+	                <th>Actions</th>
 	            </tr>
 	        </thead>
 	        <tbody>
@@ -52,8 +52,8 @@
 	                	<td>{{$articulo->category->name}}</td>
 	                	<td>{{$articulo->date}}</td>
 	                	<td>
-	                		<a href="{{route('blog.article.show', $articulo->id)}}" class="btn btn-sm btn-outline-primary">Editar</a>
-	                		<button type="button" id="{{$articulo->id}}" class="btn btn-sm btn-outline-danger eliminar_button" data-toggle="modal" data-target="#modalEliminar">Eliminar</button>
+	                		<a href="{{route('blog.article.show', $articulo->id)}}" class="btn btn-sm btn-outline-primary">Edit</a>
+	                		<button type="button" id="{{$articulo->id}}" class="btn btn-sm btn-outline-danger eliminar_button" data-toggle="modal" data-target="#modalEliminar">Delete</button>
 	                	</td>
 	                </tr>
 	            @endforeach
@@ -66,7 +66,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Eliminar Articulo</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Delete Article</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -76,11 +76,11 @@
                     @csrf
                 </form>
                 <p id="name_article"></p>
-                <p>¿Seguro que desea eliminar este articulo?</p>
+                <p>Are you sure you want to delete this article?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="eliminar_submit" class="btn btn-danger">Eliminar Articulo</button>
+                <button type="button" id="eliminar_submit" class="btn btn-danger">Delete Article</button>
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
 				let id = e.target.id,
 					title_eliminar = document.getElementById('name_article');
 
-				title_eliminar.innerHTML = `Articulo: <strong>${e.target.parentNode.parentNode.children[2].textContent}</strong>`;
+				title_eliminar.innerHTML = `Article: <strong>${e.target.parentNode.parentNode.children[2].textContent}</strong>`;
 
 
 				form.action = `/cms/eliminar/article/${id}`

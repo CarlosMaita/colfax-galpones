@@ -23,7 +23,7 @@ class UserController extends Controller
             'cms' => true,
     	]);
 
-    	return back()->with('message', 'Usuario creado con éxito');
+    	return back()->with('message', 'User created successfully');
     }
 
 
@@ -45,7 +45,7 @@ class UserController extends Controller
 
         $user->update($request->all());
 
-        return back()->with('message', 'Usuario actualizado con éxito');
+        return back()->with('message', 'User updated successfully');
     }
 
     public function editPassword(Request $request, $id)
@@ -58,9 +58,9 @@ class UserController extends Controller
         {
             $user->password = Hash::make($request->password);
             $user->save();
-            return back()->with('message', 'Contraseña actualizada con éxito');
+            return back()->with('message', 'Password updated successfully');
         } else {
-            return back()->with('error', 'Las contraseñas tienen que ser iguales');
+            return back()->with('error', 'Passwords have to be the same');
         }
     }
 
@@ -71,10 +71,10 @@ class UserController extends Controller
         if(isset($user))
         {
             $user->delete();
-            return back()->with('error', 'Usuario eliminado con éxito');
+            return back()->with('error', 'User deleted successfully');
         }
 
-        return back()->with('error', 'No se pudo eliminar al usuario');
+        return back()->with('error', 'Could not delete user');
         
     }
 

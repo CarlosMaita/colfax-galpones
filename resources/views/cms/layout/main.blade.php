@@ -51,7 +51,7 @@
       <li class="nav-item d-none d-sm-inline-block">
         <form action="/logout" id="logout_form" method="POST">
           @csrf
-          <a href="#" onclick="document.getElementById('logout_form').submit()" class="nav-link">Cerrar Sesión</a>
+          <a href="#" onclick="document.getElementById('logout_form').submit()" class="nav-link">Logout</a>
         </form>
       </li>
     </ul>
@@ -167,7 +167,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{route('cms.home')}}" class="brand-link">
-      <span class="brand-text font-weight-light">Administrador</span>
+      <span class="brand-text font-weight-light">Admin</span>
     </a>
 
     <!-- Sidebar -->
@@ -177,7 +177,7 @@
         <div class="image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Usuario: {{auth()->user()->name}}</a>
+          <a href="#" class="d-block">User: {{auth()->user()->name}}</a>
         </div>
       </div>
 
@@ -186,23 +186,23 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          @if(auth()->user()->roles->title == 'administrador')
+          @if(auth()->user()->roles->title == 'administrator')
           <li class="nav-item ">
             <a href="{{ route('cms.users') }}" class="nav-link secciones usuarios ">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Usuarios
+                Users
               </p>
             </a>
           </li>
           @endif
 
-          @if(auth()->user()->roles->title == 'editor' || auth()->user()->roles->title == 'administrador')
+          @if(auth()->user()->roles->title == 'editor' || auth()->user()->roles->title == 'administrator')
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link secciones web">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Página web
+                WebSite
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -217,7 +217,7 @@
           </li> 
           @endif
 
-          @if(auth()->user()->roles->title == 'blogger' || auth()->user()->roles->title == 'administrador')
+          @if(auth()->user()->roles->title == 'blogger' || auth()->user()->roles->title == 'administrator')
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -230,13 +230,13 @@
               <li class="nav-item">
                 <a href="{{route('blog.categories')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Blog Categorias</p>
+                  <p>Blog Categories</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('blog.articles')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Blog Articulos</p>
+                  <p>Blog Articles</p>
                 </a>
               </li>
             </ul>
@@ -248,7 +248,7 @@
             <a href="{{route('blog.perfil')}}" class="nav-link ">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Perfil Blogger
+                Profile Blogger
               </p>
             </a>
           </li>
@@ -266,13 +266,13 @@
               <li class="nav-item">
                 <a href="{{ route('leads.home') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Activos</p>
+                  <p>Actives</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('leads.archivados')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Archivados</p>
+                  <p>Filed</p>
                 </a>
               </li>
             </ul>

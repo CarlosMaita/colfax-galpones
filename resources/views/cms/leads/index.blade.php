@@ -22,10 +22,10 @@
 	<div class="table-responsive">
 	    <table class="table table-striped table-sm">
 	    	<th>#</th>
-	        <th>Nombre</th>
-	        <th>Correo</th>
-	        <th>telefono</th>
-	        <th>Acciones</th>
+	        <th>Name</th>
+	        <th>Email</th>
+	        <th>Phone</th>
+	        <th>Actions</th>
 	        <tbody>
 	        @foreach ($leads as $lead)
 	            <tr>
@@ -34,8 +34,8 @@
 	                <td>{{ $lead->email }}</td>
 	                <td>{{ $lead->telefono}}</td>
 	                <td>
-	                	<button id="{{$lead->id}}" class="btn btn-sm btn-outline-primary comentarios" data-toggle="modal" data-target="#modalComentarios">Ver comentarios</button>
-	                    <a href="{{route('leads.archivar', $lead->id)}}" class="btn btn-sm btn-outline-primary">Archivar</a>
+	                	<button id="{{$lead->id}}" class="btn btn-sm btn-outline-primary comentarios" data-toggle="modal" data-target="#modalComentarios">Read comments</button>
+	                    <a href="{{route('leads.archivar', $lead->id)}}" class="btn btn-sm btn-outline-primary">File</a>
 	                </td>
 	            </tr>
 	            @endforeach
@@ -78,9 +78,9 @@
 		correoModal.innerHTML = ''
 		comentarioModal.innerHTML = ''
 
-		tituloModal.innerHTML = `Comentario del lead: <small> <strong>#${lead.id}</strong> </small>`
-		correoModal.innerHTML = `Correo: <small> <strong> ${lead.email} </strong> </small>`
-		comentarioModal.innerHTML = `Comentario: 
+		tituloModal.innerHTML = `lead: <small> <strong>#${lead.id}</strong> </small>`
+		correoModal.innerHTML = `Email: <small> <strong> ${lead.email} </strong> </small>`
+		comentarioModal.innerHTML = `Comment: 
 		<strong>
 			${lead.comentario}
 		</strong>`

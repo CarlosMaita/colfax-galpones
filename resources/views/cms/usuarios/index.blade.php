@@ -5,41 +5,41 @@
 
 
 @section('content')
-    <h2>Usuarios de la administración</h2>
+    <h2>Administration users</h2>
     <hr>
     <section class="container-fluid">
         <form action="{{ route('cms.users.create') }}" id="form_create_user" method="POST" autocomplete="off">
             @csrf
             <div class="row">
-                <h4 class="col-12">Crear usuarios</h4>
+                <h4 class="col-12">Create User</h4>
                 <div class="col-md-4 form-group px-1">
-                    <input class="form-control" id="create_user_name" type="text" name="name" placeholder="Nombre" autocomplete="off" required>
+                    <input class="form-control" id="create_user_name" type="text" name="name" placeholder="Name" autocomplete="off" required>
                 </div>
                 <div class="col-md-4 form-group px-1">
                     <input class="form-control" id="create_user_email" type="email" name="email" placeholder="Email" autocomplete="off" required>
                 </div>
                 <div class="col-md-4 form-group px-1">
                     <select id="create_rol" class="form-control" name="role_id">
-                        <option value="0">Seleccionar rol</option>
+                        <option value="0">Select rol</option>
                         @foreach ($roles as $rol)
                             <option value="{{ $rol->id }}">{{ $rol->title }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="col-md-4 form-group px-1">
-                    <input class="form-control" type="password" id="contraseña" name="password" placeholder="Contraseña"
+                    <input class="form-control" type="password" id="contraseña" name="password" placeholder="Password"
                         autocomplete="off" required>
-                    <a href="#"><small class="inactive pass_watcher">Ver contraseña</small></a>
+                    <a href="#"><small class="inactive pass_watcher">See Password</small></a>
                 </div>
                 <div class="col-md-4 form-group px-1">
-                    <input class="form-control" type="password" id="confirmar_contraseña" name="password2" placeholder="Confirmar contraseña"
+                    <input class="form-control" type="password" id="confirmar_contraseña" name="password2" placeholder="Confirm Password"
                         autocomplete="off" required>
-                    <a href="#"><small class="inactive pass_watcher">Ver contraseña</small></a>
+                    <a href="#"><small class="inactive pass_watcher">See Password</small></a>
                 </div>
             </div>
             <div class="row form-group px-1">
-                <input type="submit" id="crear_user_submit" class="btn btn-sm btn-primary px-5" value="Crear">
-                <small id="emailHelp" style="display: none;" class="form-text text-danger col-12 px-1">Las contraseñas no coinciden.</small>
+                <input type="submit" id="crear_user_submit" class="btn btn-sm btn-primary px-5" value="Create">
+                <small id="emailHelp" style="display: none;" class="form-text text-danger col-12 px-1">Passwords do not match.</small>
             </div>
         </form>
 
@@ -67,10 +67,10 @@
         <hr>
         <section class="mt-4">
             <table class="table table-striped table-sm">
-                <th>Nombre</th>
-                <th>Correo</th>
+                <th>Name</th>
+                <th>Email</th>
                 <th>Rol</th>
-                <th>Acciones</th>
+                <th>Actions</th>
                 <tbody>
                     @foreach ($usuarios as $user)
                         <tr>
@@ -79,11 +79,11 @@
                             <td>{{ $user->roles->title}}</td>
                             <td>
                                 <button type="button" id="{{ $user->id }}" class="btn btn-sm btn-info change_pass" data-toggle="modal"
-                                    data-target="#modalContraseña">Editar Contraseña</button>
+                                    data-target="#modalContraseña">Edit Password</button>
                                 <button type="button" id="{{ $user->id }}" class="btn btn-sm btn-primary editar"
-                                    data-toggle="modal" data-target="#modalEditar">Editar</button>
+                                    data-toggle="modal" data-target="#modalEditar">Edit</button>
                                 <button type="button" id="{{ $user->id }}" class="btn btn-sm btn-danger eliminar"
-                                    data-toggle="modal" data-target="#modalEliminar">Eliminar</button>
+                                    data-toggle="modal" data-target="#modalEliminar">Delete</button>
                             </td>
                         </tr>
                     @endforeach
@@ -96,7 +96,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar usuario</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -105,7 +105,7 @@
                     <form action="" id="editar_form" method="POST">
                         @csrf
                         <div class="form-group">
-                            <h5>Nombre</h5>
+                            <h5>Name</h5>
                             <input id="editar_name" class="form-control" type="text" name="name">
                         </div>
                         <div class="form-group">
@@ -115,8 +115,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="button" id="editar_submit" class="btn btn-primary">Actualizar Usuario</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="editar_submit" class="btn btn-primary">Update User</button>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar Contraseña</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Password</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -135,21 +135,21 @@
                     <form action="" id="contraseña_form" method="POST">
                         @csrf
                         <div class="form-group">
-                            <h5>Nueva Contraseña</h5>
+                            <h5>New Password</h5>
                             <input class="form-control" id="modal_password" type="password" name="password">
-                            <a href="#"><small class="inactive modal_change_input">Ver contraseña</small></a>
+                            <a href="#"><small class="inactive modal_change_input">See Password</small></a>
                         </div>
                         <div class="form-group">
-                            <h5>Confirmar Contraseña</h5>
+                            <h5>Confirm Password</h5>
                             <input class="form-control" id="modal_password_confirm" type="password" name="corfirm_password">
-                            <a href="#"><small class="inactive modal_change_input">Ver contraseña</small></a>
+                            <a href="#"><small class="inactive modal_change_input">See Password</small></a>
                         </div>
-                        <small id="modal_password_verify" style="display: none;" class="form-text text-danger col-12 px-1">Las contraseñas no coinciden.</small>
+                        <small id="modal_password_verify" style="display: none;" class="form-text text-danger col-12 px-1">Passwords do not match.</small>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="button" id="contraseña_submit" class="btn btn-primary">Actualizar Contraseña</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="contraseña_submit" class="btn btn-primary">Update Password</button>
                 </div>
             </div>
         </div>
@@ -159,7 +159,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar usuario</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Delete user</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -173,8 +173,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" id="eliminar_submit" class="btn btn-danger">Eliminar Usuario</button>
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="eliminar_submit" class="btn btn-danger">Delete User</button>
                 </div>
             </div>
         </div>
@@ -214,13 +214,13 @@
                     accion.classList.remove('inactive')
                     accion.classList.add('active')
 
-                    accion.textContent = 'Ocultar contraseña';
+                    accion.textContent = 'Hide password';
                 } else if(accion.classList.contains('active')) {
                     inputPass.type = "password"
                     accion.classList.remove('active')
                     accion.classList.add('inactive')
 
-                    accion.textContent = 'Ver contraseña';
+                    accion.textContent = 'See Password';
                 }
             });
         });
@@ -241,13 +241,13 @@
                     accion.classList.remove('inactive')
                     accion.classList.add('active')
 
-                    accion.textContent = 'Ocultar contraseña';
+                    accion.textContent = 'Hide password';
                 } else if(accion.classList.contains('active')) {
                     inputPass.type = "password"
                     accion.classList.remove('active')
                     accion.classList.add('inactive')
 
-                    accion.textContent = 'Ver contraseña';
+                    accion.textContent = 'See Password';
                 }
             });
         });
@@ -303,15 +303,15 @@
 
             if(password.value != password_confirm.value)
             {
-                errors.push('Las contraseñas no coinciden')
+                errors.push('Passwords do not match.')
             }if(name.value == '') {
-                errors.push('Debe agregar un nombre')
+                errors.push('You must add a Name')
             }if(email.value == ''){
-                errors.push('Debe agregar un email')
+                errors.push('You must add a Email')
             }if(rol.selectedIndex === 0){
-                errors.push('Debe ecoger un rol')
+                errors.push('You must add a Rol')
             }if(password.value == ''){
-                errors.push('Debe agregar una contraseña')
+                errors.push('You must add a Password')
             }
 
             if(errors.length === 0 )
@@ -399,8 +399,8 @@
                     let user_info = e.target.parentNode.parentNode.children[1].textContent
 
                     eliminar_user.innerHTML = `
-                        El usuario <strong>${user_info}</strong> sera eliminado. <br>
-                        ¿Esta seguro que desea eliminarlo?
+                        The user <strong>${user_info}</strong> will be deleted. <br>
+                        ¿Are you sure you want to delete?
                     `
 
                     let id = e.target.id
