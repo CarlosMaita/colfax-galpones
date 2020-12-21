@@ -100,8 +100,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="crear_submit" class="btn btn-primary">Crear Category</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" id="crear_submit" class="btn btn-primary">Create Category</button>
             </div>
         </div>
     </div>
@@ -141,7 +141,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
                 <button type="button" id="editar_submit" class="btn btn-primary">Update Category</button>
             </div>
         </div>
@@ -164,7 +164,7 @@
                 <p>Are you sure you want to delete this category?</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
                 <button type="button" id="eliminar_submit" class="btn btn-danger">Delete Category</button>
             </div>
         </div>

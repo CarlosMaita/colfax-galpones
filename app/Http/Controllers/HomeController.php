@@ -35,7 +35,13 @@ class HomeController extends Controller
     {
         $recent_post = BlogArticle::orderBy('id', 'DESC')->first();
 
-        $posts = BlogArticle::where('id', '!=', $recent_post->id)->orderBy('id', 'DESC')->paginate(3);
+        if(isset($recent_post))
+        {
+            $posts = BlogArticle::where('id', '!=', $recent_post->id)->orderBy('id', 'DESC')->paginate(3);
+        }else {
+            $posts = BlogArticle::orderBy('id', 'DESC')->paginate(3);
+        }
+        
         $all_posts = BlogArticle::inRandomOrder()->get();
 
         $categorias = BlogCategorie::all();

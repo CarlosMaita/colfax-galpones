@@ -69,7 +69,7 @@
 		<div class="form-group col-12">
 			<h5>Category</h5>
 			<select class="form-control" id="categoria" required name="category_id">
-				<option value="0">Selecciona una categoria</option>
+				<option value="0">Select category</option>
 				@foreach($categorias as $categoria)
 					<option value="{{$categoria->id}}">{{$categoria->name}}</option>
 				@endforeach

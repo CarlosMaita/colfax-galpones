@@ -79,7 +79,7 @@
                 <p>Are you sure you want to delete this article?</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
                 <button type="button" id="eliminar_submit" class="btn btn-danger">Delete Article</button>
             </div>
         </div>

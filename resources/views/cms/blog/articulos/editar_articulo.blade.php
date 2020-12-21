@@ -34,7 +34,7 @@
 
 	<div style="display: none;" id="error_div" class="alert alert-danger"></div>
 	<input type="hidden" id="articulo_id" value="{{$articulo->id}}">
-	<input type="hidden" id="verify_access">
+	<input type="hidden" value="1" id="verify_access">
 	<form method="POST" id="form" action="{{route('blog.article.update', $articulo->id)}}" enctype="multipart/form-data">
 		@csrf
 		<div class="form-group col-12">
@@ -78,7 +78,7 @@
 			<input type="file" name="picture" id="picture">
 		</div>
 		<div class="col-12">
-			<input type="submit" id="form_submit" class="btn btn-primary" value="Actualizar Articulo">
+			<input type="submit" id="form_submit" class="btn btn-primary" value="Updated article">
 		</div>
 		<div class="form-group col-12" style="visibility: hidden;">
 			<input class="form-control" id="url" maxlength="191" type="text" value="{{$articulo->slug}}" autocomplete="off" name="slug">
