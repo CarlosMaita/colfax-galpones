@@ -1,5 +1,26 @@
 @extends('layouts.app')
 
+@section('metas')
+<!-- Primary Meta Tags -->
+<title>Home — Tailor a space that suits all your needs.</title>
+<meta name="title" content="Home — Tailor a space that suits all your needs.">
+<meta name="description" content="Medley Business Park is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Home — Tailor a space that suits all your needs.">
+<meta property="og:description" content="Medley Business Park is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us.">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Home — Tailor a space that suits all your needs.">
+<meta property="twitter:description" content="Medley Business Park is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us.">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+@endsection
+
 @section('title')
 Home - galpones     
 @endsection
@@ -46,7 +67,7 @@ Home - galpones
           <div class="slider-item">
             
             <!-- Cover -->
-            <div class="bg-cover" style="background-image: url(assets/img/48.jpg)"></div>
+            <div class="bg-cover" style="background-image: url(image/front.png)"></div>
 
           </div>
           <div class="slider-item">
@@ -81,19 +102,17 @@ Home - galpones
               <div class="slider-item">
 
                 <!-- Preheading -->
-                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
-                  by Simpleqode
-                </p>
+                
                 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                 Tailor a space that suits all your needs.
+                 Tailor a space that suits all your needs. <br> 
                 </h1>
 
                 <!-- Subheading -->
-                <p class="lead text-white text-muted text-center mb-5">
-                  Incline is set of landing and support pages aimed at helping companies promote new products and business launches.
-                </p>
+                <h3 class="text-white text-muted text-center mb-5">
+                Brand new strategically located state-of-the-art warehouse development! 
+                </h3>
 
                 <!-- Button -->
                 <p class="text-center mb-0">
@@ -192,12 +211,12 @@ Home - galpones
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-             Tailor a space that suits all your needs.
+             
             </h2>
 
             <!-- Subheading -->
             <p class="text-muted mb-3">
-            <strong> Brand new strategically located state-of-the-art warehouse developments</strong>
+            
             </p>
 
             <p class="text-muted mb-3">
@@ -340,7 +359,7 @@ Home - galpones
   
               <!-- Subheading -->
               <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem libero adipisci odit, iure quibusdam veniam eius perferendis numquam cumque repudiandae, quisquam veritatis mollitia. Molestiae ipsa porro, id enim deleniti aspernatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Medley Business Park is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us, we offer our clients FLEXIBLE opportunities for tailored spaces that specifically suit your needs.  
               </p>
 
               <p class="mb-5 mb-md-0">
