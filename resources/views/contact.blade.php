@@ -126,6 +126,13 @@ Contacto - galpones
                 <input type="number" class="form-control  order-1" required name="telefono">
                 <div class="input-group-append order-0">
                   <!-- AQUÍ VA EL ICONO -->
+                  <div class="input-group-text">
+                    <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path transform="translate(3 3)" d="
+                        M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
+                      </path>
+                    </svg>
+                  </div>
                 </div>
               </div>
 
