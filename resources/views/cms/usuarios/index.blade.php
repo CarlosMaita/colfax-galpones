@@ -1,6 +1,6 @@
 @extends('cms.layout.main')
 @section('title')
-    Usuarios
+    Users
 @endsection
 
 
