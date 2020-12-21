@@ -44,6 +44,9 @@ Route::middleware('lang')->group(function () {
 		return view('gallery');
 	} )->name('gallery');
 
+	Route::get('/mortgage-calculator ', function() {
+		return view('calculadora');
+	});
 
 	Route::get('/blog', 'HomeController@blog')->name('blog');
 	Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
