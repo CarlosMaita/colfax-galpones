@@ -51,7 +51,7 @@ Home
 </li>
 <li class="nav-item ">
 <a href="{{route('location')}}" class="nav-link">
-Location
+@lang('Location')
 </a>
 </li>
 <li class="nav-item ">
@@ -81,11 +81,11 @@ Contact
 </li>
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" id="navbarIdioma" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-EN
+@lang('lenguage')
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarIdioma" style="min-width: 50px; width: 100px;">
-<a class="dropdown-item" href="#">EN</a>
-<a class="dropdown-item" href="#">ES</a>
+<a class="dropdown-item" href="{{route('lang', 'en')}}">EN</a>
+<a class="dropdown-item" href="{{route('lang', 'es')}}">ES</a>
 </div>
 </li>
 </ul>

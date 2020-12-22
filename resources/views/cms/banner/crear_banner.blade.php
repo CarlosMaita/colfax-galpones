@@ -1,6 +1,6 @@
 @extends('cms.layout.main')
 @section('title')
-    Crear Banner
+    Make Banner
 @endsection
 
 
@@ -132,8 +132,8 @@
         </div>
     @endif
     <div class="row">
-        <h3 class="col-auto">Crear Nuevo Banner</h3>
-        <div class="col-auto ml-auto"><a class="btn btn-outline-info btn-sm px-5" href="{{ route('banners.home') }}">Volver</a></div>
+        <h3 class="col-auto">Create new banner</h3>
+        <div class="col-auto ml-auto"><a class="btn btn-outline-info btn-sm px-5" href="{{ route('banners.home') }}">Back</a></div>
     </div>
     <section class="my-3" id="container">
         <div class="banner_container">
@@ -145,22 +145,22 @@
                 <input type="hidden" name="status" value="1">
                 <div class="d-flex">
                     <button type="button" class="btn btn-primary button_select px-4">
-                        Agregar Imagen
+                        Add Image
                     </button>
                 </div>
                 <input type="file" id="file" name="image" class="input_file">
                 <div class="inputs_body">
                     <input class="mb-2" maxlength="191" style="width: 50%;" id="i_title" type="text"
-                        name="title" placeholder="Ingresa aquí el titulo">
+                        name="title" placeholder="Enter the title here">
                     <textarea name="description" style="width: 50%;" id="i_description" rows="3"
-					placeholder="Ingresa aquí la descripción"></textarea>
+					placeholder="Enter the description here"></textarea>
                 </div>
             </form>
         </div>
 
         <div class="d-flex justify-content-center my-3 ">
-            <button type="button" id="button_submit" class="btn btn-primary mr-5 px-5">Crear</button>
-            <a href="{{ route('banners.home') }}" class="btn btn-outline-danger">Cancelar</a>
+            <button type="button" id="button_submit" class="btn btn-primary mr-5 px-5">Create</button>
+            <a href="{{ route('banners.home') }}" class="btn btn-outline-danger">Cancel</a>
         </div>
     </section>
 
@@ -176,8 +176,8 @@
             
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" id="button_modal">Crear banner</button>
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="button_modal">Create banner</button>
           </div>
         </div>
       </div>
@@ -222,7 +222,7 @@
 
 
             if (file.files.length <= 0) {
-                errors.push('Debes agregar una imagen');
+                errors.push('you must add an image');
             }
 
 
@@ -254,13 +254,13 @@
 
             if(title.value == '')
             {
-                message = '¿Seguro que desea crear el banner sin un titulo?'
+                message = 'Are you sure you want to create the banner without a title?'
             }if(description.value == '')
             {
-                message = '¿Seguro que desea crear el banner sin una descripción?'
+                message = 'Are you sure you want to create the banner without a description?'
             }if(title.value == '' &&  description.value == '')
             {
-                message = '¿Seguro qu desea crear el banner sin un titulo y una descripción?'
+                message = 'Are you sure you want to create the banner without a title and description?'
             }
 
 

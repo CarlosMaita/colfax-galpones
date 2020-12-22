@@ -38,7 +38,7 @@ class LeadsController extends Controller
     		'status' => 1,
     	]);
 
-    	return back()->with('message', 'Lead Archivado con éxito!');
+    	return back()->with('message', 'lead filed successfully!');
     }
 
 

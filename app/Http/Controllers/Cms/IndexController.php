@@ -65,7 +65,7 @@ class IndexController extends Controller
                 ]);
             }
 
-            return back()->with('message', 'Perfil actualizado con éxito');
+            return back()->with('message', 'Profile updated successfully');
         }
 
         return back();

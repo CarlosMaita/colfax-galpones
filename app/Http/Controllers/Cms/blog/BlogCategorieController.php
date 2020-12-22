@@ -28,7 +28,7 @@ class BlogCategorieController extends Controller
             'slug' => $request->slug,
     	]);
 
-    	return back()->with('message', 'Categoria creada con éxito');
+    	return back()->with('message', 'Category created successfully');
 
     	//
     }
@@ -46,7 +46,7 @@ class BlogCategorieController extends Controller
             'slug' => $request->slug,
 		]);
 
-    	return back()->with('message', 'Categoria actualizada con éxito');
+    	return back()->with('message', 'Category updated successfully');
     }
 
 
@@ -56,7 +56,7 @@ class BlogCategorieController extends Controller
 
 		$categoria->delete();
 
-		return back()->with('error', 'Categoria eliminada con éxito');
+		return back()->with('error', 'Category deleted successfully');
 
     }
 

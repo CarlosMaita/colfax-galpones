@@ -54,6 +54,7 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'admin' => \App\Http\Middleware\AdminCheck::class,
+        'lang' =>  \App\Http\Middleware\changeLang::class,
         'landing' => \App\Http\Middleware\LandingCheck::class,
         'blog' => \App\Http\Middleware\BlogCheck::class,
         'cms' =>  \App\Http\Middleware\CmsCheck::class,
