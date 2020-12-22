@@ -96,7 +96,7 @@ Contacto - galpones
 
         <!-- Subheading -->
         <p class="text-muted mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis magnam, saepe est voluptas iste obcaecati cum odit alias minus ipsa fuga ratione tempora officia sint neque fugiat similique asperiores perferendis.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis magnam, saepe est voluptas iste obcaecati cum odit alias minus ipsa fuga ratione tempora officia sint neque fugiat similique asperiores perferendis.**
         </p>
 
         <!-- Form -->

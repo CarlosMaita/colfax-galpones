@@ -71,12 +71,12 @@ Gallery - galpones
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-              Inside the house
+              Inside the house**
             </h2>
 
             <!-- Subheading -->
             <p class="text-center text-muted mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.**
             </p>
 
           </div>

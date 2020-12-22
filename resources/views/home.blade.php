@@ -534,7 +534,7 @@ Home - galpones
             
             <!-- Heading -->
             <h3 class="mb-4">
-              We help people find great products at a <span class="text-primary">reasonable</span> price
+              We help people find great products at a <span class="text-primary">reasonable</span> price**
             </h3>
 
             <!-- Content -->
@@ -606,7 +606,7 @@ Home - galpones
                     
                     <!-- Title -->
                     <h5 class="card-title">
-                    Carmen de Jongh, <small class="text-muted">Designer</small>
+                    Carmen de Jongh, <small class="text-muted">Realtor</small>
                     </h5>
 
                     <!-- Text -->
@@ -646,7 +646,7 @@ Home - galpones
                     
                     <!-- Title -->
                     <h5 class="card-title">
-                    Tammy Roitman, <small class="text-muted">Copywriter</small>
+                    Tammy Roitman, <small class="text-muted">Realtor</small>
                     </h5>
 
                     <!-- Text -->
