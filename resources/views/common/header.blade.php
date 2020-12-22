@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xl navbar-light  fixed-top">
 <div class="container">
 <!-- Brand -->
-<a class="navbar-brand py-0" href="index.html">
+<a class="navbar-brand py-0" href="{{route('home')}}">
 <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo" height=60 width=80 class=py-0>
 </a>
 <!-- Toggler -->
