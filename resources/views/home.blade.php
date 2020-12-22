@@ -63,24 +63,17 @@ Home - galpones
 
       <!-- Slider -->
       <div class="bg-slider">
-        <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg">
+        <div class="slider slider-no-controls slider-no-draggable " id="hero-slider-bg">
           <div class="slider-item">
-            
             <!-- Cover -->
             <div class="bg-cover" style="background-image: url(image/front.png)"></div>
-
           </div>
           <div class="slider-item">
-            
             <!-- Cover -->
             <div class="bg-cover" style="background-image: url(image/front2.png)"></div>
-
           </div>
         </div>
       </div>
-
-      <!-- Overlay -->
-      <div class="bg-overlay"></div>
 
       <!-- Triangles -->
       <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
@@ -90,14 +83,10 @@ Home - galpones
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-8 col-lg-7 order-md-2">
-
             <!-- Slider -->
-            <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade mb-5 mb-md-0" data-bind="slider" data-target="#hero-slider-bg">
+            <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade" data-bind="slider" data-target="#hero-slider-bg">
+             {{-- slider1  --}}
               <div class="slider-item">
-
-                <!-- Preheading -->
-                
-                
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
                  Tailor a space that suits all your needs. <br> 
@@ -110,13 +99,12 @@ Home - galpones
 
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
+                  <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
                     Purchase now
                   </a>
                 </p>
-
               </div>
-            
+             {{-- slider1  --}}
               <div class="slider-item">
 
                 <!-- Heading -->
@@ -131,12 +119,12 @@ Home - galpones
 
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
+                  <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
                     Purchase now
                   </a>
                 </p>
-
               </div>
+
             </div>
 
           </div>

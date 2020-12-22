@@ -99,9 +99,9 @@
                 <a href="#!" id="facebook" class="text-lg text-nounderline mx-2">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#!" class="text-lg text-nounderline mx-2">
+                {{-- <a href="#!" class="text-lg text-nounderline mx-2">
                   <i class="fab fa-instagram"></i>
-                </a>
+                </a> --}}
 
               </div>
             </div>
