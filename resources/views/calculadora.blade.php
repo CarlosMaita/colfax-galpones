@@ -4,9 +4,27 @@
 Calculadora - galpones     
 @endsection
 
+
   
 {{-- location  --}}
 @section('breadcrumb')
+<style type="text/css">
+  .option_view {
+    text-decoration: none;
+  }
+
+  .option_view:hover {
+    text-decoration: none;
+  }
+
+  .option_view.hide {
+    display: none;
+  }
+
+  .option_advance.hide {
+    display: none;
+  }
+</style>
 <!-- BREADCRUMB
    ================================================== -->
    <nav class="breadcrumb">
@@ -40,7 +58,13 @@ Calculadora - galpones
    ================================================== -->
    <section class="container section">
    	<div class="row">
-   		<div class="col-lg-6">
+      <div class="col-md-11">
+        <h1>Mortgage Calculator</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+      </div>
+   		<div class="col-md-4">
    			<div class="form-group">
    				<h6>Home price</h6>
    				<input class="form-control" type="number" name="">
@@ -59,6 +83,41 @@ Calculadora - galpones
    				<h6>Interes rate</h6>
    				<input class="form-control" type="number" name="">
    			</div>
+        <div class="form-group">
+          <a class="option_view" id="advanced_option" href="#">Advanced</a>
+        </div>
+        <div class="option_advance hide" id="advance">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="">
+            <label class="form-check-label">Include PMI</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="">
+            <label class="form-check-label">Include taxes/insurange</label>
+          </div>
+          <div class="form-group">
+            <h6>Property tax</h6>
+            <div class="d-flex">
+              <div>
+                <input class="form-control" type="number" name="">
+              </div>
+              <div>
+                <input class="form-control" type="number" name="">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <h6>Home isurance</h6>
+            <input class="form-control" type="number" name="">
+          </div>
+          <div class="form-group">
+            <h6>HOA dues</h6>
+            <input class="form-control" type="number" name="">
+          </div>
+          <div class="form-group">
+            <a class="option_view hide" id="simple_option" href="#">Simple</a>
+          </div>
+        </div>
    		</div>
    		<div class="col-lg-6">
    			
@@ -93,7 +152,7 @@ Calculadora - galpones
 
            <!-- Items -->
            <div class="row">
-             <div class="col-md-6">
+             <div class="col-md-4 mb-5">
                
                <!-- Card -->
                <a href="#" class="card mb-3 mb-md-0">
@@ -108,12 +167,12 @@ Calculadora - galpones
                    
                    <!-- Title -->
                    <h5 class="card-title">
-                     Contact support
+                     Home Price
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit deserunt vero pariatur.
+                     Enter the purchase price of the home you want to buy. You can also enter the amount that you think you will offer.
                    </p>
                  
                  </div>
@@ -121,7 +180,7 @@ Calculadora - galpones
                </a> <!-- / .card -->
 
              </div>
-             <div class="col-md-6">
+             <div class="col-md-4">
                
                <!-- Card -->
                <a href="#" class="card">
@@ -136,12 +195,12 @@ Calculadora - galpones
                    
                    <!-- Title -->
                    <h5 class="card-title">
-                     Ask the forum
+                     Down Payment
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit deserunt vero pariatur.
+                     Most home loans require a down payment of at least 3%. A higher down payment will lower your monthly payment.
                    </p>
                  
                  </div>
@@ -149,10 +208,157 @@ Calculadora - galpones
                </a> <!-- / .card -->
 
              </div>
+
+             <div class="col-md-4">
+               
+               <!-- Card -->
+               <a href="#" class="card">
+                 
+                 <!-- Body -->
+                 <div class="card-body">
+
+                   <!-- Icon -->
+                   <div class="card-icon text-primary">
+                     <span class="icon icon-edit"></span>
+                   </div>
+                   
+                   <!-- Title -->
+                   <h5 class="card-title">
+                     Loan Program
+                   </h5>
+
+                   <!-- Text -->
+                   <p class="card-text text-muted">
+                     Your loan program can affect your interest rate and monthly payments. Choose from 30-year fixed, 15-year fixed, and 5/1 ARM in the calculator.
+                   </p>
+                 
+                 </div>
+
+               </a> <!-- / .card -->
+
+             </div>
+
+             <div class="col-md-4">
+               
+               <!-- Card -->
+               <a href="#" class="card">
+                 
+                 <!-- Body -->
+                 <div class="card-body">
+
+                   <!-- Icon -->
+                   <div class="card-icon text-primary">
+                     <span class="icon icon-edit"></span>
+                   </div>
+                   
+                   <!-- Title -->
+                   <h5 class="card-title">
+                     Interest Rate
+                   </h5>
+
+                   <!-- Text -->
+                   <p class="card-text text-muted">
+                     This is pre-filled with the current average mortgage rate. Your actual rate will vary based on factors like credit score and down payment.
+                   </p>
+                 
+                 </div>
+
+               </a> <!-- / .card -->
+
+             </div>
+
+             <div class="col-md-4">
+               
+               <!-- Card -->
+               <a href="#" class="card">
+                 
+                 <!-- Body -->
+                 <div class="card-body">
+
+                   <!-- Icon -->
+                   <div class="card-icon text-primary">
+                     <span class="icon icon-edit"></span>
+                   </div>
+                   
+                   <!-- Title -->
+                   <h5 class="card-title">
+                     Property Tax
+                   </h5>
+
+                   <!-- Text -->
+                   <p class="card-text text-muted">
+                     The mortgage payment calculator includes estimated property taxes based on the home's value. You can edit this in the advanced options.
+                   </p>
+                 
+                 </div>
+
+               </a> <!-- / .card -->
+
+             </div>
+
+             <div class="col-md-4">
+               
+               <!-- Card -->
+               <a href="#" class="card">
+                 
+                 <!-- Body -->
+                 <div class="card-body">
+
+                   <!-- Icon -->
+                   <div class="card-icon text-primary">
+                     <span class="icon icon-edit"></span>
+                   </div>
+                   
+                   <!-- Title -->
+                   <h5 class="card-title">
+                     Home Insurance
+                   </h5>
+
+                   <!-- Text -->
+                   <p class="card-text text-muted">
+                     Home insurance or homeowners insurance is typically required by lenders. You can edit this number in the mortgage calculator advanced options.
+                   </p>
+                 
+                 </div>
+
+               </a> <!-- / .card -->
+
+             </div>
+
            </div> <!-- / .row -->
 
          </div>
        </div> <!-- / .row -->
      </div> <!-- / .container -->
    </section>
+
+   <script type="text/javascript">
+
+     function init(){
+
+      function showAdvanceMenu(){
+        advancedOption.classList.toggle('hide')
+        simpleOption.classList.toggle('hide')
+        menuAdvance.classList.toggle('hide')
+      }
+
+      const advancedOption = document.getElementById('advanced_option')
+            simpleOption   = document.getElementById('simple_option')
+            menuAdvance    = document.getElementById('advance')
+
+      advancedOption.addEventListener('click', e => {
+        e.preventDefault()
+        showAdvanceMenu()
+      })
+
+      simpleOption.addEventListener('click', e => {
+        e.preventDefault()
+        showAdvanceMenu()
+      })
+     }  
+
+     document.addEventListener('DOMContentLoaded', () => {
+      init()
+     })
+   </script>
 @endsection
