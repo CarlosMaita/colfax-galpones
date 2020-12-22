@@ -48,6 +48,10 @@ Route::middleware('lang')->group(function () {
 		return view('calculadora');
 	});
 
+	Route::get('/mortgage-calculator-report ', function() {
+		return view('reporte_calculadora');
+	});
+
 	Route::get('/blog', 'HomeController@blog')->name('blog');
 	Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
 	Route::get('/autor/{name}', 'HomeController@blogByAuthor')->name('blog.autor');
