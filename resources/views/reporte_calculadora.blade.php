@@ -14,8 +14,12 @@ Reporte Calculadora - galpones
 		text-transform: uppercase;
 	}
 
-	.list-item {
+	li {
 		list-style: none;
+	}
+
+	.list-item:not(:last-of-type) {
+		margin-bottom: 1rem;
 	}
 
 	a, a:hover{
