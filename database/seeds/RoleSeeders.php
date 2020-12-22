@@ -12,7 +12,7 @@ class RoleSeeders extends Seeder
     public function run()
     {
         DB::table('roles')->insert([
-        	'title' => 'administrador',
+        	'title' => 'administrator',
         	'description' => 'Este usuario cuenta con permisos de super administrador'
         ]);
 
@@ -22,7 +22,7 @@ class RoleSeeders extends Seeder
         ]);
 
         DB::table('roles')->insert([
-            'title' => 'comprador',
+            'title' => 'buyer',
             'description' => 'Este usuario cuenta con permisos para comprar dentro de la página web.'
         ]);
 

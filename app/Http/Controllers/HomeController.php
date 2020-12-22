@@ -35,7 +35,13 @@ class HomeController extends Controller
     {
         $recent_post = BlogArticle::orderBy('id', 'DESC')->first();
 
-        $posts = BlogArticle::where('id', '!=', $recent_post->id)->orderBy('id', 'DESC')->paginate(3);
+        if(isset($recent_post))
+        {
+            $posts = BlogArticle::where('id', '!=', $recent_post->id)->orderBy('id', 'DESC')->paginate(3);
+        }else {
+            $posts = BlogArticle::orderBy('id', 'DESC')->paginate(3);
+        }
+        
         $all_posts = BlogArticle::inRandomOrder()->get();
 
         $categorias = BlogCategorie::all();
@@ -54,11 +60,11 @@ class HomeController extends Controller
                 {
                     $verificador = false;
                 }
+             }
 
-                if($all_post->id == $recent_post->id )
-                {
-                    $verificador = false;
-                }
+             if($all_post->id == $recent_post->id )
+             {
+                $verificador = false;
              }
 
              if($verificador)
@@ -110,11 +116,11 @@ class HomeController extends Controller
                 {
                     $verificador = false;
                 }
+             }
 
-                if($all_post->id == $recent_post->id )
-                {
-                    $verificador = false;
-                }
+             if($all_post->id == $recent_post->id )
+             {
+                 $verificador = false;
              }
 
              if($verificador)

@@ -1,6 +1,6 @@
 @extends('cms.layout.main')
 @section('title')
-    Editar Banner
+    Edit Banner
 @endsection
 
 
@@ -129,8 +129,8 @@
 	@endif
 	<section class="container">
 		<div class="row">
-			<div class="col-auto"><h3>Editar Banner</h3></div>
-			<div class="col-auto ml-auto"><a class="btn btn-outline-info btn-sm px-5" href="{{ route('banners.home') }}">Volver</a></div>
+			<div class="col-auto"><h3>Edit Banner</h3></div>
+			<div class="col-auto ml-auto"><a class="btn btn-outline-info btn-sm px-5" href="{{ route('banners.home') }}">Back</a></div>
 		</div>
 	</section>
     
@@ -142,22 +142,22 @@
                 @csrf
                 <div class="d-flex">
                     <button type="button" class="btn btn-primary button_select px-3">
-                        Agregar Imagen
+                        Add Image
                     </button>
                 </div>
                 <input type="file" id="file" name="image" class="input_file">
                 <div class="inputs_body">
                     <input class="mb-2" style="width: 50%;" id="i_title" type="text" class="mb-5" name="title"
-                        placeholder="Ingresa aquí el titulo" value="{{ $banner->title }}">
+                        placeholder="Enter the title here" value="{{ $banner->title }}">
                     <textarea name="description" style="width: 50%;" id="i_description"
-                        placeholder="Ingresa aquí la descripción" rows="3">{{ $banner->description }}</textarea>
+                        placeholder="Enter the description here" rows="3">{{ $banner->description }}</textarea>
                 </div>
             </form>
         </div>
 
         <div class="d-flex justify-content-center my-3 ">
-            <button type="button" id="button_submit" class="btn btn-primary mr-5 px-5">Actualizar</button>
-            <a href="{{ route('banners.home') }}" class="btn btn-outline-danger">Cancelar</a>
+            <button type="button" id="button_submit" class="btn btn-primary mr-5 px-5">Update</button>
+            <a href="{{ route('banners.home') }}" class="btn btn-outline-danger">Cancel</a>
         </div>
     </section>
 
@@ -174,8 +174,8 @@
             
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" id="button_modal">Actualizar banner</button>
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="button_modal">Update banner</button>
           </div>
         </div>
       </div>
@@ -245,13 +245,13 @@
 
             if(title.value == '')
             {
-                message = '¿Seguro que desea crear el banner sin un titulo?'
+                message = 'Are you sure you want to create the banner without a title?'
             }if(description.value == '')
             {
-                message = '¿Seguro que desea crear el banner sin una descripción?'
+                message = 'Are you sure you want to create the banner without a description?'
             }if(title.value == '' &&  description.value == '')
             {
-                message = '¿Seguro que desea crear el banner sin un titulo y una descripción?'
+                message = 'Are you sure you want to create the banner without a title and description?'
             }
 
 

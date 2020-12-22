@@ -1,13 +1,13 @@
 @extends('cms.layout.main')
 @section('title')
-    Leads archivados
+    Leads archived
 @endsection
 
 
 @section('content')
 <section class="mt-4">
 	<div>
-		<h1>Leads archivados</h1>
+		<h1>Leads Archieved</h1>
 	</div>
 
 	@if (session('message'))
@@ -22,9 +22,9 @@
 	<div class="table-responsive">
 	    <table class="table table-striped table-sm">
 	    	<th>#</th>
-	        <th>Nombre</th>
-	        <th>Correo</th>
-	        <th>telefono</th>
+	        <th>Name</th>
+	        <th>Email</th>
+	        <th>Phone</th>
 	        {{-- <th>Acciones</th> --}}
 	        <tbody>
 	        @foreach ($leads as $lead)

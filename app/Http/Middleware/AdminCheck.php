@@ -17,7 +17,7 @@ class AdminCheck
     {
         if(auth()->user())
         {
-            if(auth()->user()->roles->title == 'administrador'){
+            if(auth()->user()->roles->title == 'administrator'){
                 return $next($request);
             }
         }

@@ -17,7 +17,7 @@ class BlogCheck
     {
         if(auth()->user())
         {
-            if(auth()->user()->roles->title == 'blogger' || auth()->user()->roles->title == 'administrador'){
+            if(auth()->user()->roles->title == 'blogger' || auth()->user()->roles->title == 'administrator'){
                 return $next($request);
             }
         }
