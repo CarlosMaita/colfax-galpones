@@ -309,7 +309,7 @@ Home - galpones
 
               <p class="mb-5 mb-md-0">
                 <a href="contact.html" class="btn btn-outline-primary">
-                  Get in touch with us
+                  Get in touch with us**
                 </a>
               </p>
   

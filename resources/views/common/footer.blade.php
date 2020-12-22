@@ -13,7 +13,7 @@
     <div class="row align-self-center">
 
         <!-- Brand -->
-        <div class="col-md">
+        <div class="col-12 text-center col-md-4 text-md-left">
           <p>
             <a class="navbar-brand py-0" href="index.html">
              <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo" height=60 width=80 class=py-0>
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Links -->
-      <div class="col-md">
+      <div class="col-12 text-center col-md-4">
         <ul class="list-unstyled list-inline text-md-center">
           <li class="list-inline-item mr-2">
             <a href="{{route('gallery')}}" class="text-white">
@@ -43,8 +43,8 @@
       </div>
 
       <!-- Contacto -->
-      <div class="col-md">
-          <p class="text-white text-muted text-right">
+      <div class="col-12 text-center col-md-4 text-md-right">
+          <p class="text-white text-muted">
             <small>
               Carmen de Jongh <br>
               + (305) 333-7899
@@ -57,7 +57,7 @@
     <div class="row align-items-center">
 
       <!-- Copyright -->
-      <div class="col-md">
+      <div class="order-4 col-12 text-center col-md-4 text-md-left order-md-1">
         <p class="text-white text-muted">
           <small>
             &copy; Copyright <span class="current-year"></span> Medley Business Park. All rights reserved.
@@ -66,7 +66,7 @@
       </div>
 
       <!-- Social links -->
-      <div class="col-md text-center">
+      <div class="order-3 col-12 text-center col-md-4 order-md-2">
         <ul class="list-inline list-unstyled text-md-center">
           <li class="list-inline-item">
             <a href="#">
@@ -87,8 +87,8 @@
       </div>
 
       <!-- Contacto -->
-      <div class="col-md">
-        <p class="text-white text-muted text-right">
+      <div class="order-1 col-12 text-center col-md-4 text-md-right order-md-3">
+        <p class="text-white text-muted">
           <small>
             Tammy Roitman <br>
             +1 (786) 678-1052
@@ -96,20 +96,19 @@
         </p>
       </div>
 
-    </div> <!-- / .row -->
+    
 
-    <div class="row align-self-center">
      <!-- Contacto -->
-     <div class="col-md">
-        <p class="text-white text-muted text-right">
+     <div class="order-2 col-12 text-center col-md-12 order-md-3 text-md-right">
+        <p class="text-white text-muted">
           <small>
             Administration <br>
             (305) 677-9833
           </small>
         </p>
       </div>
-    </div> <!-- / .row -->
-
+    
+    </div>
     
 
 
