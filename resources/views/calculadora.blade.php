@@ -213,7 +213,8 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         </div>
         <hr>
         <div>
-          <canvas id="myChart" class="chart"></canvas>
+          <canvas id="myChart-donut" class="chart"></canvas>
+          <canvas id="myChart-line" class="chart" style="display: none;"></canvas>
         </div>
    		</div>
    	</div>
@@ -429,9 +430,11 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
    <script type="text/javascript" src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
    <script type="text/javascript">
 
-      function donutChart(container){
+      function donutChart(){
 
-        let myDoughnutChart = new Chart(container, {
+        let donut = document.getElementById('myChart-donut');
+
+        let myDoughnutChart = new Chart(donut, {
             type: 'doughnut',
             data: {
               datasets: [{
@@ -451,9 +454,11 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         });
       }
 
-      function lineChart(container){
+      function lineChart(){
 
-        let linechart = new Chart(container, {
+        let line = document.getElementById('myChart-line');
+
+        let linechart = new Chart(line, {
             type: 'line',
             data: {
               datasets: [{
@@ -473,14 +478,26 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         });
       }
 
-     function makeChart(type){
-        let ctx = document.getElementById('myChart').getContext('2d');
+      function showOrHideChart(type){
+        let line = document.getElementById('myChart-line');
+        let donut = document.getElementById('myChart-donut');
         
-        if(type === 'donutchart'){
-          donutChart(ctx)
-        }else if(type === 'linechart'){
-          lineChart(ctx)
+        if(type === 'linechart'){
+
+          line.style.display = 'block'
+          donut.style.display = 'none'
+
+        }else if(type === 'donutchart'){
+
+          line.style.display = 'none'
+          donut.style.display = 'block'
+          
         }
+      }
+
+     function loadCharts(){
+        donutChart()
+        lineChart()
       }
 
      function init(){
@@ -509,14 +526,14 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
       chartButtons.forEach(button => {
         button.addEventListener('click', (e) => {
           e.preventDefault()
-          makeChart(e.target.dataset.chart)
+          showOrHideChart(e.target.dataset.chart)
         })
       })
      }  
 
      document.addEventListener('DOMContentLoaded', () => {
       init()
-      makeChart('donutchart')
+      loadCharts()
      })
    </script>
 @endsection
