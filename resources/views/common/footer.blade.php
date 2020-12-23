@@ -9,15 +9,16 @@
 <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
 
 <!--Content -->
+
   <div class="container">
     <div class="row align-self-center">
 
         <!-- Brand -->
         <div class="col-12 text-center col-md-4 text-md-left">
           <p>
-            <a class="navbar-brand py-0" href="index.html">
-             <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo" height=60 width=80 class=py-0>
-            </a>
+            <a class="navbar-brand py-0" href="{{route('home')}}">
+              <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo" height=60 width=80 class=py-0>
+             </a>
           </p>
         </div>
 

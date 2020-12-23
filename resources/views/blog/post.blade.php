@@ -62,7 +62,7 @@
             <h1 class="mb-5 font-weight-bold text-center">
               {{$post->title}}
             </h1>
-            
+            <h2 class="mb-5 text-center">{{$post->description}}</h2>
           </div>
         </div> <!-- / .row -->
         <div class="row">
@@ -99,9 +99,9 @@
                 <a href="#!" id="facebook" class="text-lg text-nounderline mx-2">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#!" class="text-lg text-nounderline mx-2">
+                {{-- <a href="#!" class="text-lg text-nounderline mx-2">
                   <i class="fab fa-instagram"></i>
-                </a>
+                </a> --}}
 
               </div>
             </div>
@@ -116,9 +116,9 @@
       <div class="container">
         <div class="row align-items-stretch">
         @foreach($random_posts as $random_post)
-          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+          <div class="col-12 col-lg-4 mb-3">
             
-            <a class="card h-100" href="blog-post.html">
+            <a class="card h-100" href="{{route('blog.show', $random_post->slug)}}">
               <div class="card-body">
 
                 <!-- Meta -->
@@ -185,7 +185,7 @@
 		})
 
 
-    </script> -->
+    </script>
 
 
 

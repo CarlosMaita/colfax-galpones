@@ -73,6 +73,7 @@ class ArticleController extends Controller
     		'category_id' => $request->category_id,
     		'autor_id' => auth()->user()->id,
     		'date' => $request->date,
+            'description' => $request->description,
     		'picture' => $file,
     	]);
 
@@ -101,7 +102,7 @@ class ArticleController extends Controller
         $article->keywords()->sync($keywords);
 
 
-    	return back()->with('message', 'Articulo creado con éxito');
+    	return back()->with('message', 'Article created successfully');
     }
 
     public function editarArticulo($id)
@@ -149,10 +150,11 @@ class ArticleController extends Controller
     				'content' => $request->content,
     				'category_id' => $request->category_id,
     				'date' => $request->date,
+                    'description' => $request->description,
     				'picture' => $file,
     			]);
     		}else {
-    			return back()->with('error', 'No se pudo actualizar el articulo');
+    			return back()->with('error', 'Article could not be updated');
     		}
 
     	}else {
@@ -162,6 +164,7 @@ class ArticleController extends Controller
     			'content' => $request->content,
     			'category_id' => $request->category_id,
     			'date' => $request->date,
+                'description' => $request->description,
     			'keywords' => 'vacio',
     		]);
     	}
@@ -191,7 +194,7 @@ class ArticleController extends Controller
 
         $articulo->keywords()->sync($keywords);
 
-    	return back()->with('message', 'Articulo actualizado con éxito');
+    	return back()->with('message', 'Article updated successfully');
     }
 
 
@@ -205,9 +208,9 @@ class ArticleController extends Controller
     	{
     		$articulo->delete();
 
-    		return back()->with('error', 'Articulo eliminado con éxito');
+    		return back()->with('error', 'Article deleted successfully');
     	}else {
-    		return back()->with('error', 'No se puo eliminar el articulo con éxito');
+    		return back()->with('error', 'Article could not be deleted');
     	}
     }
 }

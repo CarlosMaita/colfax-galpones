@@ -6,7 +6,7 @@
 
 @section('content')
         <section>
-            <h3>Configuración de la página de incio del sitio web</h3>
+            <h3>Website Home Page Settings</h3>
             <hr>
         </section>
         <div class="alert alert-danger" style="display: none;" id="error_container">
@@ -28,7 +28,7 @@
             </div>
         @endif
         <section class="my-4">
-            <h3>Logo del menu superior</h3>
+            <h3>Top menu logo</h3>
             <div class="row">
                 <div class="col-2">
 					@if (isset($logo))
@@ -44,16 +44,16 @@
 						@csrf
 						<input type="file" name="image" class="image_file" id="file_image">
 					</form>
-					<button type="button" id="guardar_submit" class="btn btn-primary btn-sm px-5 mt-3">Guardar</button>
+					<button type="button" id="guardar_submit" class="btn btn-primary btn-sm px-5 mt-3">Save</button>
 				</div>
             </div>
         </section>
         <hr>
         <section>
             <div class="my-3 d-flex justify-content-between">
-                <h2>Imagenes del banner principal</h2>
+                <h2>Main banner images</h2>
                 <div>
-                    <a class="btn btn-outline-primary btn-sm px-4" href="{{ route('banners.create') }}">Nuevo Banner</a>
+                    <a class="btn btn-outline-primary btn-sm px-4" href="{{ route('banners.create') }}">New Banner</a>
                 </div>
 			</div>
 
@@ -62,10 +62,10 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Imagen</th>
-                            <th>Titulo</th>
-                            <th>Descripción</th>
-                            <th>Acciones</th>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Actions </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -79,16 +79,16 @@
                                 <td>{{ $banner->description }}</td>
                                 <td class="d-flex">
                                     <a href="{{ route('banners.show', $banner->id) }}"
-                                        class="btn btn-outline-success btn-sm mr-1">Editar</a>
+                                        class="btn btn-outline-success btn-sm mr-1">Edit</a>
                                     @if ($banner->status == 1)
                                         <a href="{{ route('banners.desactive', $banner->id) }}"
-                                            class="btn btn-outline-success btn-sm mr-1">Ocultar</a>
+                                            class="btn btn-outline-success btn-sm mr-1">Hide</a>
                                     @elseif($banner->status == 0)
                                         <a href="{{ route('banners.active', $banner->id) }}"
-                                            class="btn btn-outline-info btn-sm mr-1">Mostrar</a>
+                                            class="btn btn-outline-info btn-sm mr-1">Show</a>
                                     @endif
                                     <button type="button" id="{{ $banner->id }}" class="btn btn-outline-danger btn-sm eliminar"
-                                        data-toggle="modal" data-target="#modalEliminar">Eliminar</button>
+                                        data-toggle="modal" data-target="#modalEliminar">Delete</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -101,7 +101,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Eliminar Banner</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Banner</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" id="eliminar_submit" class="btn btn-danger">Eliminar Banner</button>
+                        <button type="button" id="eliminar_submit" class="btn btn-danger">Delete Banner</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
 
 
                 if (logoFile.files.length <= 0) {
-                    alerts.push('Debes cargar un logo');
+                    alerts.push('you must add an logo');
                 }
 
                 if (alerts.length > 0) {

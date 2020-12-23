@@ -1,15 +1,15 @@
 @extends('cms.layout.main')
 @section('title')
-    Blog | Editar Articulo
+    Blog | Edit Article
 @endsection
 
 
 @section('content')
 <section>
 	<div class="d-flex justify-content-between">
-		<h1>Editar Articulo</h1>
+		<h1>Edit Article</h1>
 		<div>
-			<a href="{{route('blog.articles')}}" class="btn btn-outline-primary">Volver</a>
+			<a href="{{route('blog.articles')}}" class="btn btn-outline-primary">Back</a>
 		</div>
 	</div>
 
@@ -34,34 +34,39 @@
 
 	<div style="display: none;" id="error_div" class="alert alert-danger"></div>
 	<input type="hidden" id="articulo_id" value="{{$articulo->id}}">
-	<input type="hidden" id="verify_access">
+	<input type="hidden" value="1" id="verify_access">
 	<form method="POST" id="form" action="{{route('blog.article.update', $articulo->id)}}" enctype="multipart/form-data">
 		@csrf
 		<div class="form-group col-12">
-			<h5>Titulo</h5>
-			<input class="form-control" id="title" maxlength="191" value="{{$articulo->title}}" required type="text" name="title">
+			<h5>Title</h5>
+			<input class="form-control" id="title" maxlength="191" value="{{$articulo->title}}" required type="text" name="title" autocomplete="off">
 			<small style="display: none;" id="url_verify"></small>
 		</div>
 
 		<div class="form-group col-12">
-			<h5>Keywords <small><strong>(agregar palabras claves separadas por coma)</strong></small></h5>
-			<input class="form-control" id="title" maxlength="191" required type="text" name="clave" autocomplete="off" value="{{$keywords}}">
+			<h5>Keywords <small><strong>(add keywords separated by commas)</strong></small></h5>
+			<input class="form-control" id="keywords" maxlength="191" required type="text" name="clave" autocomplete="off" value="{{$keywords}}">
 		</div>
 
 		<div class="form-group col-12">
-			<h5>Contenido</h5>
+			<h5>Short description</h5>
+			<input class="form-control" id="description_corta" maxlength="90" value="{{$articulo->description}}" required type="text" name="description" autocomplete="off">
+		</div>
+
+		<div class="form-group col-12">
+			<h5>Content</h5>
 			<textarea class="ckeditor" id="content" name="content">{{$articulo->content}}</textarea>
 		</div>
 
 		<div class="form-group col-4">
-			<h5>Fecha</h5>
-			<input type="date" id="date" value="{{$articulo->date}}" name="date">
+			<h5>Date</h5>
+			<input class="form-control" type="date" id="date" value="{{$articulo->date}}" name="date">
 		</div>
 
 		<div class="form-group col-12">
-			<h5>Categoria</h5>
+			<h5>Category</h5>
 			<select class="form-control" id="categoria" name="category_id">
-				<option value="0">Selecciona una categoria</option>
+				<option value="0">Select category</option>
 				@foreach($categorias as $categoria)
 					<option value="{{$categoria->id}}" <?php if($categoria->id == $articulo->category->id) echo 'selected' ?> >{{$categoria->name}}</option>
 				@endforeach
@@ -73,7 +78,7 @@
 			<input type="file" name="picture" id="picture">
 		</div>
 		<div class="col-12">
-			<input type="submit" id="form_submit" class="btn btn-primary" value="Actualizar Articulo">
+			<input type="submit" id="form_submit" class="btn btn-primary" value="Updated article">
 		</div>
 		<div class="form-group col-12" style="visibility: hidden;">
 			<input class="form-control" id="url" maxlength="191" type="text" value="{{$articulo->slug}}" autocomplete="off" name="slug">
@@ -109,6 +114,8 @@
 			categoria = document.getElementById('categoria'),
 			fecha = document.getElementById('date'),
 			verify_access = document.getElementById('verify_access'),
+			keywords = document.getElementById('keywords'),
+			description_corta = document.getElementById('description_corta'),
 			imagen = document.getElementById('picture');
 
 		container.innerHTML = ''
@@ -117,19 +124,23 @@
 
 		if(title.value == '')
 		{
-			errors.push('Debes colocar un titulo')
+			errors.push('You must add a title')
 		}if(CKEDITOR.instances.content.getData() == '')
 		{
-			errors.push('Debes colocar un contenido')
+			errors.push('You must add a content')
 		}if(categoria.selectedIndex == 0)
 		{
-			errors.push('Debes agregar una categoria')
+			errors.push('You must add a category')
 		}if(fecha.value == "")
 		{
-			errors.push('Debes agregar una fecha')
+			errors.push('You must add a date')
 		}if(verify_access.value == 0)
 		{
-			errors.push('Debes agregar un titulo valido')
+			errors.push('You must add a valid title')
+		}if(keywords.value == ''){
+			errors.push('You must add at least one keyword')
+		}if(description_corta.value == ''){
+			errors.push('You must add a short description')
 		}
 
 		if(errors.length > 0)
@@ -199,12 +210,12 @@
 
 		if(status == 'aceptado')
 		{
-			container.textContent = 'Titulo Permitido';
+			container.textContent = 'Title allowed for use';
 			container.style.color = 'green';
 			verify_access.value = 1;
 		}else if(status == 'negado')
 		{
-			container.textContent = 'Este titulo ya se encuentra en uso, escoja uno diferente';
+			container.textContent = 'This title is in use, please choose another';
 			container.style.color = 'red';
 			verify_access.value = 0;
 		}
