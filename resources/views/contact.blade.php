@@ -11,14 +11,14 @@
 <meta property="og:url" content="https://metatags.io/">
 <meta property="og:title" content="Contact Us —  Tailor a space that suits all your needs.">
 <meta property="og:description" content="Discover our office locations and different ways to contact us so that we can provide you with the necessary information to buy your warehouse space in the heart of Miami!">
-<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="og:image" content= "{{asset('image/front.png')}}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://metatags.io/">
 <meta property="twitter:title" content="Contact Us —  Tailor a space that suits all your needs.">
 <meta property="twitter:description" content="Discover our office locations and different ways to contact us so that we can provide you with the necessary information to buy your warehouse space in the heart of Miami!">
-<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="twitter:image" content= "{{asset('image/front.png')}}">
 @endsection
 
 
@@ -143,7 +143,7 @@ Contacto - galpones
             <div class="form-group col-md-12">
               
               <!-- Phone -->
-              <label>Telefono </label>
+              <label>Telephone </label>
               <div class="input-group">
                 <input type="number" class="form-control  order-1" required name="telefono">
                 <div class="input-group-append order-0">
