@@ -1,5 +1,26 @@
 @extends('layouts.app')
 
+@section('metas')
+<!-- Primary Meta Tags -->
+<title>{{$post->title}}</title>
+<meta name="title" content="{{$post->title}}">
+<meta name="description" content="{{$post->description}}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="{{$post->title}}">
+<meta property="og:description" content="{{$post->description}}">
+<meta property="og:image" content="{{asset('storage/'.$post->picture)}}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="{{$post->title}}">
+<meta property="twitter:description" content="{{$post->description}}">
+<meta property="twitter:image" content="{{asset('storage/'.$post->picture)}}">
+@endsection
+
 @section('title')
 	Blog | Articulos
 @endsection
