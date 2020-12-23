@@ -111,11 +111,12 @@ Contacto - galpones
                 <input type="text" class="form-control order-1" required name="name">
                 <div class="input-group-append order-0">
                   <div class="input-group-text">
-                    <svg class="input-group-icon icon-offset icon icon-person" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path transform="translate(3 3)" d="
-                        M0 100 A 50 50 0 0 1 50 60 A 20 20 0 0 1 50 0 A 20 20 0 0 1 50 60 A 50 50 0 0 1 100 100">
-                      </path>
-                    </svg>
+                    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg>
+
+
                   </div>
                 </div>
               </div>
@@ -129,11 +130,10 @@ Contacto - galpones
                 <input type="email" class="form-control order-1" required name="email">
                 <div class="input-group-append order-0">
                   <div class="input-group-text">
-                    <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path transform="translate(3 3)" d="
-                        M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
-                      </path>
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>
+
                   </div>
                 </div>
               </div>
@@ -149,11 +149,9 @@ Contacto - galpones
                 <div class="input-group-append order-0">
                   <!-- AQUÍ VA EL ICONO -->
                   <div class="input-group-text">
-                    <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path transform="translate(3 3)" d="
-                        M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
-                      </path>
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
                   </div>
                 </div>
               </div>
@@ -216,7 +214,7 @@ Contacto - galpones
 
         <!-- Subheading -->
         <p class="text-muted mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum facilis, atque officiis possimus totam placeat maiores at tempore nulla corporis rem aliquid iusto ab, distinctio, nostrum cumque asperiores!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum facilis, atque officiis possimus totam placeat maiores at tempore nulla corporis rem aliquid iusto ab, distinctio, nostrum cumque asperiores!***
         </p>
         
         <!-- Content -->
@@ -230,18 +228,18 @@ Contacto - galpones
             
             <!-- Address -->
             <p class="text-muted">
-              1234 Altschul, New York, NY 10027-0000
+              7265 NW 74th Street Miami, Miami-Dade County, FL 33166
             </p>
 
             <!-- Heading -->
-            <h5>
+            <h5 class="mt-5">
               Email:
             </h5>
             
             <!-- Address -->
             <p class="text-muted">
               <a href="mailto:admin@domain.com">
-                admin@domain.com
+                cdejongh@colfaxrealty.com
               </a>
             </p>
 
@@ -254,21 +252,45 @@ Contacto - galpones
             </h5>
             
             <!-- Phone -->
-            <p class="text-muted">
-              <a href="tel:1234567890">
-                132-465-78-90
-              </a>
+            <p class="text-muted m-0">
+              <ul class="list-unstyled">
+
+                <li>
+                  <a href="tel:1234567890" class="text-sm">
+                    (305) 677-9833
+                  </a>
+                </li>
+
+                <li>
+                <a href="tel:1234567890" class="text-sm">
+                   (305) 333-7899
+                  </a>
+                </li>
+
+                <li>
+                  <a href="tel:1234567890" class="text-sm">
+                  (786) 678-1052
+                  </a>
+                </li>
+
+              </ul>
+
+
+
+
+
+
             </p>
 
             <!-- Heading -->
             <h5>
-              Skype:
+              Email:
             </h5>
             
             <!-- Phone -->
             <p class="text-muted">
               <a href="tel:1234567890">
-                simpleqode.skype
+                troitman@colfaxrealty.com
               </a>
             </p>
 
