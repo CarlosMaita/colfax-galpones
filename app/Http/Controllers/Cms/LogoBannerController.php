@@ -42,7 +42,7 @@ class LogoBannerController extends Controller
                     'image' => $file,
                 ]);
 
-                return back()->with('message', 'Logo creado con éxito');
+                return back()->with('message', 'Logo created successfully');
             }
                 
         } else {
@@ -59,7 +59,7 @@ class LogoBannerController extends Controller
                 'image' => $file,
             ]);
 
-            return back()->with('message', 'Logo actualizado con éxito');
+            return back()->with('message', 'Logo updated successfully');
         }
     }
 
@@ -73,7 +73,7 @@ class LogoBannerController extends Controller
         $banner->status = 1;
         $banner->save();
 
-        return back()->with('message', 'Banner activado con éxito');
+        return back()->with('message', 'Banner activated successfully');
 
     }
 
@@ -84,7 +84,7 @@ class LogoBannerController extends Controller
         $banner->status = 0;
         $banner->save();
 
-        return back()->with('error', 'Banner ocultado con éxito');
+        return back()->with('error', 'Baner hidden successfully');
     }
 
     public function crearBanner()
@@ -109,7 +109,7 @@ class LogoBannerController extends Controller
             'image' => $file,
         ]);
 
-    	return back()->with('message', 'Banner creado con éxito!');
+    	return back()->with('message', 'Banner created successfully!');
     }
 
 
@@ -140,9 +140,9 @@ class LogoBannerController extends Controller
                     'image' => $file,
                 ]);
                 
-                return back()->with('message', 'Banner actualizado con éxito');
+                return back()->with('message', 'Banner updated successfully!');
             } else {
-                return back()->with('message', 'No se pudo actualizar el banner');
+                return back()->with('message', 'Banner could not be updated');
             }
         } else {
             $banner->update([
@@ -150,7 +150,7 @@ class LogoBannerController extends Controller
                 'description' =>$request->description,
             ]);
 
-            return back()->with('message', 'Banner actualizado con éxito');
+            return back()->with('message', 'Banner updated successfully!');
         }
     }
 
@@ -162,9 +162,9 @@ class LogoBannerController extends Controller
         if(isset($deleted) || $banner->image == null)
         {
             $banner->delete();
-            return back()->with('error', 'Banner eliminado con éxito');
+            return back()->with('error', 'Banner deleted successfully!');
         } else {
-            return back()->with('error', 'No se pudo eliminar el Banner');
+            return back()->with('error', 'Banner could not be deleted');
         }
     }
 }

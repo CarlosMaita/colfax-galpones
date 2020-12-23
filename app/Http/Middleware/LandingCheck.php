@@ -17,7 +17,7 @@ class LandingCheck
     {
         if(auth()->user())
         {
-            if(auth()->user()->roles->title == 'editor' || auth()->user()->roles->title == 'administrador'){
+            if(auth()->user()->roles->title == 'editor' || auth()->user()->roles->title == 'administrator'){
                 return $next($request);
             }
         }

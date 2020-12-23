@@ -38,6 +38,7 @@
 @section('content')
 <!-- HERO
     ================================================== -->
+  @isset($recent_post)
     <section>
       <div class="container section section-top pb-0">
         <div class="row align-items-center">
@@ -83,7 +84,7 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
+  @endisset
     <!-- FEATURED
     ================================================== -->
     <section>

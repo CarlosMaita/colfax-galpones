@@ -1,15 +1,15 @@
 @extends('cms.layout.main')
 @section('title')
-    Blog | Categorias
+    Blog | Categories
 @endsection
 
 
 @section('content')
 <section>
 	<div class="d-flex justify-content-between">
-		<h1>Blog Categorias</h1>
+		<h1>Blog Categories</h1>
 		<div>
-			<button type="button" data-toggle="modal" data-target="#modalCrear" class="btn btn-outline-primary">Crear Categoria</button>
+			<button type="button" data-toggle="modal" data-target="#modalCrear" class="btn btn-outline-primary">Create Category</button>
 		</div>
 	</div>
 	@if (session('message'))
@@ -34,11 +34,11 @@
 	        <thead>
 	            <tr>
 	                <th>#</th>
-	                <th>Titulo</th>
-	                <th>Categoria Padre</th>
-	                <th>Estatus</th>
-	                <th>Descripción</th>
-	                <th>Acciones</th>
+	                <th>Title</th>
+	                <th>Parent category</th>
+	                <th>Status</th>
+	                <th>Description</th>
+	                <th>Actions</th>
 	            </tr>
 	        </thead>
 	        <tbody>
@@ -48,13 +48,13 @@
 	                    <td>{{$categoria->name}}</td>
 	                    <td>
 	                    	@php $padre = $categoria->getFatherName() @endphp
-	                    	{{$padre ? $padre->name : 'No tiene categoria padre'}}
+	                    	{{$padre ? $padre->name : 'It has no parent category'}}
 	                    </td>
 	                    <td>{{$categoria->status}}</td>
 	                    <td>{{$categoria->description}}</td>
 	                    <td>
-	                    	<button id="{{$categoria->id}}" type="button" class="btn btn-sm btn-outline-primary editar_button" data-toggle="modal" data-target="#modalEditar">Editar</button>
-	                    	<button id="{{$categoria->id}}" type="button" class="btn btn-sm btn-outline-danger eliminar_button" data-toggle="modal" data-target="#modalEliminar">Eliminar</button>
+	                    	<button id="{{$categoria->id}}" type="button" class="btn btn-sm btn-outline-primary editar_button" data-toggle="modal" data-target="#modalEditar">Edit</button>
+	                    	<button id="{{$categoria->id}}" type="button" class="btn btn-sm btn-outline-danger eliminar_button" data-toggle="modal" data-target="#modalEliminar">Delete</button>
 	                    </td>
 	                </tr>
 	            @endforeach
@@ -67,7 +67,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Crear Categoria</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Create Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -78,14 +78,14 @@
                 <form action="{{route('blog.categories.create')}}" id="crear_form" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                    	<h5>Titulo</h5>
+                    	<h5>Title</h5>
                     	<input class="form-control" id="title_crear" autocomplete="off"  type="text" maxlength="191" name="name" required>
                     	<small id="slug-alert-create"></small>
                     </div>
                     <div class="form-group">
-                    	<h5>Categoría padre <small>(opcional)</small></h5>
+                    	<h5>Parent category <small>(optional)</small></h5>
                     	<select class="form-control" name="padre_id">
-                    		<option value="0">Seleccionar categoría</option>
+                    		<option value="0">Select category</option>
                     		<option value="0">Principal</option>
                     		@foreach($categorias as $categoria)
                     		<option value="{{$categoria->id}}">{{$categoria->name}}</option>
@@ -93,15 +93,15 @@
                     	</select>
                     </div>
                     <div class="form-group">
-                    	<h5>Descripción</h5>
+                    	<h5>Description</h5>
                     	<textarea required class="form-control" id="description_crear" name="description"></textarea>
                     </div>
                     <input style="visibility: hidden;position: absolute;" class="form-control" type="text" id="slug-create" name="slug">
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="crear_submit" class="btn btn-primary">Crear Categoria</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" id="crear_submit" class="btn btn-primary">Create Category</button>
             </div>
         </div>
     </div>
@@ -111,7 +111,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Editar Categoria</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -123,26 +123,26 @@
                     @csrf
                     <input type="hidden" id="categoria_id_edit">
                     <div class="form-group">
-                    	<h5>Titulo</h5>
+                    	<h5>Title</h5>
                     	<input class="form-control" id="title_editar" autocomplete="off" required type="text" maxlength="191" name="name">
                     	<small id="slug-alert-edit"></small>
                     </div>
                     <div class="form-group">
-                    	<h5>Categoria padre <small>(opcional</small></h5>
+                    	<h5>Parent category <small>(optional</small></h5>
                     	<select id="categoria_padre_edit" class="form-control" name="padre_id">
                     		
                     	</select>
                     </div>
                     <div class="form-group">
-                    	<h5>Descripción</h5>
+                    	<h5>Description</h5>
                     	<textarea required class="form-control" id="description_editar" name="description"></textarea>
                     </div>
                     <input type="text" style="visibility: hidden;position: absolute;" id="slug-editar" name="slug">
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="editar_submit" class="btn btn-primary">Actualizar Categoria</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" id="editar_submit" class="btn btn-primary">Update Category</button>
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Eliminar Categoria</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Delete Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -161,11 +161,11 @@
                 <form action="" id="eliminar_form" method="POST">
                     @csrf
                 </form>
-                <p>Seguro que desea eliminar esta categoria?</p>
+                <p>Are you sure you want to delete this category?</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="eliminar_submit" class="btn btn-danger">Eliminar Categoria</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" id="eliminar_submit" class="btn btn-danger">Delete Category</button>
             </div>
         </div>
     </div>
@@ -360,7 +360,7 @@
 	function modalEliminar(form, id,message)
 	{
 		form.action = `/cms/eliminar/categoria/${id}`
-		form.innerHTML += `<div>Categoria: <strong>${message}</strong></div>`
+		form.innerHTML += `<div>Category: <strong>${message}</strong></div>`
 	}
 
 </script>
@@ -448,12 +448,12 @@
 		if(accion === 'crear') {
 
 			if(status === 200) {
-				slugStatus.textContent = 'Titulo permitido para su uso'
+				slugStatus.textContent = 'Title allowed for use'
 				slugStatus.style.color = 'green';
 				slugVerify.value = 1
 
 			}else if(status === 204){
-				slugStatus.textContent = 'Este titulo se encuentra en uso, por favor escoger otro'
+				slugStatus.textContent = 'This title is in use, please choose another'
 				slugStatus.style.color = 'red';
 				slugVerify.value = 0
 			}
@@ -463,12 +463,12 @@
 
 
 			if(status === 200) {
-				slugStatusEdit.textContent = 'Titulo permitido para su uso'
+				slugStatusEdit.textContent = 'Title allowed for use'
 				slugStatusEdit.style.color = 'green';
 				slugVerifyEdit.value = 1
 
 			}else if(status === 204){
-				slugStatusEdit.textContent = 'Este titulo se encuentra en uso, por favor escoger otro'
+				slugStatusEdit.textContent = 'This title is in use, please choose another'
 				slugStatusEdit.style.color = 'red';
 				slugVerifyEdit.value = 0
 			}
