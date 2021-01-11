@@ -34,7 +34,11 @@ Route::middleware('lang')->group(function () {
 
 	Route::get('/floorplants-secondary', function(){
 		return view('floorplants_secundaria');
-	} )->name('floorplants');
+	} )->name('floorplants.secondary');
+
+	Route::get('/floorplants-third', function(){
+		return view('floorplants_tercera');
+	} )->name('floorplants.third');
 
 	// location
 	Route::get('/location', function(){
