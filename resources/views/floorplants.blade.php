@@ -41,12 +41,10 @@
     position: relative;
     transform: translateY(-7%);
   }
-
-  /* .floorplant__principalImage-background {
+  
+  .img-effect-solid:before {
     background-color: #7B7B7B;
-    width: 100%;
-    height: 100%;
-  } */
+  }
   
 </style>
 
@@ -132,7 +130,7 @@
       </div>
 
       <div class="col-md-6 offset-1 floorplant__principalImage">
-        <div class="img-effect img-effect-solid image_background">
+        <div class="img-effect img-effect-dotted image_background">
           <img class="img-fluid" src="{{asset('image/floorplants_principal.jpg')}}" alt="">
         </div>
       </div>
