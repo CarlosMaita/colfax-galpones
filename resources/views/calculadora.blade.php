@@ -104,11 +104,11 @@ Calculadora - galpones
    		<div class="col-md-4">
    			<div class="form-group">
    				<h6>Home price</h6>
-   				<input class="form-control" type="number" name="">
+   				<input class="form-control input-number" pattern="/^[0-9.]+$/" type="text" name="">
    			</div>
    			<div class="form-group">
    				<h6>Down Payment</h6>
-   				<input class="form-control" type="number" name="">
+   				<input class="form-control input-number" pattern="/^[0-9.]+$/" type="text" name="">
    			</div>
    			<div class="form-group">
    				<h6>Loan program</h6>
@@ -120,9 +120,9 @@ Calculadora - galpones
    			</div>
    			<div class="form-group">
    				<h6>Interes rate</h6>
-   				<input class="form-control" type="number" name="">
+   				<input class="form-control input-number" pattern="/^[0-9.]+$/" type="text" name="">
    			</div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <a class="option_view" id="advanced_option" href="#">Advanced</a>
         </div>
         <div class="option_advance hide" id="advance">
@@ -171,8 +171,8 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
           </div>
           <div class="form-group">
             <a class="option_view hide" id="simple_option" href="#">Simple</a>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
    		</div>
    		<div class="col-md-7">
    			<div class="d-flex justify-content-between align-items-center">
@@ -502,27 +502,38 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
      function init(){
 
-      function showAdvanceMenu(){
-        advancedOption.classList.toggle('hide')
-        simpleOption.classList.toggle('hide')
-        menuAdvance.classList.toggle('hide')
+      // function showAdvanceMenu(){
+      //   advancedOption.classList.toggle('hide')
+      //   simpleOption.classList.toggle('hide')
+      //   menuAdvance.classList.toggle('hide')
+      // }
+
+      const chartButtons   = document.querySelectorAll('.chart_button')
+            inputNumbers   = document.querySelectorAll('.input-number')
+
+      // advancedOption.addEventListener('click', e => {
+      //   e.preventDefault()
+      //   showAdvanceMenu()
+      // })
+
+      // simpleOption.addEventListener('click', e => {
+      //   e.preventDefault()
+      //   showAdvanceMenu()
+      // })
+      
+      if(inputNumbers) {
+        inputNumbers.forEach(input => {
+          input.addEventListener('keyup', (e) => {
+            const element = e.target;
+
+            let n = parseInt(element.value.replace(/\D/g,''),10);
+
+            
+            element.value = n.toLocaleString();
+          })
+        })
       }
-
-      const advancedOption = document.getElementById('advanced_option')
-            simpleOption   = document.getElementById('simple_option')
-            menuAdvance    = document.getElementById('advance')
-            chartButtons   = document.querySelectorAll('.chart_button')
-
-      advancedOption.addEventListener('click', e => {
-        e.preventDefault()
-        showAdvanceMenu()
-      })
-
-      simpleOption.addEventListener('click', e => {
-        e.preventDefault()
-        showAdvanceMenu()
-      })
-
+      
       chartButtons.forEach(button => {
         button.addEventListener('click', (e) => {
           e.preventDefault()
