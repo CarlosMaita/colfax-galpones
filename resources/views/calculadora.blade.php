@@ -104,23 +104,22 @@ Calculadora - galpones
    		<div class="col-md-4">
    			<div class="form-group">
    				<h6>Home price</h6>
-   				<input class="form-control input-number" pattern="/^[0-9.]+$/" type="text" name="">
+   				<input class="form-control input-number" id="home_price" type="number" name="">
    			</div>
    			<div class="form-group">
    				<h6>Down Payment</h6>
-   				<input class="form-control input-number" pattern="/^[0-9.]+$/" type="text" name="">
+   				<input class="form-control input-number" id="down_payment" type="number" name="">
    			</div>
    			<div class="form-group">
    				<h6>Loan program</h6>
-   				<select class="form-control">
-            <option>30-year fixed</option>
-            <option>15-year fixed</option>
-   					<option>5/1 ARM</option>
+   				<select class="form-control" id="loan_program">
+            <option value=30>30-year fixed</option>
+            <option value=15>15-year fixed</option>
    				</select>
    			</div>
    			<div class="form-group">
    				<h6>Interes rate</h6>
-   				<input class="form-control input-number" pattern="/^[0-9.]+$/" type="text" name="">
+   				<input class="form-control input-number" id="Interes_rate" type="number" name="">
    			</div>
         <!-- <div class="form-group">
           <a class="option_view" id="advanced_option" href="#">Advanced</a>
@@ -180,12 +179,12 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
             <li class="mr-4">
               <a href="#" class=" chart_button" data-chart="donutchart">Breakdonw</a>
             </li>
-            <li class="mr-4">
+            <!-- <li class="mr-4">
               <a href="#" class=" chart_button" data-chart="linechart" >Schedule</a>
             </li>
             <li>
               <a href="#">Full Report</a>
-            </li>
+            </li> -->
           </ul>
           <div class="dropdown">
             <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -215,6 +214,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         <div>
           <canvas id="myChart-donut" class="chart"></canvas>
           <canvas id="myChart-line" class="chart" style="display: none;"></canvas>
+          <h5 id="your_payment"></h5>
         </div>
    		</div>
    	</div>
@@ -430,7 +430,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
    <script type="text/javascript" src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
    <script type="text/javascript">
 
-      function donutChart(){
+      function donutChart(value){
 
         let donut = document.getElementById('myChart-donut');
 
@@ -438,7 +438,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
             type: 'doughnut',
             data: {
               datasets: [{
-                data: [10, 20, 30],
+                data: value ? [...value] : [10, 6 , 8],
                 backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
@@ -446,7 +446,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                 ],
               }],
               labels: [
-                  'Red',
+                  'P&I',
                   'Yellow',
                   'Blue'
               ],
@@ -500,6 +500,48 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         lineChart()
       }
 
+      //calcular payment
+      function cuotas(interes_anual, anos, house_value, down_payment){
+          //vars
+          let r = interes_anual/(100*12);
+          let P =  house_value - down_payment;
+          let N =  anos*12;
+          //retorna la cuota mensual
+          let cuota = r*P/( 1 - ( (1+r)**(-N)));
+          cuota = cuota.toFixed(2);
+          return cuota;
+      }
+
+      function calcularPrecio() {
+          
+          const home_price    = document.getElementById('home_price'),
+                down_payment  = document.getElementById('down_payment'),
+                loan_program  = document.getElementById('loan_program'),
+                Interes_rate  = document.getElementById('Interes_rate'),
+                your_payment  = document.getElementById('your_payment')
+
+          if(home_price.value  && Interes_rate.value && loan_program.value){
+
+            let home_price_number  =       parseFloat(home_price.value)
+              down_payment_number  =       parseFloat(down_payment.value) >= 0 ? parseFloat(down_payment.value) : 0
+              loan_program_number  =       parseFloat(loan_program.value)
+              Interes_rate_number  =       parseFloat(Interes_rate.value)
+              
+              pago_total = cuotas(Interes_rate_number, loan_program_number, home_price_number, down_payment_number);
+
+              your_payment.textContent = `
+                Your payment is : $ ${pago_total}
+              `
+              grafico_value = [pago_total]
+              donutChart(grafico_value)
+            
+          
+          } else {
+            console.log('vacio')
+            return false;
+          }
+      }
+
      function init(){
 
       // function showAdvanceMenu(){
@@ -510,6 +552,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
       const chartButtons   = document.querySelectorAll('.chart_button')
             inputNumbers   = document.querySelectorAll('.input-number')
+            loanP          = document.getElementById('loan_program')
 
       // advancedOption.addEventListener('click', e => {
       //   e.preventDefault()
@@ -524,15 +567,14 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
       if(inputNumbers) {
         inputNumbers.forEach(input => {
           input.addEventListener('keyup', (e) => {
-            const element = e.target;
-
-            let n = parseInt(element.value.replace(/\D/g,''),10);
-
-            
-            element.value = n.toLocaleString();
+            calcularPrecio()
           })
         })
       }
+
+      loanP.addEventListener('change', () => {
+        calcularPrecio()
+      })
       
       chartButtons.forEach(button => {
         button.addEventListener('click', (e) => {

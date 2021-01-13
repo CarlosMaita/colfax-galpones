@@ -6,7 +6,8 @@
     <title>Document</title>
 
     <script>
-        function cuotas(interes_anual, anos, house_value, down_payment){
+        function cuotas(interes_anual, anos, house_value, down_payment = 0){
+            console.log(d)
             //vars
             let r = interes_anual/(100*12);
             let P =  house_value - down_payment;
