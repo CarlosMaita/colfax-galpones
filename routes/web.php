@@ -61,6 +61,10 @@ Route::middleware('lang')->group(function () {
 		return view('reporte_calculadora');
 	});
 
+	Route::get('/demo', function(){
+		return view('demo');
+   	} )->name('demo');
+
 	Route::get('/blog', 'HomeController@blog')->name('blog');
 	Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
 	Route::get('/autor/{name}', 'HomeController@blogByAuthor')->name('blog.autor');
