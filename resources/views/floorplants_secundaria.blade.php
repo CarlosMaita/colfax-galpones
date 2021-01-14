@@ -22,30 +22,31 @@
 @endsection
 
 <style>
-  .floorplants__title {
-    margin-top: 7rem;
-    margin-bottom: 4rem;
+  .floorplant__secondaryBodyMain {
+    padding-top: 8rem;
   }
 
-  .floorplants__menu {
-    border-left: 1px solid black;
-    padding: 1rem 1rem 0;
-    transform: translateX(5%);
-  }
-
-  .floorplants__optionMain {
-    /* transform: translateY(-20%); */
-  }
-
-  .floorplant__optionIcon {
+  .floorplant__backIcon {
     position: relative;
-    transform: translateY(-7%);
+    top: -.1rem;
+  }
+
+  .floorplant__secondaryBodyMain-title  {
+    font-size: 4rem;
   }
   
-  .img-effect-solid:before {
-    background-color: #7B7B7B;
+  .floorplant__secondaryBodyMain-subtitle {
+    color: #7B7B7B;
+    font-size: 2rem;
+    margin-bottom: 10rem;
   }
-  
+
+
+  .floorplant__secondaryComponent-subtitle {
+    color: #7B7B7B;
+  }
+
+
 </style>
 
 
@@ -84,56 +85,57 @@
 
 @section('content')
 <div class="container">
-    <h1 class="col-md-12 text-center floorplants__title" >Look at the plans</h1>
+    <div class="d-flex justify-content-end align-items-center my-5">
+      <a href="#">
+        <span class="floorplant__backIcon">
+          <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 35L1 19.6813L19 0.999999" stroke="black"/>
+          </svg>  
+        </span>
+        <span class="ml-2">Back</span>
+      </a>
+    </div>
+    <div class="row my-5">
+      <div class="col-md-5 py-5 img-fluid">
+        <img class="img-fluid" src="{{asset('image/floorplants_secundaria.jpg')}}" alt="">
+      </div>
+      <div class="col-md-6 offset-1 floorplant__secondaryBodyMain ">
+        <h1 class="floorplant__secondaryBodyMain-title text-center">UNIT 1</h1>
+        <p class="floorplant__secondaryBodyMain-subtitle text-center">Lorem ipsu lorems el lem su</p>
+        
+        <div class="d-flex justify-content-around text-center mb-5">
+          <div class="" style="flex:1;">
+            <div class="mb-5">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="15" height="15" fill="#A1896E"/>
+              </svg>
+            </div>
+            <h3 class="mb-0">700 SF</h3>
+            <p class="mt-0 floorplant__secondaryComponent-subtitle">office</p>  
+          </div>
 
-    <section class="row">
-      <div class="col-md-5">
-        <h5 class="mb-5">Choose the plane you want to see</h5>
-        <div class=" floorplants__menu">
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4>SITE PLAN</h4>
-              <p>lorem ipsup lo rem epso</p>
+          <div class="" style="flex:1;">
+            <div class="mb-5">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="15" height="15" fill="#A1896E"/>
+              </svg>
             </div>
-            <div class=" floorplants__optionMain">
-              <a href="#" class=" d-flex justify-content-between align-items-center">
-                <span class="mr-3">
-                  SHOW
-                </span>
-                <span class="floorplant__optionIcon">
-                  <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L19 16.3187L1 35" stroke="black"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
+            <h3 class="mb-0">843 SF </h3>
+            <p class="mt-0 floorplant__secondaryComponent-subtitle">Mezzanine</p>  
           </div>
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4>TYPICAL UNIT PLAN</h4>
-              <p>lorem ipsup lo rem epso</p>
+
+          <div class="" style="flex:1;">
+            <div class="mb-5">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="15" height="15" fill="#A1896E"/>
+              </svg>
             </div>
-            <div class=" floorplants__optionMain">
-              <a href="#" class=" d-flex justify-content-between align-items-center">
-                <span class="mr-3">
-                  SHOW
-                </span>
-                <span class="floorplant__optionIcon">
-                  <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L19 16.3187L1 35" stroke="black"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
+            <h3 class="mb-0">3480 SF</h3>
+            <p class="mt-0 floorplant__secondaryComponent-subtitle" >Warehouse</p>  
           </div>
+          
         </div>
       </div>
-
-      <div class="col-md-6 offset-1 floorplant__principalImage">
-        <div class="img-effect img-effect-dotted image_background">
-          <img class="img-fluid" src="{{asset('image/floorplants_principal.jpg')}}" alt="">
-        </div>
-      </div>
-    </section>
+    </div>
 </div>
 @endsection

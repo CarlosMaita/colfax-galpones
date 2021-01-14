@@ -22,30 +22,45 @@
 @endsection
 
 <style>
-  .floorplants__title {
-    margin-top: 7rem;
-    margin-bottom: 4rem;
+  .floorplant__secondaryBodyMain {
+    padding-top: 8rem;
   }
 
-  .floorplants__menu {
-    border-left: 1px solid black;
-    padding: 1rem 1rem 0;
-    transform: translateX(5%);
-  }
-
-  .floorplants__optionMain {
-    /* transform: translateY(-20%); */
-  }
-
-  .floorplant__optionIcon {
+  .floorplant__backIcon {
     position: relative;
-    transform: translateY(-7%);
+    top: -.1rem;
+  }
+
+  .floorplant__secondaryBodyMain-title  {
+    font-size: 4rem;
   }
   
-  .img-effect-solid:before {
-    background-color: #7B7B7B;
+  .floorplant__secondaryBodyMain-subtitle {
+    color: #7B7B7B;
+    font-size: 2rem;
+    margin-bottom: 10rem;
   }
-  
+
+
+  .floorplant__secondaryComponent-subtitle {
+    color: #7B7B7B;
+  }
+
+
+  .floorplant__thirdIconsMain-title {
+    padding-top: 5rem;
+  }
+
+  .floorplant__thirdIconsMain-title.second {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .floorplant__thirdIconsMain-icons img {
+    width: 100px;
+    height: 100px;
+  }
+
 </style>
 
 
@@ -84,56 +99,53 @@
 
 @section('content')
 <div class="container">
-    <h1 class="col-md-12 text-center floorplants__title" >Look at the plans</h1>
-
-    <section class="row">
-      <div class="col-md-5">
-        <h5 class="mb-5">Choose the plane you want to see</h5>
-        <div class=" floorplants__menu">
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4>SITE PLAN</h4>
-              <p>lorem ipsup lo rem epso</p>
-            </div>
-            <div class=" floorplants__optionMain">
-              <a href="#" class=" d-flex justify-content-between align-items-center">
-                <span class="mr-3">
-                  SHOW
-                </span>
-                <span class="floorplant__optionIcon">
-                  <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L19 16.3187L1 35" stroke="black"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4>TYPICAL UNIT PLAN</h4>
-              <p>lorem ipsup lo rem epso</p>
-            </div>
-            <div class=" floorplants__optionMain">
-              <a href="#" class=" d-flex justify-content-between align-items-center">
-                <span class="mr-3">
-                  SHOW
-                </span>
-                <span class="floorplant__optionIcon">
-                  <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L19 16.3187L1 35" stroke="black"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
+    <div class="d-flex justify-content-end align-items-center my-5">
+      <a href="#">
+        <span class="floorplant__backIcon">
+          <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 35L1 19.6813L19 0.999999" stroke="black"/>
+          </svg>  
+        </span>
+        <span class="ml-2">Back</span>
+      </a>
+    </div>
+    <div class="text-center">
+      <h1>SITE PLAN</h1>
+      <p class="floorplant__secondaryBodyMain-subtitle mb-2">Lorem ipsu lorems el lem su</p>
+      <a href="#" class="btn btn-outline-primary">Download Now</a>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-10 offset-1 d-flex justify-content-center">
+          <img class="img-fluid" src="{{asset('image/floorplants_tercera.png')}}" alt="">
       </div>
+    </div>
 
-      <div class="col-md-6 offset-1 floorplant__principalImage">
-        <div class="img-effect img-effect-dotted image_background">
-          <img class="img-fluid" src="{{asset('image/floorplants_principal.jpg')}}" alt="">
-        </div>
+    <div class="row">
+      <div class="col-md-12 floorplant__thirdIconsMain d-flex justify-content-around align-items-center mb-5">
+          <div class="text-center">
+            <div class="floorplant__thirdIconsMain-icons">
+                <img src="{{asset('image/icon/car.svg')}}" alt="">
+            </div>
+            <h3 class="floorplant__thirdIconsMain-title ">74 Spaces</h3>
+            <p>Parking Provided</p>
+          </div>
+
+          <div class="text-center">
+            <div class="floorplant__thirdIconsMain-icons mb-1">
+                <img src="{{asset('image/icon/plans.svg')}}" alt="">
+            </div>
+            <h3 class="floorplant__thirdIconsMain-title second text-center">72483,90 SF</h3>
+            <p class="text-center">Total SF</p>
+          </div>
+
+          <div class="text-center">
+            <div class="floorplant__thirdIconsMain-icons">
+                <img src="{{asset('image/icon/tree.svg')}}" alt="">
+            </div>
+            <h3 class="floorplant__thirdIconsMain-title third text-center">74 Spaces</h3>
+            <p class="text-center">Parking Provided</p>
+          </div>
       </div>
-    </section>
+    </div>
 </div>
 @endsection

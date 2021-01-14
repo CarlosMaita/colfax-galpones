@@ -31,6 +31,15 @@ Route::middleware('lang')->group(function () {
 	Route::get('/floorplants', function(){
 		return view('floorplants');
 	} )->name('floorplants');
+
+	Route::get('/floorplants-secondary', function(){
+		return view('floorplants_secundaria');
+	} )->name('floorplants.secondary');
+
+	Route::get('/floorplants-third', function(){
+		return view('floorplants_tercera');
+	} )->name('floorplants.third');
+
 	// location
 	Route::get('/location', function(){
 		return view('location');
@@ -47,6 +56,14 @@ Route::middleware('lang')->group(function () {
 	Route::get('/mortgage-calculator ', function() {
 		return view('calculadora');
 	});
+
+	Route::get('/mortgage-calculator-report ', function() {
+		return view('reporte_calculadora');
+	});
+
+	Route::get('/demo', function(){
+		return view('demo');
+   	} )->name('demo');
 
 	Route::get('/blog', 'HomeController@blog')->name('blog');
 	Route::get('/blog/{slug}', 'HomeController@showPost')->name('blog.show');
