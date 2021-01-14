@@ -32,11 +32,11 @@ Route::middleware('lang')->group(function () {
 		return view('floorplants');
 	} )->name('floorplants');
 
-	Route::get('/floorplants-secondary', function(){
+	Route::get('/floorplants/typical-unit-plan', function(){
 		return view('floorplants_secundaria');
 	} )->name('floorplants.secondary');
 
-	Route::get('/floorplants-third', function(){
+	Route::get('/floorplants/site-plan', function(){
 		return view('floorplants_tercera');
 	} )->name('floorplants.third');
 

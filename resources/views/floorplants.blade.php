@@ -84,21 +84,21 @@
 
 @section('content')
 <div class="container">
-    <h1 class="col-md-12 text-center floorplants__title" >Look at the plans</h1>
+    <h1 class="col-md-12 text-center floorplants__title m-5" >Look at <span class="text-primary">THE PLANS</span></h1>
 
     <section class="row">
       <div class="col-md-5">
-        <h5 class="mb-5">Choose the plane you want to see</h5>
+        <h5 class="mb-5">Choose the plane you want to see.</h5>
         <div class=" floorplants__menu">
           <div class="d-flex justify-content-between">
             <div>
               <h4>SITE PLAN</h4>
-              <p>lorem ipsup lo rem epso</p>
+              <p>Scaled diagram of building viewed from above</p>
             </div>
             <div class=" floorplants__optionMain">
-              <a href="#" class=" d-flex justify-content-between align-items-center">
+              <a href="{{ route('floorplants.third')}}" class=" d-flex justify-content-between align-items-center">
                 <span class="mr-3">
-                  SHOW
+                  See
                 </span>
                 <span class="floorplant__optionIcon">
                   <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,12 +111,12 @@
           <div class="d-flex justify-content-between">
             <div>
               <h4>TYPICAL UNIT PLAN</h4>
-              <p>lorem ipsup lo rem epso</p>
+              <p>Scaled diagram of typical unit viewed from above</p>
             </div>
             <div class=" floorplants__optionMain">
-              <a href="#" class=" d-flex justify-content-between align-items-center">
+              <a href="{{ route('floorplants.secondary')}}" class=" d-flex justify-content-between align-items-center">
                 <span class="mr-3">
-                  SHOW
+                  See
                 </span>
                 <span class="floorplant__optionIcon">
                   <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
