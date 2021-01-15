@@ -70,11 +70,11 @@
             <span class="breadcrumb-item">
               <a href="{{route('home')}}">Home</a>
             </span>
-            <span class="breadcrumb-item active">
-               Floorplants
+            <span class="breadcrumb-item">
+              <a href="{{route('floorplants')}}">Floorplants</a>
             </span> 
             <span class="breadcrumb-item active">
-              Site
+              Typical Unit
            </span> 
           </div>
 
@@ -88,53 +88,58 @@
 
 @section('content')
 <div class="container">
-    <div class="d-flex justify-content-end align-items-center my-5">
-      <a href="#">
-        <span class="floorplant__backIcon">
-          <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 35L1 19.6813L19 0.999999" stroke="black"/>
-          </svg>  
-        </span>
-        <span class="ml-2">Back</span>
-      </a>
-    </div>
+  <div class="d-flex align-items-center my-4">
+    <span class="floorplant__backIcon">
+      <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 35L1 19.6813L19 0.999999" stroke="black"/>
+      </svg>  
+    </span>
+    <a href="{{route('floorplants')}}">
+      <span class="ml-2">Back</span>
+    </a>
+  </div>
     <div class="row my-5">
-      <div class="col-md-5 py-5 img-fluid">
-        <img class="img-fluid" src="{{asset('image/floorplants_secundaria.jpg')}}" alt="">
+      <div class="col-md-5 py-5 img-fluid text-center order-2 order-md-1">
+        <img class="img-fluid " src="{{asset('image/floorplants_secundaria.jpg')}}" alt="" style="max-height:80vh">
       </div>
-      <div class="col-md-6 offset-1 floorplant__secondaryBodyMain ">
-        <h1 class="floorplant__secondaryBodyMain-title text-center">UNIT 1</h1>
-        <p class="floorplant__secondaryBodyMain-subtitle text-center">Lorem ipsu lorems el lem su</p>
+      <div class="col-md-6 offset-1 floorplant__secondaryBodyMain order-1 order-md-2">
+        <h1 class="floorplant__secondaryBodyMain-title text-center h1 p-5">TYPICAL UNIT</h1>
+        {{-- <p class="floorplant__secondaryBodyMain-subtitle text-center">u</p> --}}
         
-        <div class="d-flex justify-content-around text-center mb-5">
-          <div class="" style="flex:1;">
-            <div class="mb-5">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="15" height="15" fill="#A1896E"/>
-              </svg>
+
+        <div class="d-flex justify-content-around text-center">
+         
+          <div class="stats-item text-center">
+            <!-- Value -->
+            <div class="stats-item-value">
+              700 SF
             </div>
-            <h3 class="mb-0">700 SF</h3>
-            <p class="mt-0 floorplant__secondaryComponent-subtitle">office</p>  
+            <!-- Title -->
+            <p class="stats-item-title text-muted">
+              Office
+            </p>
           </div>
 
-          <div class="" style="flex:1;">
-            <div class="mb-5">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="15" height="15" fill="#A1896E"/>
-              </svg>
+          <div class="stats-item text-center">
+            <!-- Value -->
+            <div class="stats-item-value">
+              843 SF
             </div>
-            <h3 class="mb-0">843 SF </h3>
-            <p class="mt-0 floorplant__secondaryComponent-subtitle">Mezzanine</p>  
+            <!-- Title -->
+            <p class="stats-item-title text-muted">
+              Mezzanine
+            </p>
           </div>
 
-          <div class="" style="flex:1;">
-            <div class="mb-5">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="15" height="15" fill="#A1896E"/>
-              </svg>
+          <div class="stats-item text-center">
+            <!-- Value -->
+            <div class="stats-item-value">
+              3480 SF
             </div>
-            <h3 class="mb-0">3480 SF</h3>
-            <p class="mt-0 floorplant__secondaryComponent-subtitle" >Warehouse</p>  
+            <!-- Title -->
+            <p class="stats-item-title text-muted">
+              Warehouse
+            </p>
           </div>
           
         </div>

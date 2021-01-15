@@ -37,7 +37,7 @@
   
   .floorplant__secondaryBodyMain-subtitle {
     color: #7B7B7B;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 10rem;
   }
 
@@ -48,7 +48,7 @@
 
 
   .floorplant__thirdIconsMain-title {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
   }
 
   .floorplant__thirdIconsMain-title.second {
@@ -60,6 +60,7 @@
     width: 100px;
     height: 100px;
   }
+
 
 </style>
 
@@ -84,9 +85,12 @@
             <span class="breadcrumb-item">
               <a href="{{route('home')}}">Home</a>
             </span>
-            <span class="breadcrumb-item active">
-               Floorplants
+            <span class="breadcrumb-item">
+              <a href="{{route('floorplants')}}">Floorplants</a>
             </span> 
+            <span class="breadcrumb-item active">
+              Site Plan
+           </span> 
           </div>
 
         </div> <!-- / .row -->
@@ -99,53 +103,56 @@
 
 @section('content')
 <div class="container">
-    <div class="d-flex justify-content-end align-items-center my-5">
-      <a href="#">
-        <span class="floorplant__backIcon">
-          <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 35L1 19.6813L19 0.999999" stroke="black"/>
-          </svg>  
-        </span>
+    <div class="d-flex align-items-center my-4">
+      <span class="floorplant__backIcon">
+        <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 35L1 19.6813L19 0.999999" stroke="black"/>
+        </svg>  
+      </span>
+      <a href="{{route('floorplants')}}">
         <span class="ml-2">Back</span>
       </a>
     </div>
     <div class="text-center">
-      <h1>SITE PLAN</h1>
-      <p class="floorplant__secondaryBodyMain-subtitle mb-2">Lorem ipsu lorems el lem su</p>
-      <a href="#" class="btn btn-outline-primary">Download Now</a>
+      <h2>SITE PLAN</h2>
+      <p class="floorplant__secondaryBodyMain-subtitle mb-2">Download the pdf drawing below</p>
+      <a href="{{asset('pdf/a005-site-plan.pdf')}}" class="btn btn-outline-primary" target="_blank">Download Now</a>
     </div>
     <div class="row mb-5">
       <div class="col-md-10 offset-1 d-flex justify-content-center">
-          <img class="img-fluid" src="{{asset('image/floorplants_tercera.png')}}" alt="">
+        <img class="img-fluid" src="{{asset('image/floorplants_tercera.png')}}" alt="">
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col-md-12 floorplant__thirdIconsMain d-flex justify-content-around align-items-center mb-5">
-          <div class="text-center">
-            <div class="floorplant__thirdIconsMain-icons">
-                <img src="{{asset('image/icon/car.svg')}}" alt="">
-            </div>
-            <h3 class="floorplant__thirdIconsMain-title ">74 Spaces</h3>
-            <p>Parking Provided</p>
+{{-- informacion del lugar --}}
+<section class="container">
+  <div class="row">
+        <div class="text-center col-md-4 p-2 order-2 order-md-1">
+          <div class="floorplant__thirdIconsMain-icons">
+              <img src="{{asset('image/icon/car.svg')}}" alt="">
           </div>
+          <h3 class="floorplant__thirdIconsMain-title ">74 Spaces</h3>
+          <p class="floorplant__secondaryComponent-subtitle">Parking Provided</p>
+        </div>
 
-          <div class="text-center">
-            <div class="floorplant__thirdIconsMain-icons mb-1">
-                <img src="{{asset('image/icon/plans.svg')}}" alt="">
-            </div>
-            <h3 class="floorplant__thirdIconsMain-title second text-center">72483,90 SF</h3>
-            <p class="text-center">Total SF</p>
+        <div class="text-center col-md-4 p-2 order-1 order-md-2">
+          <div class="floorplant__thirdIconsMain-icons mb-1">
+              <img src="{{asset('image/icon/plans.svg')}}" alt="">
           </div>
+          <h3 class="floorplant__thirdIconsMain-title second text-center">72483,90 SF</h3>
+          <p class="text-center floorplant__secondaryComponent-subtitle"><b>Total SF</b></p>
+        </div>
 
-          <div class="text-center">
-            <div class="floorplant__thirdIconsMain-icons">
-                <img src="{{asset('image/icon/tree.svg')}}" alt="">
-            </div>
-            <h3 class="floorplant__thirdIconsMain-title third text-center">74 Spaces</h3>
-            <p class="text-center">Parking Provided</p>
+        <div class="text-center col-md-4 p-2 order-3">
+          <div class="floorplant__thirdIconsMain-icons">
+              <img src="{{asset('image/icon/tree.svg')}}" alt="">
           </div>
-      </div>
+          <h3 class="floorplant__thirdIconsMain-title third text-center">36 Trees</h3>
+          <p class="text-center floorplant__secondaryComponent-subtitle">Trees Provided</p>
+        </div>
     </div>
-</div>
+    
+  </div>
+</section>
 @endsection

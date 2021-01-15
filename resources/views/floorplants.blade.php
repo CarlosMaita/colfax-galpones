@@ -84,10 +84,10 @@
 
 @section('content')
 <div class="container">
-    <h1 class="col-md-12 text-center floorplants__title m-5" >Look at <span class="text-primary">THE PLANS</span></h1>
+    <h1 class="col-md-12 text-center floorplants__title mt-5  mb-2 h2" >Look at <span class="text-primary">THE PLANS</span></h1>
 
     <section class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 order-2 order-md-1">
         <h5 class="mb-5">Choose the plane you want to see.</h5>
         <div class=" floorplants__menu">
           <div class="d-flex justify-content-between">
@@ -129,7 +129,7 @@
         </div>
       </div>
 
-      <div class="col-md-6 offset-1 floorplant__principalImage">
+      <div class="col-md-6 offset-1 floorplant__principalImage order-1 order-md-2 m-4">
         <div class="img-effect img-effect-dotted image_background">
           <img class="img-fluid" src="{{asset('image/floorplants_principal.jpg')}}" alt="">
         </div>
