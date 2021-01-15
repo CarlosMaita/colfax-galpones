@@ -182,7 +182,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/45.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_1.jpg" alt="App landing" class="img-fluid">
               </div>
 
             </a> <!-- / .card -->
@@ -195,7 +195,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/90.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_2.jpg" alt="App landing" class="img-fluid">
               </div>
 
             
@@ -209,7 +209,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/57.png" alt="Fullpage scrolling" class="img-fluid">
+                <img src="image/botons/BOTON_3.jpg" alt="Fullpage scrolling" class="img-fluid">
               </div>
 
 
@@ -223,7 +223,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/44.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_4.jpg" alt="App landing" class="img-fluid">
               </div>
 
            
@@ -237,7 +237,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/46.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_5.jpg" alt="App landing" class="img-fluid">
               </div>
 
 
@@ -251,7 +251,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/91.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_6.jpg" alt="App landing" class="img-fluid">
               </div>
 
 
@@ -575,7 +575,7 @@ Home - galpones
             
             <!-- Heading -->
             <h3 class="mb-4">
-              People behind the scenes
+              Contact Us
             </h3>
       
             <!-- Team -->
@@ -587,33 +587,29 @@ Home - galpones
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="assets/img/17.jpg" alt="..." class="card-img-top">
+                  <img src="image/contact-us/contact_carmen.jpg" alt="..." class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body">
                     
                     <!-- Title -->
-                    <h5 class="card-title">
-                    Carmen de Jongh, <small class="text-muted">Realtor</small>
+                    <h5 class="card-title mb-0">
+                    Carmen De Jongh  <small class="text-muted">Florida Real Estate Broker</small>
                     </h5>
 
                     <!-- Text -->
                     <ul class="card-text list-inline list-unstyled">
-                      <li class="list-inline-item">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-whatsapp"></i>
+                          <p class="mb-0">(305) 333-7899</p>
                         </a>
                       </li>
-                      <li class="list-inline-item ml-3">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-twitter"></i>
+                          <p>cdejongh@colfaxrealty.com</p>
                         </a>
                       </li>
-                      <li class="list-inline-item ml-3">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
+                    
                     </ul>
 
                   </div>
@@ -627,31 +623,26 @@ Home - galpones
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="assets/img/18.jpg" alt="..." class="card-img-top">
+                  <img src="image/contact-us/contact_tammy.jpg" alt="..." class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body">
                     
                     <!-- Title -->
-                    <h5 class="card-title">
-                    Tammy Roitman, <small class="text-muted">Realtor</small>
+                    <h5 class="card-title mb-0">
+                    Tammy Roitman  <small class="text-muted">Real Estate Agent</small>
                     </h5>
 
                     <!-- Text -->
                     <ul class="card-text list-inline list-unstyled mb-3">
-                      <li class="list-inline-item">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-whatsapp"></i>
+                          <p class="mb-0">(786) 678-1052</p>
                         </a>
                       </li>
-                      <li class="list-inline-item ml-3">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item ml-3">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
+                          <p>troitman@colfaxrealty.com</p>
                         </a>
                       </li>
                     </ul>
