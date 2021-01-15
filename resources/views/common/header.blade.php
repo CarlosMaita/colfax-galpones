@@ -65,6 +65,11 @@ Gallery
 </a>
 </li>
 <li class="nav-item ">
+<a href="{{route('calculator')}}" class="nav-link">
+Calculator
+</a>
+</li>
+<li class="nav-item ">
 <a href="{{route('blog')}}" class="nav-link">
 Blog
 </a>
