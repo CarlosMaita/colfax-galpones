@@ -53,9 +53,9 @@ Route::middleware('lang')->group(function () {
 		return view('gallery');
 	} )->name('gallery');
 
-	Route::get('/mortgage-calculator ', function() {
+	Route::get('/mortgage-calculator', function() {
 		return view('calculadora');
-	});
+	})->name('calculator');
 
 	Route::get('/mortgage-calculator-report ', function() {
 		return view('reporte_calculadora');

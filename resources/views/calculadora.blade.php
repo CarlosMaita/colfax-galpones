@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-Calculadora - galpones     
+Mortgage calculator - Medley Business Park
 @endsection
 <link rel="stylesheet" type="text/css" href="{{asset('vendor/chartjs/Chart.min.css')}}">
 
@@ -71,7 +71,7 @@ Calculadora - galpones
            
            <!-- Heading -->
            <h5 class="breadcrumb-heading">
-             Help center
+            Mortgage calculator
            </h5>
 
          </div>
@@ -82,7 +82,7 @@ Calculadora - galpones
              <a href="index.html">Home</a>
            </span>
            <span class="breadcrumb-item active">
-             Help center
+              Mortgage calculator
            </span>
          
          </div>
@@ -97,29 +97,28 @@ Calculadora - galpones
    	<div class="row">
       <div class="col-md-11">
         <h1>Mortgage Calculator</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+        <p>Use our home loan calculator to estimate your mortgage payment. 
+          Simply enter the price of the home, your down payment, and details about the home loan to calculate your mortgage payment breakdown.</p>
       </div>
    		<div class="col-md-4">
    			<div class="form-group">
-   				<h6>Home price</h6>
-   				<input class="form-control input-number" id="home_price" type="number" name="">
+   				<h6>Home price (USD)</h6>
+   				<input class="form-control input-number" id="home_price" type="number" name="" value=100000>
    			</div>
    			<div class="form-group">
-   				<h6>Down Payment</h6>
-   				<input class="form-control input-number" id="down_payment" type="number" name="">
+   				<h6>Down Payment (USD)</h6>
+   				<input class="form-control input-number" id="down_payment" type="number" name="" value=20000>
    			</div>
    			<div class="form-group">
-   				<h6>Loan program</h6>
+   				<h6>Loan program (Years)</h6>
    				<select class="form-control" id="loan_program">
-            <option value=30>30-year fixed</option>
-            <option value=15>15-year fixed</option>
+            <option value=30 >30-year fixed</option>
+            <option value=15 >15-year fixed</option>
    				</select>
    			</div>
    			<div class="form-group">
-   				<h6>Interes rate</h6>
-   				<input class="form-control input-number" id="Interes_rate" type="number" name="">
+   				<h6>Interes rate (%)</h6>
+   				<input class="form-control input-number" id="Interes_rate" type="number" name="" value='3.5' step="0.01">
    			</div>
         <!-- <div class="form-group">
           <a class="option_view" id="advanced_option" href="#">Advanced</a>
@@ -177,7 +176,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
    			<div class="d-flex justify-content-between align-items-center">
           <ul class=" p-0 m-0 d-flex justify-content-around align-items-center">
             <li class="mr-4">
-              <a href="#" class=" chart_button" data-chart="donutchart">Breakdonw</a>
+              <a href="#" class=" chart_button" data-chart="donutchart">Breakdown</a>
             </li>
             <!-- <li class="mr-4">
               <a href="#" class=" chart_button" data-chart="linechart" >Schedule</a>
@@ -214,7 +213,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         <div>
           <canvas id="myChart-donut" class="chart"></canvas>
           <canvas id="myChart-line" class="chart" style="display: none;"></canvas>
-          <h5 id="your_payment"></h5>
+          <h5 class="text-center p-4 h2" id="your_payment"></h5>
         </div>
    		</div>
    	</div>
@@ -242,7 +241,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
            <!-- Subheading -->
            <p class="text-muted mb-5">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptas quos odio quidem, nesciunt est repudiandae quae libero voluptatem sit.
+            Our mortgage payments calculator can help you quickly estimate the monthly mortgage payments for your new home.  Here’s the info you’ll need to enter into the mortgage calculator:
            </p>
 
            <!-- Items -->
@@ -257,7 +256,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
                    <!-- Icon -->
                    <div class="card-icon text-primary">
-                     <span class="icon icon-at"></span>
+                     <span class="icon icon-price"></span>
                    </div>
                    
                    <!-- Title -->
@@ -438,19 +437,21 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
             type: 'doughnut',
             data: {
               datasets: [{
-                data: value ? [...value] : [10, 6 , 8],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)'
-                ],
+                data: value ? [...value] : [1],
+                backgroundColor: ['#ab967d'],
+                borderWidth:['5'],
+                weight: ['1'],
               }],
+              
               labels: [
-                  'P&I',
-                  'Yellow',
-                  'Blue'
+                  'Principal & Interest',
+                  // 'Tax',
+                  // 'Blue'
               ],
+              
+              
             },
+            
         });
       }
 
@@ -528,9 +529,10 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
               Interes_rate_number  =       parseFloat(Interes_rate.value)
               
               pago_total = cuotas(Interes_rate_number, loan_program_number, home_price_number, down_payment_number);
+              pago_total = pago_total >= 0 ? pago_total : 0 ; 
 
               your_payment.textContent = `
-                Your payment is : $ ${pago_total}
+                Your payment is  $ ${pago_total}
               `
               grafico_value = [pago_total]
               donutChart(grafico_value)
@@ -587,6 +589,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
      document.addEventListener('DOMContentLoaded', () => {
       init()
       loadCharts()
+      calcularPrecio()
      })
    </script>
 @endsection
