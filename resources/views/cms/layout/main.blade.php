@@ -239,6 +239,12 @@
                   <p>Blog Articles</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{route('blog.readers')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Newsletter Readers</p>
+                </a>
+              </li>
             </ul>
           </li>
           @endif
