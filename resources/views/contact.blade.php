@@ -44,16 +44,16 @@ Contacto - galpones
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Contact
+              @lang('Contact')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item active">
-              Contact
+            @lang('Contact')
             </span> 
           </div>
 
@@ -66,7 +66,7 @@ Contacto - galpones
 
 <!-- FORM
 ================================================== -->
-<section class="section pb-0">
+<section class="section pt-6 pb-0">
 
   <!-- Content -->
   <div class="container">
@@ -83,7 +83,7 @@ Contacto - galpones
 
         <!-- Title -->
         <h6 class="title">
-          Contact form and information
+          @lang('CONTACT FORM AND INFORMATION')
         </h6>
         
       </div>
@@ -91,7 +91,7 @@ Contacto - galpones
 
         <!-- Heading -->
         <h3 class="mb-4">
-          Have questions? Send us an <span class="text-primary">e-mail</span>
+          @lang('Have questions? Send us an')<span class="text-primary"> @lang('e-mail')</span>
         </h3>
 
         <!-- Subheading -->
@@ -106,7 +106,7 @@ Contacto - galpones
             <div class="form-group col-md-6">
               
               <!-- Name -->
-              <label>Full name</label>
+              <label>@lang('Full name')</label>
               <div class="input-group">
                 <input type="text" class="form-control order-1" required name="name">
                 <div class="input-group-append order-0">
@@ -125,7 +125,7 @@ Contacto - galpones
             <div class="form-group col-md-6">
               
               <!-- Email -->
-              <label>Email address</label>
+              <label>@lang('Email address')</label>
               <div class="input-group">
                 <input type="email" class="form-control order-1" required name="email">
                 <div class="input-group-append order-0">
@@ -143,7 +143,7 @@ Contacto - galpones
             <div class="form-group col-md-12">
               
               <!-- Phone -->
-              <label>Telephone </label>
+              <label>@lang('Telephone')</label>
               <div class="input-group">
                 <input type="number" class="form-control  order-1" required name="telefono">
                 <div class="input-group-append order-0">
@@ -162,7 +162,7 @@ Contacto - galpones
             <div class="form-group col-12">
               
               <!-- Message -->
-              <label>Your comments</label>
+              <label>@lang('Your comments')</label>
               <textarea class="form-control" name="comentario" required rows="7"></textarea>
               
             </div>
@@ -172,12 +172,12 @@ Contacto - galpones
               
               <!-- Submit -->
               <button type="submit" class="btn btn-outline-primary">
-                Send message
+              @lang('Send message')
               </button>
 
               <!-- Reset -->
               <button type="reset" class="btn btn-link">
-                Reset form
+              @lang('Reset form')
               </button>
 
             </div>
@@ -201,7 +201,7 @@ Contacto - galpones
         
         <!-- Title -->
         <h6 class="title">
-          Our offices
+        @lang('Our offices')
         </h6>
 
       </div>
@@ -209,7 +209,7 @@ Contacto - galpones
 
         <!-- Heading -->
         <h3 class="mb-4">
-          Want to talk <span class="text-primary">in person</span>? Call us or visit us
+        @lang('Want to talk') <span class="text-primary">@lang('in person')</span>@lang('? Call us or visit us')
         </h3>
 
         <!-- Subheading -->
@@ -223,7 +223,7 @@ Contacto - galpones
             
             <!-- Heading -->
             <h5>
-              Location:
+            @lang('Location'):
             </h5>
             
             <!-- Address -->
@@ -233,7 +233,7 @@ Contacto - galpones
 
             <!-- Heading -->
             <h5 class="mt-5">
-              Email:
+            @lang('Email'):
             </h5>
             
             <!-- Address -->
@@ -248,7 +248,7 @@ Contacto - galpones
 
             <!-- Heading -->
             <h5>
-              Call us:
+            @lang('Call us'):
             </h5>
             
             <!-- Phone -->
@@ -284,7 +284,7 @@ Contacto - galpones
 
             <!-- Heading -->
             <h5>
-              Email:
+            @lang('Email'):
             </h5>
             
             <!-- Phone -->

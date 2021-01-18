@@ -33,16 +33,16 @@
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Location
+              @lang('Location')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item active">
-                Location
+            @lang('Location')
             </span> 
           </div>
 
@@ -58,7 +58,7 @@
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-md-8 col-offset-2 text-center">
-             <h2 class="mb-5 pb-1">The best strategic location for your business.</h2>
+             <h2 class="mb-5 pb-1">@lang('The best strategic location for your business')</h2>
              <p class="text-center text-muted mb-3 text-sm">
              The Municipality of Medley is bordered by the Town of Hialeah Gardens on the northwest, the City of Hialeah on the northeast, the City of Miami Springs on the southeast, the City of Doral on the south and is considered an unincorporated area to Miami-Dade County on the west.
             </p>

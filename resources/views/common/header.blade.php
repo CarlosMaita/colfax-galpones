@@ -46,7 +46,7 @@ Instagram
 <ul class="navbar-nav ml-auto">
 <li class="nav-item ">
 <a href="{{route('home')}}" class="nav-link">
-Home
+@lang('Home')
 </a>
 </li>
 <li class="nav-item ">
@@ -56,17 +56,17 @@ Home
 </li>
 <li class="nav-item ">
 <a href="{{route('floorplants')}}" class="nav-link">
-floorplants
+@lang('Floorplants')
 </a>
 </li>
 <li class="nav-item ">
 <a href="{{route('gallery')}}" class="nav-link">
-Gallery
+@lang('Gallery')
 </a>
 </li>
 <li class="nav-item ">
 <a href="{{route('calculator')}}" class="nav-link">
-Calculator
+@lang('Calculator')
 </a>
 </li>
 <li class="nav-item ">
@@ -76,7 +76,7 @@ Blog
 </li>
 <li class="nav-item ">
 <a href="{{route('contact')}}" class="nav-link">
-Contact
+@lang('Contact')
 </a>
 </li>
 <li class="nav-item-divider">

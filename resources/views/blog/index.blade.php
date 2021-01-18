@@ -44,7 +44,7 @@
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item active">
               Blog
@@ -238,7 +238,7 @@
             
             <!-- Heading -->
             <h3 class="mb-4 mb-md-0 text-white">
-              Get updates directly into your mailbox
+              @lang('Get updates directly into your mailbox')
             </h3>
 
           </div>

@@ -61,16 +61,16 @@
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Floorplants
+            @lang('Floorplants')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item active">
-               Floorplants
+            @lang('Floorplants')
             </span> 
           </div>
 
@@ -84,11 +84,11 @@
 
 @section('content')
 <div class="container">
-    <h1 class="col-md-12 text-center floorplants__title mt-5  mb-2 h2" >Look at <span class="text-primary">THE PLANS</span></h1>
+    <h1 class="col-md-12 text-center floorplants__title mt-5  mb-2 h2" >@lang('Look at') <span class="text-primary">@lang('THE PLANS')</span></h1>
 
     <section class="row">
       <div class="col-md-5 order-2 order-md-1">
-        <h5 class="mb-5">Choose the plane you want to see.</h5>
+        <h5 class="mb-5">@lang('Choose the plane you want to see')</h5>
         <div class=" floorplants__menu">
           <div class="d-flex justify-content-between">
             <div>
