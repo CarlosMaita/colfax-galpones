@@ -3,10 +3,9 @@
 </footer> -->
 
 <footer class="section bg-dark">
-
+<div class="bg-cover" style="background-image: url(image/footer.jpg)"></div>
 <!-- Triangles -->
-<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
 
 <!--Content -->
 
