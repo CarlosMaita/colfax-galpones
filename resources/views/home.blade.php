@@ -590,7 +590,7 @@ Home - galpones
                   <img src="image/contact-us/contact_carmen.jpg" alt="..." class="card-img-top">
 
                   <!-- Body -->
-                  <div class="card-body">
+                  <div class="card-body pb-1">
                     
                     <!-- Title -->
                     <h5 class="card-title mb-0">
