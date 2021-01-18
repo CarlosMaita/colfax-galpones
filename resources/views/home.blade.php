@@ -587,7 +587,7 @@ Home - galpones
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="{{ asset('image/contact-us/contact_carmen.jpg') }} " alt="..." class="card-img-top">
+                  <img src="{{ asset('image/contact-us/contact_carmen.jpg')}} " alt="photo-carmen" class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body">
@@ -623,7 +623,7 @@ Home - galpones
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="{{ asset('image/contact-us/contact_tammy.jpg') }}" alt="..." class="card-img-top">
+                  <img src="{{ asset('image/contact-us/contact_tammy.jpg') }}" alt="photo-tammy" class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body">

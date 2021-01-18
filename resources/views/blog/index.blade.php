@@ -111,6 +111,8 @@
     <section>
       <div class="container section pb-0">
         <div class="row align-items-stretch">
+          @isset($posts)
+              
           @foreach($posts as $post)
           <div class="col-12 col-lg-4 mb-3">
             <a class="card h-100" href="{{route('blog.show', $post->slug)}}">
@@ -146,6 +148,7 @@
 
           </div>
           @endforeach
+          @endisset
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
@@ -164,15 +167,19 @@
 
             <!-- Sidenav -->
             <nav class="sidenav d-flex flex-column mb-5 mb-md-0">
+              @isset($categorias)
               @foreach($categorias as $categoria)
                 <a class="text-uppercase text-xs mb-2" href="{{route('blog.category.show', $categoria->slug)}}" title="{{$categoria->description}}">
                   {{$categoria->name}}
                 </a>
               @endforeach
+              @endisset
             </nav>
 
           </div>
           <div class="col-12 col-md-9 col-lg-10 order-md-1">
+            @isset($random_posts)
+                
             @foreach($random_posts as $random_post)
               <a class="row align-items-center text-nounderline" href="{{route('blog.show', $random_post->slug)}}">
                 <div class="col-12 col-md-3">
@@ -209,6 +216,8 @@
                 <hr class="my-4">
               @endif 
             @endforeach
+            @endisset
+
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
