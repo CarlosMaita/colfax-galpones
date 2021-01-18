@@ -118,7 +118,7 @@ Home - galpones
                 </h3>
 
                 <!-- Button -->
-                <p class="text-center mb-0">
+                <p class="text-center mb-5">
                   <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
                     Purchase now
                   </a>
@@ -178,7 +178,7 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="app.html" class="card border-0 mb-3 mb-md-0">
+            <a href="#" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
@@ -191,11 +191,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="company.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('location')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="image/botons/BOTON_2.jpg" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_2.jpg" alt="location" class="img-fluid">
               </div>
 
             
@@ -205,11 +205,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="fullpage.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('floorplants')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="image/botons/BOTON_3.jpg" alt="Fullpage scrolling" class="img-fluid">
+                <img src="image/botons/BOTON_3.jpg" alt="floorplants" class="img-fluid">
               </div>
 
 
@@ -219,11 +219,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="product.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('gallery')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="image/botons/BOTON_4.jpg" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_4.jpg" alt="gallery" class="img-fluid">
               </div>
 
            
@@ -233,11 +233,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="real-estate.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('blog')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="image/botons/BOTON_5.jpg" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_5.jpg" alt="blog" class="img-fluid">
               </div>
 
 
@@ -247,11 +247,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="restaurant.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('contact')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="image/botons/BOTON_6.jpg" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_6.jpg" alt="contact" class="img-fluid">
               </div>
 
 
