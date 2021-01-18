@@ -11,14 +11,14 @@
 <meta property="og:url" content="https://metatags.io/">
 <meta property="og:title" content="Home — Tailor a space that suits all your needs.">
 <meta property="og:description" content="Medley Business Park is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us.">
-<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="og:image" content="{{asset('image/front.png')}}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://metatags.io/">
 <meta property="twitter:title" content="Home — Tailor a space that suits all your needs.">
 <meta property="twitter:description" content="Medley Business Park is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us.">
-<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="twitter:image" content="{{asset('image/front.png')}}">
 @endsection
 
 @section('title')
@@ -118,7 +118,7 @@ Home - galpones
                 </h3>
 
                 <!-- Button -->
-                <p class="text-center mb-0">
+                <p class="text-center mb-5">
                   <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
                     Purchase now
                   </a>
@@ -178,11 +178,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="app.html" class="card border-0 mb-3 mb-md-0">
+            <a href="#" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/45.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_1.jpg" alt="App landing" class="img-fluid">
               </div>
 
             </a> <!-- / .card -->
@@ -191,11 +191,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="company.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('location')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/90.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_2.jpg" alt="location" class="img-fluid">
               </div>
 
             
@@ -205,11 +205,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="fullpage.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('floorplants')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/57.png" alt="Fullpage scrolling" class="img-fluid">
+                <img src="image/botons/BOTON_3.jpg" alt="floorplants" class="img-fluid">
               </div>
 
 
@@ -219,11 +219,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="product.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('gallery')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/44.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_4.jpg" alt="gallery" class="img-fluid">
               </div>
 
            
@@ -233,11 +233,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="real-estate.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('blog')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/46.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_5.jpg" alt="blog" class="img-fluid">
               </div>
 
 
@@ -247,11 +247,11 @@ Home - galpones
           <div class="col-md-4 p-1">
         
             <!-- Item -->
-            <a href="restaurant.html" class="card border-0 mb-3 mb-md-0">
+            <a href="{{route('contact')}}" class="card border-0 mb-3 mb-md-0">
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="assets/img/91.png" alt="App landing" class="img-fluid">
+                <img src="image/botons/BOTON_6.jpg" alt="contact" class="img-fluid">
               </div>
 
 
@@ -297,7 +297,7 @@ Home - galpones
 
               <p class="mb-5 mb-md-0">
                 <a href="contact.html" class="btn btn-outline-primary">
-                  Get in touch with us
+                  Get in touch with us**
                 </a>
               </p>
   
@@ -575,7 +575,7 @@ Home - galpones
             
             <!-- Heading -->
             <h3 class="mb-4">
-              People behind the scenes
+              Contact Us
             </h3>
       
             <!-- Team -->
@@ -587,33 +587,29 @@ Home - galpones
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="assets/img/17.jpg" alt="..." class="card-img-top">
+                  <img src="image/contact-us/contact_carmen.jpg" alt="..." class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body">
                     
                     <!-- Title -->
-                    <h5 class="card-title">
-                    Carmen de Jongh, <small class="text-muted">Realtor</small>
+                    <h5 class="card-title mb-0">
+                    Carmen De Jongh  <small class="text-muted">Florida Real Estate Broker</small>
                     </h5>
 
                     <!-- Text -->
                     <ul class="card-text list-inline list-unstyled">
-                      <li class="list-inline-item">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-whatsapp"></i>
+                          <p class="mb-0">(305) 333-7899</p>
                         </a>
                       </li>
-                      <li class="list-inline-item ml-3">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-twitter"></i>
+                          <p>cdejongh@colfaxrealty.com</p>
                         </a>
                       </li>
-                      <li class="list-inline-item ml-3">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
+                    
                     </ul>
 
                   </div>
@@ -627,31 +623,26 @@ Home - galpones
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="assets/img/18.jpg" alt="..." class="card-img-top">
+                  <img src="image/contact-us/contact_tammy.jpg" alt="..." class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body">
                     
                     <!-- Title -->
-                    <h5 class="card-title">
-                    Tammy Roitman, <small class="text-muted">Realtor</small>
+                    <h5 class="card-title mb-0">
+                    Tammy Roitman  <small class="text-muted">Real Estate Agent</small>
                     </h5>
 
                     <!-- Text -->
                     <ul class="card-text list-inline list-unstyled mb-3">
-                      <li class="list-inline-item">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-whatsapp"></i>
+                          <p class="mb-0">(786) 678-1052</p>
                         </a>
                       </li>
-                      <li class="list-inline-item ml-3">
+                      <li>
                         <a href="#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item ml-3">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
+                          <p>troitman@colfaxrealty.com</p>
                         </a>
                       </li>
                     </ul>

@@ -11,14 +11,14 @@
 <meta property="og:url" content="https://metatags.io/">
 <meta property="og:title" content="Gallery —  Visit our product gallery">
 <meta property="og:description" content="Thanks to our exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.">
-<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="og:image" content="{{asset('image/front.png')}}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://metatags.io/">
 <meta property="twitter:title" content="Gallery —  Visit our product gallery">
 <meta property="twitter:description" content="Thanks to our exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.">
-<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="twitter:image" content="{{asset('image/front.png')}}">
 @endsection
 
 {{-- titulo  --}}
