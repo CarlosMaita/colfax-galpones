@@ -90,10 +90,12 @@ Mortgage calculator - Medley Business Park
      </div> <!-- / .container -->
    </nav>
    
+   @endsection
 
+   @section('content')       
    <!-- CALCUADORA
    ================================================== -->
-   <section class="container section">
+   <section class="container section p-5">
    	<div class="row">
       <div class="col-md-11">
         <h1>@lang('Mortgage Calculator')</h1>
@@ -176,7 +178,9 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
    			<div class="d-flex justify-content-between align-items-center">
           <ul class=" p-0 m-0 d-flex justify-content-around align-items-center">
             <li class="mr-4">
-              <a href="#" class=" chart_button" data-chart="donutchart">Breakdown</a>
+              <p class="m-0 p-0">
+                <a href="#" class=" chart_button" data-chart="donutchart">Breakdown</a>
+              </p>
             </li>
             <!-- <li class="mr-4">
               <a href="#" class=" chart_button" data-chart="linechart" >Schedule</a>
@@ -221,8 +225,8 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
    <!-- LINKS
    ================================================== -->
-   <section class="section">
-     <div class="container">
+   <section class="container section p-4">
+     <div class="">
        <div class="row">
          <div class="col-md-2">
            
@@ -246,7 +250,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
            <!-- Items -->
            <div class="row">
-             <div class="col-md-4 mb-5">
+             <div class="col-md-4 mb-3">
                
                <!-- Card -->
                <a href="#" class="card mb-3 mb-md-0">
@@ -254,10 +258,10 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   <!-- Icon -->
+                   {{-- <!-- Icon -->
                    <div class="card-icon text-primary">
                      <span class="icon icon-price"></span>
-                   </div>
+                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
@@ -274,7 +278,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                </a> <!-- / .card -->
 
              </div>
-             <div class="col-md-4">
+             <div class="col-md-4 mb-3">
                
                <!-- Card -->
                <a href="#" class="card">
@@ -283,9 +287,9 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <div class="card-body">
 
                    <!-- Icon -->
-                   <div class="card-icon text-primary">
+                   {{-- <div class="card-icon text-primary">
                      <span class="icon icon-edit"></span>
-                   </div>
+                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
@@ -303,7 +307,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
              </div>
 
-             <div class="col-md-4">
+             <div class="col-md-4 mb-3">
                
                <!-- Card -->
                <a href="#" class="card">
@@ -311,10 +315,10 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   <!-- Icon -->
+                   {{-- <!-- Icon -->
                    <div class="card-icon text-primary">
                      <span class="icon icon-edit"></span>
-                   </div>
+                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
@@ -323,7 +327,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     Your loan program can affect your interest rate and monthly payments. Choose from 30-year fixed, 15-year fixed, and 5/1 ARM in the calculator.
+                     Your loan program can affect your interest rate and monthly payments. Choose from 30-year fixed & 15-year fixed in the calculator.
                    </p>
                  
                  </div>
@@ -332,7 +336,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
              </div>
 
-             <div class="col-md-4">
+             <div class="col-md-4 mb-3">
                
                <!-- Card -->
                <a href="#" class="card">
@@ -340,10 +344,10 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   <!-- Icon -->
+                   {{-- <!-- Icon -->
                    <div class="card-icon text-primary">
                      <span class="icon icon-edit"></span>
-                   </div>
+                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
@@ -361,7 +365,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
              </div>
 
-             <div class="col-md-4">
+             <div class="col-md-4 mb-3">
                
                <!-- Card -->
                <a href="#" class="card">
@@ -369,11 +373,11 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   <!-- Icon -->
+                   {{-- <!-- Icon -->
                    <div class="card-icon text-primary">
                      <span class="icon icon-edit"></span>
                    </div>
-                   
+                    --}}
                    <!-- Title -->
                    <h5 class="card-title">
                      Property Tax
@@ -390,7 +394,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
 
              </div>
 
-             <div class="col-md-4">
+             <div class="col-md-4 mb-3">
                
                <!-- Card -->
                <a href="#" class="card">
@@ -399,9 +403,9 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <div class="card-body">
 
                    <!-- Icon -->
-                   <div class="card-icon text-primary">
+                   {{-- <div class="card-icon text-primary">
                      <span class="icon icon-edit"></span>
-                   </div>
+                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
@@ -425,6 +429,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
        </div> <!-- / .row -->
      </div> <!-- / .container -->
    </section>
+
 
    <script type="text/javascript" src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
    <script type="text/javascript">
