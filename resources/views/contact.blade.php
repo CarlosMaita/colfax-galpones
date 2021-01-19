@@ -91,12 +91,12 @@ Contacto - galpones
 
         <!-- Heading -->
         <h3 class="mb-4">
-          @lang('Have questions? Send us an')<span class="text-primary"> @lang('e-mail')</span>
+          @lang('Do you want to contact us?')
         </h3>
 
         <!-- Subheading -->
         <p class="text-muted mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis magnam, saepe est voluptas iste obcaecati cum odit alias minus ipsa fuga ratione tempora officia sint neque fugiat similique asperiores perferendis.**
+          @lang('text-contact-01')
         </p>
 
         <!-- Form -->
@@ -214,7 +214,7 @@ Contacto - galpones
 
         <!-- Subheading -->
         <p class="text-muted mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum facilis, atque officiis possimus totam placeat maiores at tempore nulla corporis rem aliquid iusto ab, distinctio, nostrum cumque asperiores!***
+          @lang('text-contact-02')
         </p>
         
         <!-- Content -->

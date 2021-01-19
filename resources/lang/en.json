@@ -22,7 +22,7 @@
     "THE PLANS" : "THE PLANS",
     "Mortgage Calculator" : "Mortgage Calculator",
     "CONTACT FORM AND INFORMATION" : "CONTACT FORM AND INFORMATION",
-    "Have questions? Send us an" : "Have questions? Send us an",
+    "Do you want to contact us?" : "Do you want to <span class='text-primary'>contact us</span>?",
     "e-mail" : "e-mail",
     "Full name" : "Full name",
     "Email address" : "Email address",
@@ -38,5 +38,8 @@
     "Email" : "Email",
     "Get updates directly into your mailbox" : "Get updates directly into your mailbox",
     "Florida Real Estate Broker" : "Florida Real Estate Broker",
-    "Real Estate Agent" : "Real Estate Agent"
+    "Real Estate Agent" : "Real Estate Agent",
+    "text-contact-01":"Investing in a warehouse requires knowing all the benefits and advantages that your negotiation will have for the growth of your business. Leave it in the hands of professionals with more than 20 years in the real estate and industrial market to guarantee you a large-scale investment.",
+    "text-contact-02":"Our offices are fully available to provide smart solutions for businesses. Contact us and we will provide you with personalized attention."
+
 }
