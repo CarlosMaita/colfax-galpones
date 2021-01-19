@@ -90,11 +90,11 @@ Home - galpones
               <div class="slider-item">
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                @lang('Tailor a space that suits all your needs') <br> 
+                  @lang('Tailor a space that suits all your needs') <br> 
                 </h1>
 
                 <!-- Subheading -->
-                <h3 class="text-white text-muted text-center mb-5">
+                <h3 class="text-white text-center mb-5">
                 Brand new strategically located state-of-the-art warehouse development! 
                 </h3>
 
@@ -114,7 +114,7 @@ Home - galpones
                 </h1>
 
                 <!-- Subheading -->
-                <h3 class="text-white text-muted text-center mb-5">
+                <h3 class="text-white  text-center mb-5">
                 Brand new strategically located state-of-the-art warehouse development! 
                 </h3>
 

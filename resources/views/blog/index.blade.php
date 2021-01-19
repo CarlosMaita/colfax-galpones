@@ -238,7 +238,7 @@
             
             <!-- Heading -->
             <h3 class="mb-4 mb-md-0 text-white">
-              @lang('Get updates directly into your mailbox')
+              @lang('text-newsletter')
             </h3>
 
           </div>
@@ -248,7 +248,7 @@
             <form class="form-mailchimp form-light validate" action="//simpleqode.us15.list-manage.com/subscribe/post-json?u=507744bbfd1cc2879036c7780&id=4523d25e1b&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
               <div id="mc_embed_signup_scroll" class="form-row justify-content-end">
                 <div class="input-group col-md mb-2 mb-md-0">
-                  <input type="email" value="" name="EMAIL" class="required email form-control order-1" id="mce-EMAIL" placeholder="Email address">
+                  <input type="email" value="" name="EMAIL" class="required email form-control order-1" id="mce-EMAIL" placeholder="@lang('Email')">
                   <div class="input-group-append order-0">
                     <div class="input-group-text">
                       <svg class="icon icon-envelope input-group-icon icon-offset" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -269,7 +269,7 @@
                 </div>
                 <div class="clear col-md-auto">
                   <button type="submit" class="btn btn-outline-primary text-white" id="mc-embedded-subscribe">
-                    Sign up
+                    @lang('sign up')
                   </button>
                 </div>
               </div>
