@@ -45,7 +45,7 @@ Contacto - galpones
 
         <!-- Map -->
         <div class="map">
-          <div class="map-container" data-markers="[[40.7127753,-74.0059728]]" data-zoom="12"></div>
+          <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
         </div>
         
       </div>

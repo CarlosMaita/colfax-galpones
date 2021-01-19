@@ -39,16 +39,16 @@ Gallery - galpones
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Gallery
+              @lang('Gallery')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item active">
-              Gallery
+              @lang('Gallery')
             </span> 
           </div>
 
@@ -60,23 +60,23 @@ Gallery - galpones
     
 {{-- contenido  --}}
 @section('content')
-<section class="section">
+<section class="section pt-6">
       <!-- Line 
       <div class="line line-top"></div>-->
 
       <!-- Content -->
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6">
+          <div class="col-md-8 col-lg-8">
 
             <!-- Heading -->
-            <h2 class="text-center mb-4">
-              Inside the house**
+            <h1 class="text-center mb-4">
+              @lang('Tailor a space that suits all your needs')
             </h2>
 
             <!-- Subheading -->
             <p class="text-center text-muted mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.**
+              Medley Business Park is <b>the perfect space to develop your business</b>. Modernity and luxury are just some of the key elements that define us, we offer our clients <b>FLEXIBLE opportunities</b> for tailored spaces that specifically suit your needs. 
             </p>
 
           </div>

@@ -3,10 +3,9 @@
 </footer> -->
 
 <footer class="section bg-dark">
-
+<div class="bg-cover" style="background-image: url(image/footer.jpg)"></div>
 <!-- Triangles -->
-<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
 
 <!--Content -->
 
@@ -27,7 +26,7 @@
         <ul class="list-unstyled list-inline text-md-center">
           <li class="list-inline-item mr-2">
             <a href="{{route('gallery')}}" class="text-white">
-              Gallery
+            @lang('Gallery')
             </a>
           </li>
           <li class="list-inline-item mr-2">
@@ -37,7 +36,7 @@
           </li>
           <li class="list-inline-item">
             <a href="{{route('contact')}}" class="text-white">
-              Contact us
+            @lang('Contact')
             </a>
           </li>
         </ul>
