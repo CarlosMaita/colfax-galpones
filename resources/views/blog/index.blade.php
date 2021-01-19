@@ -267,7 +267,7 @@
               @csrf
               <div id="mc_embed_signup_scroll" class="form-row justify-content-end">
                 <div class="input-group col-md mb-2 mb-md-0">
-                  <input type="email" value="" name="EMAIL" class="required email form-control order-1" id="mce-EMAIL" placeholder="@lang('Email')">
+                  <input type="email" value="" name="correo" class="required email form-control order-1"  placeholder="@lang('Email')">
                   <div class="input-group-append order-0">
                     <div class="input-group-text">
                       <svg class="icon icon-envelope input-group-icon icon-offset" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -283,11 +283,11 @@
                   </div>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div aria-hidden="true" id="mce-hidden-input">
-                    <input type="text" name="ahdjawdja" tabindex="-1" value="">
+                    {{-- <input type="text" name="ahdjawdja" tabindex="-1" value=""> --}}
                   </div>
                 </div>
                 <div class="clear col-md-auto">
-                  <button type="submit" class="btn btn-outline-primary text-white" id="mc-embedded-subscribe">
+                  <button type="submit" class="btn btn-outline-primary text-white" >
                     @lang('sign up')
                   </button>
                 </div>
