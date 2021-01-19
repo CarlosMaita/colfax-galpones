@@ -59,12 +59,6 @@ Home - galpones
      
       <!-- HERO
     ================================================== -->
-    <style>
-    .overlay {
-      background: rgba(0, 0, 0, .15);
-    }
-    
-    </style>
 
     <section class="section section-top section-full">
 
@@ -83,8 +77,8 @@ Home - galpones
       </div>
 
       <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left overlay"></div>
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right overlay"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left "></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
 
       <!-- Content -->
       <div class="container">
