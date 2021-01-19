@@ -59,6 +59,7 @@ Home - galpones
      
       <!-- HERO
     ================================================== -->
+
     <section class="section section-top section-full">
 
       <!-- Slider -->
@@ -76,7 +77,7 @@ Home - galpones
       </div>
 
       <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left "></div>
       <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
 
       <!-- Content -->
@@ -89,7 +90,7 @@ Home - galpones
               <div class="slider-item">
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                 Tailor a space that suits all your needs. <br> 
+                @lang('Tailor a space that suits all your needs') <br> 
                 </h1>
 
                 <!-- Subheading -->
@@ -100,7 +101,7 @@ Home - galpones
                 <!-- Button -->
                 <p class="text-center mb-0">
                   <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
-                    Purchase now
+                  @lang('Purchase now')
                   </a>
                 </p>
               </div>
@@ -109,7 +110,7 @@ Home - galpones
 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                 Tailor a space that suits all your needs. <br> 
+                @lang('Tailor a space that suits all your needs') <br> 
                 </h1>
 
                 <!-- Subheading -->
@@ -120,7 +121,7 @@ Home - galpones
                 <!-- Button -->
                 <p class="text-center mb-5">
                   <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
-                    Purchase now
+                  @lang('Purchase now')
                   </a>
                 </p>
               </div>
@@ -155,7 +156,7 @@ Home - galpones
 
  <!-- PAGES
     ================================================== -->
-    <section class="section" id="pages">
+    <section class="section py-6" id="pages">
 
       <!-- Content -->
       <div class="container">
@@ -164,7 +165,7 @@ Home - galpones
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-            Tailor a space that suits all your needs.
+            @lang('Tailor a space that suits all your needs')
             </h2>
 
             <!-- Subheading -->
@@ -281,7 +282,7 @@ Home - galpones
               
               <!-- Heading -->
               <h2 class="mb-4">
-              Convenient and <span class="text-primary">Flexible</span> spaces
+              @lang('Convenient and') <span class="text-primary">@lang('Flexible')</span> @lang('spaces') 
               </h2>
 
   
@@ -306,7 +307,7 @@ Home - galpones
               
               <!-- Blockquote -->
               <blockquote class="blockquote">
-              <h4>FOR RENT OR SALE</h4>
+              <h4>@lang('FOR RENT OR SALE')</h4>
                 <p>
                 Range from 4.500 SF and up
                 14 units with conditioned office and bathroom, large industrial garage door.
@@ -321,7 +322,7 @@ Home - galpones
   
       <!-- GALLERY
       ================================================== -->
-      <section class="section">
+      <section class="section py-6">
   
         <!-- Line -->
         <div class="line line-top"></div>
@@ -333,7 +334,7 @@ Home - galpones
   
               <!-- Heading -->
               <h2 class="text-center mb-4">
-                The best strategic location for your business.
+              @lang('The best strategic location for your business')
               </h2>
              
               <!-- Subheading -->
@@ -458,7 +459,7 @@ Home - galpones
                     
                     <!-- Heading -->
                     <h3 class="text-center mb-4">
-                     An Investment within your reach
+                    @lang('An Investment within your reach')
                     </h3>
                     
                     <!-- Content -->
@@ -489,23 +490,25 @@ Home - galpones
     ================================================== -->
    <!-- <section class="section pb-0">
 
+        <!-- Content 
       <!-- Content 
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            
-            <!-- Header --
-            <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
+        <!-- Content 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              
+              <!-- Header --
+              <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
 
-          </div>
-        </div> <!-- / .row --
-      </div> <!-- / .container --
+            </div>
+          </div> <!-- / .row --
+        </div> <!-- / .container --
 
-    </section>
+   </section>
 
     <!-- ABOUT
     ================================================== -->
-    <section class="section pb-0">
+    <section class="section pt-6 pb-0">
 
       <!-- Content -->
       <div class="container">
@@ -514,7 +517,7 @@ Home - galpones
             
             <!-- Title -->
             <h6 class="title">
-              Two words about our company
+              @lang('TWO WORDS ABOUT OUR COMPANY')
             </h6>
 
           </div>
@@ -558,7 +561,7 @@ Home - galpones
 
     <!-- TEAM
     ================================================== -->
-    <section class="section pb-0">
+    <section class="section pt-5 pb-0">
       
       <!-- Content -->
       <div class="container">
@@ -567,7 +570,7 @@ Home - galpones
             
             <!-- Title -->
             <h6 class="title">
-              Our team
+            @lang('Our team')
             </h6>
 
           </div>
@@ -575,7 +578,7 @@ Home - galpones
             
             <!-- Heading -->
             <h3 class="mb-4">
-              Contact Us
+             @lang('Contact')
             </h3>
       
             <!-- Team -->
@@ -590,11 +593,11 @@ Home - galpones
                   <img src="{{ asset('image/contact-us/contact_carmen.jpg')}} " alt="photo-carmen" class="card-img-top">
 
                   <!-- Body -->
-                  <div class="card-body">
+                  <div class="card-body pb-1">
                     
                     <!-- Title -->
                     <h5 class="card-title mb-0">
-                    Carmen De Jongh  <small class="text-muted">Florida Real Estate Broker</small>
+                    Carmen De Jongh  <small class="text-muted">@lang('Florida Real Estate Broker')</small>
                     </h5>
 
                     <!-- Text -->
@@ -630,7 +633,7 @@ Home - galpones
                     
                     <!-- Title -->
                     <h5 class="card-title mb-0">
-                    Tammy Roitman  <small class="text-muted">Real Estate Agent</small>
+                    Tammy Roitman  <small class="text-muted">@lang('Real Estate Agent')</small>
                     </h5>
 
                     <!-- Text -->

@@ -39,16 +39,16 @@ Gallery - galpones
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Gallery
+              @lang('Gallery')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item active">
-              Gallery
+              @lang('Gallery')
             </span> 
           </div>
 
@@ -60,7 +60,7 @@ Gallery - galpones
     
 {{-- contenido  --}}
 @section('content')
-<section class="section">
+<section class="section pt-6">
       <!-- Line 
       <div class="line line-top"></div>-->
 

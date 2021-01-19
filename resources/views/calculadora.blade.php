@@ -71,7 +71,7 @@ Mortgage calculator - Medley Business Park
            
            <!-- Heading -->
            <h5 class="breadcrumb-heading">
-            Mortgage calculator
+            @lang('Mortgage Calculator')
            </h5>
 
          </div>
@@ -79,10 +79,10 @@ Mortgage calculator - Medley Business Park
 
            <!-- Breadcrumb -->
            <span class="breadcrumb-item">
-             <a href="index.html">Home</a>
+             <a href="index.html">@lang('Home')</a>
            </span>
            <span class="breadcrumb-item active">
-              Mortgage calculator
+              @lang('Mortgage Calculator')
            </span>
          
          </div>
@@ -96,7 +96,7 @@ Mortgage calculator - Medley Business Park
    <section class="container section">
    	<div class="row">
       <div class="col-md-11">
-        <h1>Mortgage Calculator</h1>
+        <h1>@lang('Mortgage Calculator')</h1>
         <p>Use our home loan calculator to estimate your mortgage payment. 
           Simply enter the price of the home, your down payment, and details about the home loan to calculate your mortgage payment breakdown.</p>
       </div>
