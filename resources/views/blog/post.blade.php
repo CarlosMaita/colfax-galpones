@@ -73,14 +73,14 @@
               <div class="col-auto">
                 
                 <p class="mb-0 text-xs text-muted">
-                  by <strong class="text-body">{{$post->author->name}}</strong> {{$post->created_at->diffForHumans()}}
+                  @lang('by') <strong class="text-body">{{$post->author->name}}</strong> {{$post->created_at->diffForHumans()}}
                 </p>
 
               </div>
             </div> <!-- / .row -->
             
             <!-- Heading -->
-            <h1 class="mb-5 font-weight-bold text-center">
+            <h1 class="mb-2 font-weight-bold text-center">
               {{$post->title}}
             </h1>
             <h2 class="mb-5 text-center">{{$post->description}}</h2>
@@ -133,7 +133,7 @@
 
     <!-- FEATURED
     ================================================== -->
-    <section class="section">
+    <section class="section m-0 p-4">
       <div class="container">
         <div class="row align-items-stretch">
         @foreach($random_posts as $random_post)
@@ -147,14 +147,14 @@
                   <div class="col">
                     
                     <p class="mb-0 text-xs text-muted">
-                      by <strong class="text-body">{{$random_post->author->name}}</strong> {{$random_post->created_at->diffForHumans()}}
+						@lang('by') <strong class="text-body">{{$random_post->author->name}}</strong> {{$random_post->created_at->diffForHumans()}}
                     </p>
 
                   </div>
                 </div> <!-- / .row -->
                 
                 <!-- Heading -->
-                <h4>
+                <h4 class="">
                   {{$random_post->title}}
                 </h4>
 

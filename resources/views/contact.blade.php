@@ -64,9 +64,25 @@ Contacto - galpones
 
 @section('content')
 
+<!-- MAP
+================================================== -->
+<section class="section m-2 p-5">
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+
+</section>
+
+
 <!-- FORM
 ================================================== -->
-<section class="section pt-6 pb-0">
+<section class="section pt-0 pb-0">
 
   <!-- Content -->
   <div class="container">
