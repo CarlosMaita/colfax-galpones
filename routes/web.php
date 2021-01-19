@@ -70,6 +70,7 @@ Route::middleware('lang')->group(function () {
 	Route::get('/autor/{name}', 'HomeController@blogByAuthor')->name('blog.autor');
 	Route::get('/blog-categorias/{slug}', 'HomeController@blogByCategories')->name('blog.category.show');
 	Route::get('/blog-keywords/{name}', 'HomeController@blogByTag')->name('blog.tag.show');
+	Route::post('/blog/email', 'Cms\blog\ReaderController@agregarReader')->name('blog.newsletter');
 	Auth::routes();
 });
 
@@ -175,6 +176,9 @@ Route::middleware('blog')->group(function () {
 	Route::get('/get/comments/{id}', 'Cms\blog\BlogCommentController@getComments');
 
 	Route::post('/delete/comment/{id}', 'Cms\blog\BlogCommentController@deleteComment');
+
+		/*--------------- READERS --------------*/
+	Route::get('/cms/blog/readers', 'Cms\blog\ReaderController@index')->name('blog.readers');
 
 });
 

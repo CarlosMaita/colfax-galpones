@@ -57,6 +57,23 @@
 @endsection
 
 @section('content')
+@if (session('error'))
+    <div class="alert alert-danger" role="alert">
+        {{ session('error') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+@endif
+
+@if (session('message'))
+    <div class="alert alert-success" role="alert">
+        {{ session('message') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+@endif
 <!-- HERO
     ================================================== -->
     @isset($recent_post)
@@ -246,7 +263,8 @@
           <div class="col-12 col-md">
               
             <!-- Form -->
-            <form class="form-mailchimp form-light validate" action="//simpleqode.us15.list-manage.com/subscribe/post-json?u=507744bbfd1cc2879036c7780&id=4523d25e1b&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+            <form class="form-mailchimp form-light validate" action="{{route('blog.newsletter')}}" method="POST" name="mc-embedded-subscribe-form" novalidate="">
+              @csrf
               <div id="mc_embed_signup_scroll" class="form-row justify-content-end">
                 <div class="input-group col-md mb-2 mb-md-0">
                   <input type="email" value="" name="EMAIL" class="required email form-control order-1" id="mce-EMAIL" placeholder="@lang('Email')">
@@ -265,7 +283,7 @@
                   </div>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div aria-hidden="true" id="mce-hidden-input">
-                    <input type="text" name="b_507744bbfd1cc2879036c7780_4523d25e1b" tabindex="-1" value="">
+                    <input type="text" name="ahdjawdja" tabindex="-1" value="">
                   </div>
                 </div>
                 <div class="clear col-md-auto">
