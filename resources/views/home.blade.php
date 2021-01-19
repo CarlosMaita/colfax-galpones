@@ -297,8 +297,8 @@ Home - galpones
               </p>
 
               <p class="mb-5 mb-md-0">
-                <a href="contact.html" class="btn btn-outline-primary">
-                  Get in touch with us**
+                <a href="{{route('contact')}}" class="btn btn-outline-primary">
+                  Get in touch with us
                 </a>
               </p>
   
@@ -470,7 +470,7 @@ Home - galpones
 
   
                     <!-- Button -->
-                    <a href="contact.html" class="btn btn-outline-primary">
+                    <a href="{{route('contact')}}" class="btn btn-outline-primary">
                       Schedule a showing
                     </a>
   
@@ -525,7 +525,7 @@ Home - galpones
             
             <!-- Heading -->
             <h3 class="mb-4">
-              We help people find great products at a <span class="text-primary">reasonable</span> price**
+              Why <span class="text-primary">Medley</span>?
             </h3>
 
             <!-- Content -->
