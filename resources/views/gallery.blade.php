@@ -67,16 +67,16 @@ Gallery - galpones
       <!-- Content -->
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6">
+          <div class="col-md-8 col-lg-8">
 
             <!-- Heading -->
-            <h2 class="text-center mb-4">
-              Inside the house**
+            <h1 class="text-center mb-4">
+              @lang('Tailor a space that suits all your needs')
             </h2>
 
             <!-- Subheading -->
             <p class="text-center text-muted mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.**
+              Medley Business Park is <b>the perfect space to develop your business</b>. Modernity and luxury are just some of the key elements that define us, we offer our clients <b>FLEXIBLE opportunities</b> for tailored spaces that specifically suit your needs. 
             </p>
 
           </div>
