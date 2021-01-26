@@ -26,53 +26,75 @@ Home - galpones
 @endsection
 
 @section('content')
- <!-- MODALS
-    ================================================== -->
-    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-lg" role="document">
-          <div class="modal-content">
-  
-            <!-- Header -->
-            <div class="modal-header">
-  
-              <!-- Title -->
-              <h4 class="modal-title text-white" id="modal-video-header">
-                Video demonstration
-              </h4>
-  
-              <!-- Close -->
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-  
-            </div>
-            <div class="modal-body">
-          
-              <!-- Video -->
-              <video src="assets/video/1.mp4" class="img-fluid" controls></video>
-  
-            </div>
-          </div> <!-- / .modal-content -->
-        </div> <!-- / .modal-dialog -->
-      </div> <!-- / .modal -->
-  
      
       <!-- HERO
     ================================================== -->
+<style>
+  .title-main{
+    background: #9F876E;
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    padding: 5px;
+    width: 70vw;
+  }
 
+.title-main > h1{
+  font-family: Raleway;
+}
+
+.subtitle-main > h3{
+}
+  .subtitle-main{
+    background: #76644E;
+    position: absolute;
+    z-index: 100;
+    right:0;
+    padding: 5px;
+    top: 280px;
+    width: 70vw;
+  }
+
+@media only screen and (max-width: 360px) {
+  
+    .title-main > h1{
+    font-family: Raleway;
+    font-size: small;
+  }
+  .subtitle-main > h3{
+    display: none
+  }
+
+}
+
+</style>
+    
     <section class="section section-top section-full">
+      
+      <div class="title-main">
+        <!-- Heading -->
+        <h1 class="text-white text-right mr-3">
+          @lang('Tailor a space that suits all your needs') <br> 
+        </h1>
+      </div>
+      <div class="subtitle-main">
+        <!-- Subheading -->
+        <h3 class="text-white text-left ml-3">
+          Brand new strategically located state-of-the-art warehouse development! 
+          </h3>
+      </div>
 
       <!-- Slider -->
       <div class="bg-slider">
         <div class="slider slider-no-controls slider-no-draggable " id="hero-slider-bg">
           <div class="slider-item">
             <!-- Cover -->
-            <div class="bg-cover" style="background-image: url(image/front.png)"></div>
+            <div class="bg-cover" style="background-image: url({{asset('image/front-main.jpg')}})"></div>
           </div>
-          <div class="slider-item">
+          {{-- <div class="slider-item">
             <!-- Cover -->
             <div class="bg-cover" style="background-image: url(image/front2.png)"></div>
-          </div>
+          </div> --}}
         </div>
       </div>
 
@@ -88,16 +110,8 @@ Home - galpones
             <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade" data-bind="slider" data-target="#hero-slider-bg">
              {{-- slider1  --}}
               <div class="slider-item">
-                <!-- Heading -->
-                <h1 class="text-white text-center mb-4">
-                  @lang('Tailor a space that suits all your needs') <br> 
-                </h1>
-
-                <!-- Subheading -->
-                <h3 class="text-white text-center mb-5">
-                Brand new strategically located state-of-the-art warehouse development! 
-                </h3>
-
+                
+                <h1>&nbsp;</h1>
                 <!-- Button -->
                 <p class="text-center mb-0">
                   <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
@@ -106,7 +120,7 @@ Home - galpones
                 </p>
               </div>
              {{-- slider1  --}}
-              <div class="slider-item">
+              {{-- <div class="slider-item">
 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
@@ -124,12 +138,12 @@ Home - galpones
                   @lang('Purchase now')
                   </a>
                 </p>
-              </div>
+              </div> --}}
 
             </div>
 
           </div>
-          <div class="col-6 col-md-2 order-md-1">
+          {{-- <div class="col-6 col-md-2 order-md-1">
 
             <!-- Controls -->
             <div class="text-left">
@@ -148,7 +162,7 @@ Home - galpones
               </a>
             </div>
 
-          </div>
+          </div> --}}
         </div> <!-- / .row -->
       </div> <!-- / .container -->
 
@@ -269,7 +283,7 @@ Home - galpones
   
       <!-- ABOUT
       ================================================== -->
-      <section class="section bg-light">
+      <section class=" section bg-light p-4">
         
         <!-- Triangle -->
         <div class="bg-triangle bg-triangle-dark bg-triangle-top bg-triangle-left"></div>
@@ -429,7 +443,7 @@ Home - galpones
   
       <!-- PROMO
       ================================================== -->
-      <section class="section bg-light">
+      <section class="section bg-light p-5">
   
         <!-- Triangles -->
         <div class="bg-triangle bg-triangle-dark bg-triangle-top bg-triangle-left"></div>

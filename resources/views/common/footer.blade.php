@@ -2,7 +2,7 @@
     <h1>Pie de pagina</h1>
 </footer> -->
 
-<footer class="section bg-dark">
+<footer class="section bg-dark p-5">
 <div class="bg-cover" style="background-image: url(image/footer.jpg)"></div>
 <!-- Triangles -->
 

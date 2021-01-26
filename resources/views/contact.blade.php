@@ -64,6 +64,12 @@ Contacto - galpones
 
 @section('content')
 
+<style>
+  .title{
+    font-size: 1rem;
+  }
+</style>
+
 <!-- MAP
 ================================================== -->
 <section class="section m-2 p-5">
@@ -72,7 +78,7 @@ Contacto - galpones
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
+        <div class="header bg-cover" style="background-image: url({{ asset('image/banner-contacto.jpg') }});"></div>
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->

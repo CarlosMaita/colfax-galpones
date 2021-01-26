@@ -120,7 +120,7 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-10 offset-1 d-flex justify-content-center">
-        <img class="img-fluid" src="{{asset('image/floorplants_tercera.png')}}" alt="">
+        <img class="img-fluid" src="{{asset('image/floorplants_tercera.jpg')}}" alt="">
       </div>
     </div>
   </div>
