@@ -69,18 +69,23 @@
       <div class="order-3 col-12 text-center col-md-4 order-md-2">
         <ul class="list-inline list-unstyled text-md-center">
           <li class="list-inline-item">
-            <a href="#">
+            <a href="https://api.whatsapp.com/send?phone=+13053337899">
               <i class="fab fa-whatsapp"></i>
             </a>
           </li>
           <li class="list-inline-item ml-3">
-            <a href="#">
+            <a href="https://twitter.com/medleybusiness">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li class="list-inline-item ml-3">
-            <a href="#">
+            <a href="https://www.instagram.com/medleybusinesspark/">
               <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item ml-3">
+            <a href="https://www.facebook.com/Medleybusinesspark-105592124717036">
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
         </ul>

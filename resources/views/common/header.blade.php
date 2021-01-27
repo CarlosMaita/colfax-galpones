@@ -18,7 +18,7 @@
 </span>
 </li>
 <li class="nav-item d-md-block d-none">
-<a href="#" class="nav-link">
+<a href="https://api.whatsapp.com/send?phone=+13053337899" class="nav-link" target="_black">
 <i class="fab fa-whatsapp"></i> 
 <span class="d-xl-none ml-2">
 Whatsapp
@@ -26,7 +26,7 @@ Whatsapp
 </a>
 </li>
 <li class="nav-item d-md-block d-none">
-<a href="#" class="nav-link">
+<a href="https://twitter.com/medleybusiness" class="nav-link" target="_black">
 <i class="fab fa-twitter"></i> 
 <span class="d-xl-none ml-2">
 Twitter
@@ -34,10 +34,18 @@ Twitter
 </a>
 </li>
 <li class="nav-item d-md-block d-none">
-<a href="#" class="nav-link">
+<a href="https://www.instagram.com/medleybusinesspark/" class="nav-link" target="_black">
 <i class="fab fa-instagram"></i> 
 <span class="d-xl-none ml-2">
 Instagram
+</span>
+</a>
+</li>
+<li class="nav-item d-md-block d-none">
+<a href="https://www.instagram.com/medleybusinesspark/" class="nav-link" target="_black">
+<i class="fab fa-facebook"></i> 
+<span class="d-xl-none ml-2">
+Facebook
 </span>
 </a>
 </li>
