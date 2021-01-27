@@ -197,7 +197,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="{{ asset('image/botons/BOTON_1.jpg') }}" alt="App landing" class="img-fluid">
+                <img src="{{ asset('image/Botons/BOTON_1.jpg') }}" alt="App landing" class="img-fluid">
               </div>
 
             </a> <!-- / .card -->
@@ -210,7 +210,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="{{ asset('image/botons/BOTON_2.jpg') }}" alt="location" class="img-fluid">
+                <img src="{{ asset('image/Botons/BOTON_2.jpg') }}" alt="location" class="img-fluid">
               </div>
 
             
@@ -224,7 +224,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="{{ asset('image/botons/BOTON_3.jpg') }}" alt="floorplants" class="img-fluid">
+                <img src="{{ asset('image/Botons/BOTON_3.jpg') }}" alt="floorplants" class="img-fluid">
               </div>
 
 
@@ -238,7 +238,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="{{ asset('image/botons/BOTON_4.jpg') }}" alt="gallery" class="img-fluid">
+                <img src="{{ asset('image/Botons/BOTON_4.jpg') }}" alt="gallery" class="img-fluid">
               </div>
 
            
@@ -252,7 +252,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="{{ asset('image/botons/BOTON_5.jpg') }}" alt="blog" class="img-fluid">
+                <img src="{{ asset('image/Botons/BOTON_5.jpg') }}" alt="blog" class="img-fluid">
               </div>
 
 
@@ -266,7 +266,7 @@ Home - galpones
           
               <!-- Image -->
               <div class="card-img-top">
-                <img src="{{ asset('image/botons/BOTON_6.jpg') }}" alt="contact" class="img-fluid">
+                <img src="{{ asset('image/Botons/BOTON_6.jpg') }}" alt="contact" class="img-fluid">
               </div>
 
 
