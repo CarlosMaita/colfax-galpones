@@ -55,7 +55,7 @@ Home - galpones
     width: 70vw;
   }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 768px) {
   
     .title-main > h1{
     font-family: Raleway;
