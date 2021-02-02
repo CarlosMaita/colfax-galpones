@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="{{asset('assets/libs/highlightjs/styles/codepen-embed.css')}}">
     <link rel="stylesheet" href="{{asset('assets/libs/@fortawesome/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/libs/incline-icons/style.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/floating-wpp.css')}}"/>
+
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
@@ -45,15 +47,16 @@
 </head>
 <body>
     <div id="app" > 
-        {{-- whatsapp --}}
-        @include('common.whatsapp')
+        
+          {{-- whatsapp --}}
+         @include('common.whatsapp')
         {{-- Header & Nav  --}}
         @if(isset($navbar_null))
-            {{-- void --}}
+        {{-- void --}}
         @else
-            @include('common.header')
-            {{-- page location --}}
-            @yield('breadcrumb','')
+        @include('common.header')
+        {{-- page location --}}
+        @yield('breadcrumb','')
         @endif
         {{-- contenido --}}
         <main class="" style="min-height: 90vh">
@@ -62,12 +65,15 @@
         {{-- footer --}}
         @include('common.footer')
     </div>
-
+    
+   
+    
      <!-- JAVASCRIPT
     ================================================== -->
     <!-- Global JS -->
     <script src="{{asset('assets/libs/jquery/dist/jquery.min.js')}}"></script>
     {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script> --}}
+    <script src="{{asset('js/floating-wpp.js')}}"></script>
 
     <!-- Plugins JS -->
     <script src="{{asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
@@ -82,7 +88,23 @@
 
     <!-- Theme JS -->
     <script src="{{asset('assets/js/theme.min.js')}}"></script>
-
+  
+<script type="text/javascript">  
+$(document).ready(function(){
+    $('#WAButton').floatingWhatsApp({
+phone: '13053337899', //WhatsApp Business phone number International format-
+//Get it with Toky at https://toky.co/en/features/whatsapp.
+headerTitle: 'Write us by WhatsApp!', //Popup Title
+popupMessage: 'Hello, are you looking for more information on the project?', //Popup Message
+showPopup: true, //Enables popup display
+//    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+headerColor: '#343434', //Custom header color
+// backgroundColor: 'crimson', //Custom background button color
+position: "right"    
+});
+}
+);
+</script>  
 
 </body>
 </html>
