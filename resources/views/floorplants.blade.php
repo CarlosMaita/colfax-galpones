@@ -93,7 +93,7 @@
           <div class="d-flex justify-content-between">
             <div>
               <h4>SITE PLAN</h4>
-              <p>Scaled diagram of building viewed from above</p>
+              <p>Scaled diagram of project viewed from above</p>
             </div>
             <div class=" floorplants__optionMain">
               <a href="{{ route('floorplants.third')}}" class=" d-flex justify-content-between align-items-center">

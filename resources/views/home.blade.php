@@ -55,14 +55,24 @@ Home - galpones
     width: 70vw;
   }
 
+  .btn-primary{
+
+background-color: #a1896e8f;
+}
+
 @media only screen and (max-width: 768px) {
   
     .title-main > h1{
     font-family: Raleway;
-    font-size: small;
+    font-size: medium;
   }
   .subtitle-main > h3{
     display: none
+  }
+
+  .btn-primary{
+
+    background-color: #a1896e8f;
   }
 
 }
@@ -114,7 +124,7 @@ Home - galpones
                 <h1>&nbsp;</h1>
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
+                  <a href="{{route('contact')}}" target="_blank" class="btn btn-primary text-white">
                   @lang('Purchase now')
                   </a>
                 </p>
@@ -485,7 +495,7 @@ Home - galpones
   
                     <!-- Button -->
                     <a href="{{route('contact')}}" class="btn btn-outline-primary">
-                      Schedule a showing
+                      Schedule an appointment
                     </a>
   
                   </div>
@@ -530,9 +540,9 @@ Home - galpones
           <div class="col-md-2">
             
             <!-- Title -->
-            <h6 class="title">
+            {{-- <h6 class="title">
               @lang('TWO WORDS ABOUT OUR COMPANY')
-            </h6>
+            </h6> --}}
 
           </div>
           <div class="col-md-5">

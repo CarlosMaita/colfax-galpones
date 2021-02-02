@@ -45,6 +45,8 @@
 </head>
 <body>
     <div id="app" > 
+        {{-- whatsapp --}}
+        @include('common.whatsapp')
         {{-- Header & Nav  --}}
         @if(isset($navbar_null))
             {{-- void --}}
