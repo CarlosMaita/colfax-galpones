@@ -52,7 +52,18 @@ Home - galpones
     right:0;
     padding: 5px;
     top: 280px;
-    width: 70vw;
+    width: 75vw;
+
+font-style: normal;
+font-weight: bold;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
   }
 
   .btn-primary{
@@ -61,13 +72,21 @@ background-color: #a1896e8f;
 }
 
 @media only screen and (max-width: 768px) {
-  
+  .title-main{
+    top: 140px;
+    width: 80vw;
+  }
+
     .title-main > h1{
+    
     font-family: Raleway;
     font-size: medium;
   }
-  .subtitle-main > h3{
+  .subtitle-main{
     display: none
+  }
+  .subtitle-main > h3{
+    display: none;
   }
 
   .btn-primary{
@@ -99,11 +118,11 @@ background-color: #a1896e8f;
         <div class="slider slider-no-controls slider-no-draggable " id="hero-slider-bg">
           <div class="slider-item">
             <!-- Cover -->
-            <div class="bg-cover" style="background-image: url({{asset('image/front-main.jpg')}})"></div>
+            <div class="bg-cover" style="background-image: url({{asset('image/images/front-main.jpg')}})"></div>
           </div>
           {{-- <div class="slider-item">
             <!-- Cover -->
-            <div class="bg-cover" style="background-image: url(image/front2.png)"></div>
+            <div class="bg-cover" style="background-image: url(image/images/front2.png)"></div>
           </div> --}}
         </div>
       </div>
@@ -189,9 +208,9 @@ background-color: #a1896e8f;
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-            @lang('Tailor a space that suits all your needs')
+             @lang('Tailor a space that suits all your needs')
             </h2>
-
+           
             <!-- Subheading -->
             <p class="text-muted text-center mb-5">
             Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
@@ -200,8 +219,8 @@ background-color: #a1896e8f;
           </div>
         </div> <!-- / .row -->
         <div class="row">
-          <div class="col-md-4 p-1">
-        
+          <div class="col-md-4 p-2">
+            
             <!-- Item -->
             <a href="#" class="card border-0 mb-3 mb-md-0">
           
@@ -370,81 +389,86 @@ background-color: #a1896e8f;
   
             </div>
           </div> <!-- / .row -->
-          <div class="row">
-            <div class="col">
-              
-              <!-- Slider -->
-              <div class="slider slider-no-controls mb-3" data-bind="slider" data-target="#sliderGallerySmall" id="sliderGalleryLarge">
-                <div class="slider-item">
-                  
-                  <!-- Image -->
-                  <img src="image/front.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item">
-                  
-                  <!-- Image -->
-                  <img src="image/oficina.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item">
-                  
-                  <!-- Image -->
-                  <img src="image/mezzanine.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item">
-                  
-                  <!-- Image -->
-                  <img src="image/warehouse.png" alt="..." class="img-fluid">
-                  
-                </div>
-              
-              </div> <!-- / .slider -->
-      
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col">
-              
-              <!-- Slider -->
-              <div class="slider slider-highlight" data-bind="slider" data-target="#sliderGalleryLarge" id="sliderGallerySmall">
-                <div class="slider-item col-6 col-md-3">
-                  
-                  <!-- Image -->
-                  <img src="image/front.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item col-6 col-md-3">
-                  
-                  <!-- Image -->
-                  <img src="image/oficina.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item col-6 col-md-3">
-                  
-                  <!-- Image -->
-                  <img src="image/mezzanine.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item col-6 col-md-3">
-                  
-                  <!-- Image -->
-                  <img src="image/warehouse.png" alt="..." class="img-fluid">
-  
-                </div>
-                <div class="slider-item col-6 col-md-3">
-                  
-                  <!-- Image -->
-                  <img src="image/mezzanine.png" alt="..." class="img-fluid">
-  
-                </div>
-  
-                </div>
-              </div> <!-- / .slider -->
-  
-            </div>
+        <div class="row">
+          <div class="col">
+            <!-- Slider -->
+            <div class="slider slider-no-controls mb-3" data-bind="slider" data-target="#sliderGallerySmall" id="sliderGalleryLarge">
+            
+              <div class="slider-item">                
+                <img src="{{ asset('image/images/front.png')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item">                
+                <img src="{{ asset('image/gallery/exterior1.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item">                
+                <img src="{{ asset('image/gallery/exterior2.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item">                
+                <img src="{{ asset('image/gallery/interior1.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item">                
+                <img src="{{ asset('image/gallery/interior3.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item">
+                <img src="{{ asset('image/images/oficina.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item">                
+                <img src="{{ asset('image/gallery/interior2.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item">
+                <img src="{{ asset('image/images/warehouse.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="{{ asset('image/images/satelital-zona.png')}}" alt="..." class="img-fluid">
+              </div>             
+            </div> 
           </div>
+        </div> 
+
+        <div class="row">
+          <div class="col">
+            <!-- Slider -->
+            <div class="slider slider-highlight" data-bind="slider" data-target="#sliderGalleryLarge" id="sliderGallerySmall">
+              
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/images/front.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/gallery/exterior1.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/gallery/exterior2.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/gallery/interior1.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/gallery/interior3.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/images/oficina.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/gallery/interior2.jpg')}}" alt="..." class="img-fluid" >
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/images/warehouse.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item col-6 col-md-3">
+               <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
+              </div>
+              <div class="slider-item col-6 col-md-3">
+                <img src="{{ asset('image/images/satelital-zona.png')}}" alt="..." class="img-fluid">
+              </div>
+
+              </div>
+            </div> 
+
+          </div>
+        </div>
         </div> <!-- / .container -->
   
       </section>
@@ -466,7 +490,7 @@ background-color: #a1896e8f;
   
               <!-- Image -->
               <div class="text-center">
-                <img src="image/mezzanine.png" alt="..." class="img-fluid">
+                <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
               </div>
   
               <!-- Content -->
@@ -614,7 +638,7 @@ background-color: #a1896e8f;
                 <div class="card card-sm border-0 mb-3 mb-md-0">
                   
                   <!-- Image -->
-                  <img src="{{ asset('image/contact-us/contact_carmen.jpg')}} " alt="photo-carmen" class="card-img-top">
+                  <img src="{{ asset('image/contact-us/contact_carmen.jpg')}}" alt="photo-carmen" class="card-img-top">
 
                   <!-- Body -->
                   <div class="card-body pb-1">
