@@ -52,7 +52,18 @@ Home - galpones
     right:0;
     padding: 5px;
     top: 280px;
-    width: 70vw;
+    width: 75vw;
+
+font-style: normal;
+font-weight: bold;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
   }
 
   .btn-primary{
@@ -61,13 +72,21 @@ background-color: #a1896e8f;
 }
 
 @media only screen and (max-width: 768px) {
-  
+  .title-main{
+    top: 140px;
+    width: 80vw;
+  }
+
     .title-main > h1{
+    
     font-family: Raleway;
     font-size: medium;
   }
-  .subtitle-main > h3{
+  .subtitle-main{
     display: none
+  }
+  .subtitle-main > h3{
+    display: none;
   }
 
   .btn-primary{
@@ -189,9 +208,9 @@ background-color: #a1896e8f;
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-            @lang('Tailor a space that suits all your needs')
+             @lang('Tailor a space that suits all your needs')
             </h2>
-
+           
             <!-- Subheading -->
             <p class="text-muted text-center mb-5">
             Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
@@ -200,8 +219,8 @@ background-color: #a1896e8f;
           </div>
         </div> <!-- / .row -->
         <div class="row">
-          <div class="col-md-4 p-1">
-        
+          <div class="col-md-4 p-2">
+            
             <!-- Item -->
             <a href="#" class="card border-0 mb-3 mb-md-0">
           
