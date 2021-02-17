@@ -31,44 +31,61 @@ Home - galpones
     ================================================== -->
 <style>
   .title-main{
-    background: #9F876E;
+    background:#8a7365;
     position: absolute;
+    top: 180px;
     z-index: 200;
     left: 0;
-    padding: 5px;
-    width: 70vw;
+    padding: 20px;
+    width: 60vw;
+    padding-right:3.5rem;
   }
 
 .title-main > h1{
   font-family: Raleway;
+  font-size: 3.5rem;
 }
 
 .subtitle-main > h3{
+  font-size: 1.85rem;
+  margin: 0;
+  font-family: Raleway;
+  letter-spacing: 0.15em;
 }
   .subtitle-main{
-    background: #76644E;
+    background: #aa947d;
     position: absolute;
     z-index: 100;
     right:0;
-    padding: 5px;
-    top: 280px;
-    width: 75vw;
+    top: 350px;
+    width: 60vw;
+    padding:15px 2rem 5px;
+    
 
-font-style: normal;
-font-weight: bold;
-/* identical to box height */
+    font-style: normal;
+    font-weight: bold;
+  
+    /* identical to box height */
 
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.05em;
-text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    
 
   }
 
-  .btn-primary{
+.btn-primary{
+  background-color: #a1896e8f;
+}
 
-background-color: #a1896e8f;
+
+.subtitle-main_warehouse{
+  font-weight: bold;
+  font-size: 2.95rem;
+  margin: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
@@ -96,8 +113,20 @@ background-color: #a1896e8f;
 
 }
 
+  .main-btn_compra {
+    padding: 0;
+    margin-bottom:0;
+    position: absolute;
+    top:800px; 
+    z-index: 600;
+    left:700px;
+  }
+  .btn-compra-main{
+    font-size: 2rem;
+}
+
 </style>
-    
+
     <section class="section section-top section-full">
       
       <div class="title-main">
@@ -108,8 +137,8 @@ background-color: #a1896e8f;
       </div>
       <div class="subtitle-main">
         <!-- Subheading -->
-        <h3 class="text-white text-left ml-3">
-          Brand new strategically located state-of-the-art warehouse development! 
+        <h3 class="text-white text-left py-2 px-5">
+          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse">Warehouse development</span> 
           </h3>
       </div>
 
@@ -142,11 +171,12 @@ background-color: #a1896e8f;
                 
                 <h1>&nbsp;</h1>
                 <!-- Button -->
-                <p class="text-center mb-0">
-                  <a href="{{route('contact')}}" target="_blank" class="btn btn-primary text-white">
-                  @lang('Purchase now')
-                  </a>
-                </p>
+                <div class="text-center main-btn_compra">
+                    <a href="{{route('contact')}}" target="_blank" class="btn btn-primary text-white btn-compra-main p-4">
+                    @lang('Purchase now')
+                    </a>
+                  </div>
+                
               </div>
              {{-- slider1  --}}
               {{-- <div class="slider-item">
