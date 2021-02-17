@@ -208,12 +208,11 @@ background-color: #a1896e8f;
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-             @lang('Tailor a space that suits all your needs')
+             @lang('An Investment within your reach')
             </h2>
            
             <!-- Subheading -->
-            <p class="text-muted text-center mb-5">
-            Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
+            <p class="text-muted text-center mb-5"> Medley Business Park is <span class="font-weight-bold">the perfect space to develop your business.</span> Modernity and luxury are just some of the key elements that define us, we offer our clients <span class="font-weight-bold">FLEXIBLE opportunities</span> for tailored spaces to specifically suit your needs.
             </p>
 
           </div>
@@ -336,8 +335,7 @@ background-color: #a1896e8f;
   
               <!-- Subheading -->
               <p class="text-muted">
-              <strong>Medley Business Park</strong> is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us, we offer our clients FLEXIBLE opportunities for tailored spaces that specifically suit your needs.  
-              </p>
+              Thanks to its <span class="font-weight-bold">exclusive design and unique details</span>, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.</p>
 
               <p class="mb-5 mb-md-0">
                 <a href="{{route('contact')}}" class="btn btn-outline-primary">
@@ -381,9 +379,9 @@ background-color: #a1896e8f;
               </h2>
              
               <!-- Subheading -->
-              <p class="text-center text-muted mb-5">
-               Vacancy rates less than 4% for the past 10 years.
-               Medley Business Park is located in the Miami-Dade industrial market and Medley Industrial submarket, which are currently exhibiting occupancy rates of 96.2% and 97.1%, respectively.
+              <p class="text-muted mb-5">
+              Medley is one of the four cities with the highest <span class="font-weight-bold">commercial growth in the state of Florida</span>, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region. <br>
+              The commercial development is located along <span class="font-weight-bold">Okeechobee Road. The location offers immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</span>
               </p>
 
   
@@ -507,12 +505,14 @@ background-color: #a1896e8f;
                     
                     <!-- Heading -->
                     <h3 class="text-center mb-4">
-                    @lang('An Investment within your reach')
+                      Vacancy rates less than 4% for the past 10 years
                     </h3>
                     
                     <!-- Content -->
-                    <p class="text-muted text-center">
-                      The South Florida industrial market is one of the strongest markets in the country with continued growth projected over the next few years.
+                    <p class="text-muted">
+                     The Miami-Dade industrial market has 96.2%  of occupancy rate and the Medley Industrial submarket has 97.1% <br>
+                     
+                    The South Florida industrial market is <span class="font-weight-bold">one of the strongest markets in the country</span> with continued growth projected over the next few years. 
                     </p> 
                     
 
@@ -573,7 +573,7 @@ background-color: #a1896e8f;
             
             <!-- Heading -->
             <h3 class="mb-4">
-              Why <span class="text-primary">Medley</span>?
+              Meet the <span class="text-primary">Team</span>
             </h3>
 
             <!-- Content -->
@@ -617,9 +617,7 @@ background-color: #a1896e8f;
           <div class="col-md-2">
             
             <!-- Title -->
-            <h6 class="title">
-            @lang('Our team')
-            </h6>
+            
 
           </div>
           <div class="col-md-10">
