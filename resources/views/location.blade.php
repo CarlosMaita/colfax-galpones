@@ -60,8 +60,8 @@
           <div class="col-md-8 col-offset-2 text-center">
              <h2 class="">@lang('The best strategic location for your business')</h2>
              <p class="text-center text-muted text-sm">
-             The Municipality of Medley is bordered by the Town of Hialeah Gardens on the northwest, the City of Hialeah on the northeast, the City of Miami Springs on the southeast, the City of Doral on the south and is considered an unincorporated area to Miami-Dade County on the west.
-            </p>
+              Medley is one of the four cities with the highest commercial growth in the state of Florida, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region.          
+              </p>
             <!-- /Content-top -->
 </section>
 
@@ -86,9 +86,12 @@
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-md-8 col-offset-2 text-center">
-            <p class="text-center text-muted text-sm">
-              The location offers immediate access to Palmetto Expressway, NW 74 St., St. & NW 75 St.) On City Water & Sewer th (NW 74 US Turnpike. 27, Milam Diary RD & FL
-              Commercial development is typically located along Okeechobee Road. The location offers immediate access to Palmetto Expressway, NW 74 St., St. & NW 75 St.
+            <p class="text-muted text-sm">
+              <ul class="text-left text-muted">
+                <li>Proximity to Miami International Airport, Port Miami, and the main highways of the region</li>
+                <li>Located along Okeechobee Road.</li>
+                <li>Immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</li>
+              </ul>
             </p>
             <!-- /Content-top -->
 </section>
