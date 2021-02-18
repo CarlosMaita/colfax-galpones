@@ -30,6 +30,9 @@ Home - galpones
       <!-- HERO
     ================================================== -->
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+</style>
+<style>
   .title-main{
     background:#8a7365;
     position: absolute;
@@ -52,7 +55,7 @@ Home - galpones
     position: absolute;
     z-index: 100;
     right:0;
-    top: 350px;
+    top: 305px;
     width: 75vw;
     
 
@@ -90,26 +93,28 @@ Home - galpones
 @media (min-width:769px){
   .subtitle-main_warehouse{
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     margin: 0;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
     font-family: Raleway;
   }
   .subtitle-main > h3{
-    font-size: 1.53rem;
+    font-size: 1.45rem;
     margin: 0;
     font-family: Raleway;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.21em;
   }
 
   .subtitle-main{
     width: 65vw;
-    padding:15px 2rem 5px;
+    padding:5px 2rem 5px;
   }
   .title-main > h1{
-    font-family: Raleway;
-    font-size: 2.9rem;
+    font-family: Playfair Display;
+    font-size: 2.45rem;
+    letter-spacing: 0.02em;
+    top: 160px;
   }
   .title-main{
     padding: 20px;
@@ -121,14 +126,14 @@ Home - galpones
     color:white;
     position: absolute;
     z-index: 300;
-    top: 760px;
-    right: 632px;
+    top: 600px;
+    right: 530px;
   }
-  .main-btn {
-  padding: 2rem 1.5rem;
-  color:white;
-  font-size: 2rem;
-}
+    .main-btn {
+    padding: 1rem 1.5rem 0.95rem;
+    color:white;
+    font-size: 1.8rem;
+  }
 
 
 }
