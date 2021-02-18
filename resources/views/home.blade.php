@@ -36,21 +36,16 @@ Home - galpones
     top: 180px;
     z-index: 200;
     left: 0;
-    padding: 20px;
-    width: 60vw;
-    padding-right:3.5rem;
+    padding: 8px;
+    width: 75vw;
   }
 
 .title-main > h1{
   font-family: Raleway;
-  font-size: 3.5rem;
+  margin-bottom: 0;
 }
 
 .subtitle-main > h3{
-  font-size: 1.85rem;
-  margin: 0;
-  font-family: Raleway;
-  letter-spacing: 0.15em;
 }
   .subtitle-main{
     background: #aa947d;
@@ -58,8 +53,7 @@ Home - galpones
     z-index: 100;
     right:0;
     top: 350px;
-    width: 60vw;
-    padding:15px 2rem 5px;
+    width: 75vw;
     
 
     font-style: normal;
@@ -79,14 +73,66 @@ Home - galpones
   background-color: #a1896e8f;
 }
 
-
-.subtitle-main_warehouse{
-  font-weight: bold;
-  font-size: 2.95rem;
-  margin: 0;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+.main-btn_compra {
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  z-index: 300;
+  top: 230px;
+  right: 110px;
 }
+.main-btn {
+  padding: .5rem 1rem;
+  color:white;
+}
+
+
+@media (min-width:769px){
+  .subtitle-main_warehouse{
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin: 0;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: Raleway;
+  }
+  .subtitle-main > h3{
+    font-size: 1.53rem;
+    margin: 0;
+    font-family: Raleway;
+    letter-spacing: 0.18em;
+  }
+
+  .subtitle-main{
+    width: 65vw;
+    padding:15px 2rem 5px;
+  }
+  .title-main > h1{
+    font-family: Raleway;
+    font-size: 2.9rem;
+  }
+  .title-main{
+    padding: 20px;
+    width: 65vw;
+    padding-right:3.5rem;
+  }
+  .main-btn_compra {
+    text-align:center;
+    color:white;
+    position: absolute;
+    z-index: 300;
+    top: 760px;
+    right: 632px;
+  }
+  .main-btn {
+  padding: 2rem 1.5rem;
+  color:white;
+  font-size: 2rem;
+}
+
+
+}
+
 
 @media only screen and (max-width: 768px) {
   .title-main{
@@ -94,8 +140,7 @@ Home - galpones
     width: 80vw;
   }
 
-    .title-main > h1{
-    
+  .title-main > h1{
     font-family: Raleway;
     font-size: medium;
   }
@@ -113,17 +158,6 @@ Home - galpones
 
 }
 
-  .main-btn_compra {
-    padding: 0;
-    margin-bottom:0;
-    position: absolute;
-    top:800px; 
-    z-index: 600;
-    left:700px;
-  }
-  .btn-compra-main{
-    font-size: 2rem;
-}
 
 </style>
 
@@ -137,9 +171,15 @@ Home - galpones
       </div>
       <div class="subtitle-main">
         <!-- Subheading -->
-        <h3 class="text-white text-left py-2 px-5">
+        <h3 class="text-white text-left py-2 pl-5">
           Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse">Warehouse development</span> 
           </h3>
+      </div>
+      <!-- Button -->
+      <div class="main-btn_compra">
+        <a href="{{route('contact')}}" target="_blank" class="btn btn-primary main-btn">
+        @lang('Purchase now')
+        </a>
       </div>
 
       <!-- Slider -->
@@ -170,12 +210,7 @@ Home - galpones
               <div class="slider-item">
                 
                 <h1>&nbsp;</h1>
-                <!-- Button -->
-                <div class="text-center main-btn_compra">
-                    <a href="{{route('contact')}}" target="_blank" class="btn btn-primary text-white btn-compra-main p-4">
-                    @lang('Purchase now')
-                    </a>
-                  </div>
+                
                 
               </div>
              {{-- slider1  --}}
@@ -191,12 +226,7 @@ Home - galpones
                 Brand new strategically located state-of-the-art warehouse development! 
                 </h3>
 
-                <!-- Button -->
-                <p class="text-center mb-5">
-                  <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
-                  @lang('Purchase now')
-                  </a>
-                </p>
+              
               </div> --}}
 
             </div>
