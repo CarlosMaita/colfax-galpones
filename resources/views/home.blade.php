@@ -36,7 +36,7 @@ Home - galpones
   .title-main{
     background:#8a7365;
     position: absolute;
-    top: 180px;
+    top: 135px;
     z-index: 200;
     left: 0;
     padding: 8px;
@@ -55,7 +55,7 @@ Home - galpones
     position: absolute;
     z-index: 100;
     right:0;
-    top: 305px;
+    top: 265px;
     width: 75vw;
     
 
@@ -126,7 +126,7 @@ Home - galpones
     color:white;
     position: absolute;
     z-index: 300;
-    top: 600px;
+    top: 580px;
     right: 540px;
   }
     .main-btn {
