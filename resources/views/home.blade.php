@@ -93,9 +93,9 @@ Home - galpones
 @media (min-width:769px){
   .subtitle-main_warehouse{
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 0;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.46em;
     text-transform: uppercase;
     font-family: Raleway;
   }
@@ -127,12 +127,12 @@ Home - galpones
     position: absolute;
     z-index: 300;
     top: 600px;
-    right: 530px;
+    right: 540px;
   }
     .main-btn {
     padding: 1rem 1.5rem 0.95rem;
     color:white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
 
