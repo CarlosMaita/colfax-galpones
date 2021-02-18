@@ -29,9 +29,7 @@ Home - galpones
      
       <!-- HERO
     ================================================== -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-</style>
+
 <style>
   .title-main{
     background:#8a7365;
@@ -82,7 +80,7 @@ Home - galpones
   position: absolute;
   z-index: 300;
   top: 230px;
-  right: 110px;
+  right: calc(100% - 67vw);
 }
 .main-btn {
   padding: .5rem 1rem;
@@ -115,6 +113,7 @@ Home - galpones
     font-size: 2.45rem;
     letter-spacing: 0.02em;
     top: 160px;
+    font-weight: 400;
   }
   .title-main{
     padding: 20px;
@@ -127,7 +126,7 @@ Home - galpones
     position: absolute;
     z-index: 300;
     top: 580px;
-    right: 540px;
+    right: calc(100% - 60vw);
   }
     .main-btn {
     padding: 1rem 1.5rem 0.95rem;
@@ -146,7 +145,7 @@ Home - galpones
   }
 
   .title-main > h1{
-    font-family: Raleway;
+    font-family: Playfair Display;
     font-size: medium;
   }
   .subtitle-main{
