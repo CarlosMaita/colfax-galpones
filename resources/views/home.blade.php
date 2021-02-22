@@ -176,7 +176,7 @@ Home - galpones
       <div class="subtitle-main">
         <!-- Subheading -->
         <h3 class="text-white text-left py-2 pl-5">
-          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse">Warehouse development</span> 
+          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse"><br>Warehouse development</span> 
           </h3>
       </div>
       <!-- Button -->
