@@ -107,7 +107,7 @@
         {{-- <p class="floorplant__secondaryBodyMain-subtitle text-center">u</p> --}}
         
 
-        <div class="d-flex justify-content-around text-center">
+        <div class="d-flex justify-content-around text-center flex-wrap">
          
           <div class="stats-item text-center">
             <!-- Value -->
@@ -140,6 +140,15 @@
             <p class="stats-item-title text-muted">
               Warehouse
             </p>
+          </div>
+
+          <div class="col-12 mt-4 pt-4">
+            <h2 class="text-primary py-2">Each unit include</h2>
+            <ul class="text-left">
+              <li><span class="font-weight-bold text-muted">Office: </span>Finished flooring, air conditioning & bathroom</li>
+              <li><span class="font-weight-bold text-muted">Mezzanine: </span>Good for extra storage</li>
+              <li><span class="font-weight-bold text-muted">Warehouse: </span>Roll up doors & 20-24 ceiling hight</li>
+            </ul>
           </div>
           
         </div>

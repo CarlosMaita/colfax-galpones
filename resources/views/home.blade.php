@@ -29,47 +29,114 @@ Home - galpones
      
       <!-- HERO
     ================================================== -->
+
 <style>
   .title-main{
-    background: #9F876E;
+    background:#8a7365;
     position: absolute;
+    top: 135px;
     z-index: 200;
     left: 0;
-    padding: 5px;
-    width: 70vw;
+    padding: 8px;
+    width: 75vw;
   }
 
 .title-main > h1{
   font-family: Raleway;
+  margin-bottom: 0;
 }
 
 .subtitle-main > h3{
 }
   .subtitle-main{
-    background: #76644E;
+    background: #aa947d;
     position: absolute;
     z-index: 100;
     right:0;
-    padding: 5px;
-    top: 280px;
+    top: 265px;
     width: 75vw;
+    
 
-font-style: normal;
-font-weight: bold;
-/* identical to box height */
+    font-style: normal;
+    font-weight: bold;
+  
+    /* identical to box height */
 
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.05em;
-text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    
 
   }
 
-  .btn-primary{
-
-background-color: #a1896e8f;
+.btn-primary{
+  background-color: #a1896e8f;
 }
+
+.main-btn_compra {
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  z-index: 300;
+  top: 230px;
+  right: calc(100% - 67vw);
+}
+.main-btn {
+  padding: .5rem 1rem;
+  color:white;
+}
+
+
+@media (min-width:769px){
+  .subtitle-main_warehouse{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.46em;
+    text-transform: uppercase;
+    font-family: Raleway;
+  }
+  .subtitle-main > h3{
+    font-size: 1.45rem;
+    margin: 0;
+    font-family: Raleway;
+    letter-spacing: 0.21em;
+  }
+
+  .subtitle-main{
+    width: 65vw;
+    padding:5px 2rem 5px;
+  }
+  .title-main > h1{
+    font-family: Playfair Display;
+    font-size: 2.45rem;
+    letter-spacing: 0.02em;
+    top: 160px;
+    font-weight: 400;
+  }
+  .title-main{
+    padding: 20px;
+    width: 65vw;
+    padding-right:3.5rem;
+  }
+  .main-btn_compra {
+    text-align:center;
+    color:white;
+    position: absolute;
+    z-index: 300;
+    top: 580px;
+    right: calc(100% - 60vw);
+  }
+    .main-btn {
+    padding: 1rem 1.5rem 0.95rem;
+    color:white;
+    font-size: 1.5rem;
+  }
+
+
+}
+
 
 @media only screen and (max-width: 768px) {
   .title-main{
@@ -77,9 +144,8 @@ background-color: #a1896e8f;
     width: 80vw;
   }
 
-    .title-main > h1{
-    
-    font-family: Raleway;
+  .title-main > h1{
+    font-family: Playfair Display;
     font-size: medium;
   }
   .subtitle-main{
@@ -96,8 +162,9 @@ background-color: #a1896e8f;
 
 }
 
+
 </style>
-    
+
     <section class="section section-top section-full">
       
       <div class="title-main">
@@ -108,9 +175,15 @@ background-color: #a1896e8f;
       </div>
       <div class="subtitle-main">
         <!-- Subheading -->
-        <h3 class="text-white text-left ml-3">
-          Brand new strategically located state-of-the-art warehouse development! 
+        <h3 class="text-white text-left py-2 pl-5">
+          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse"><br>Warehouse development</span> 
           </h3>
+      </div>
+      <!-- Button -->
+      <div class="main-btn_compra">
+        <a href="{{route('contact')}}" target="_blank" class="btn btn-primary main-btn">
+        @lang('Purchase now')
+        </a>
       </div>
 
       <!-- Slider -->
@@ -141,12 +214,8 @@ background-color: #a1896e8f;
               <div class="slider-item">
                 
                 <h1>&nbsp;</h1>
-                <!-- Button -->
-                <p class="text-center mb-0">
-                  <a href="{{route('contact')}}" target="_blank" class="btn btn-primary text-white">
-                  @lang('Purchase now')
-                  </a>
-                </p>
+                
+                
               </div>
              {{-- slider1  --}}
               {{-- <div class="slider-item">
@@ -161,12 +230,7 @@ background-color: #a1896e8f;
                 Brand new strategically located state-of-the-art warehouse development! 
                 </h3>
 
-                <!-- Button -->
-                <p class="text-center mb-5">
-                  <a href="{{route('contact')}}" target="_blank" class="btn btn-outline-primary text-white">
-                  @lang('Purchase now')
-                  </a>
-                </p>
+              
               </div> --}}
 
             </div>
@@ -208,12 +272,11 @@ background-color: #a1896e8f;
 
             <!-- Heading -->
             <h2 class="text-center mb-4">
-             @lang('Tailor a space that suits all your needs')
+             @lang('An Investment within your reach')
             </h2>
            
             <!-- Subheading -->
-            <p class="text-muted text-center mb-5">
-            Thanks to its exclusive design and unique details, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.
+            <p class="text-muted text-center mb-5"> Medley Business Park is <span class="font-weight-bold">the perfect space to develop your business.</span> Modernity and luxury are just some of the key elements that define us, we offer our clients <span class="font-weight-bold">FLEXIBLE opportunities</span> for tailored spaces to specifically suit your needs.
             </p>
 
           </div>
@@ -336,8 +399,7 @@ background-color: #a1896e8f;
   
               <!-- Subheading -->
               <p class="text-muted">
-              <strong>Medley Business Park</strong> is the perfect space to develop your business. Modernity and luxury are just some of the key elements that define us, we offer our clients FLEXIBLE opportunities for tailored spaces that specifically suit your needs.  
-              </p>
+              Thanks to its <span class="font-weight-bold">exclusive design and unique details</span>, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.</p>
 
               <p class="mb-5 mb-md-0">
                 <a href="{{route('contact')}}" class="btn btn-outline-primary">
@@ -381,9 +443,9 @@ background-color: #a1896e8f;
               </h2>
              
               <!-- Subheading -->
-              <p class="text-center text-muted mb-5">
-               Vacancy rates less than 4% for the past 10 years.
-               Medley Business Park is located in the Miami-Dade industrial market and Medley Industrial submarket, which are currently exhibiting occupancy rates of 96.2% and 97.1%, respectively.
+              <p class="text-muted mb-5">
+              Medley is one of the four cities with the highest <span class="font-weight-bold">commercial growth in the state of Florida</span>, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region. <br>
+              The commercial development is located along <span class="font-weight-bold">Okeechobee Road. The location offers immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</span>
               </p>
 
   
@@ -507,12 +569,14 @@ background-color: #a1896e8f;
                     
                     <!-- Heading -->
                     <h3 class="text-center mb-4">
-                    @lang('An Investment within your reach')
+                      Vacancy rates less than 4% for the past 10 years
                     </h3>
                     
                     <!-- Content -->
-                    <p class="text-muted text-center">
-                      The South Florida industrial market is one of the strongest markets in the country with continued growth projected over the next few years.
+                    <p class="text-muted">
+                     The Miami-Dade industrial market has 96.2%  of occupancy rate and the Medley Industrial submarket has 97.1% <br>
+                     
+                    The South Florida industrial market is <span class="font-weight-bold">one of the strongest markets in the country</span> with continued growth projected over the next few years. 
                     </p> 
                     
 
@@ -573,7 +637,7 @@ background-color: #a1896e8f;
             
             <!-- Heading -->
             <h3 class="mb-4">
-              Why <span class="text-primary">Medley</span>?
+              Meet the <span class="text-primary">Team</span>
             </h3>
 
             <!-- Content -->
@@ -617,9 +681,7 @@ background-color: #a1896e8f;
           <div class="col-md-2">
             
             <!-- Title -->
-            <h6 class="title">
-            @lang('Our team')
-            </h6>
+            
 
           </div>
           <div class="col-md-10">
