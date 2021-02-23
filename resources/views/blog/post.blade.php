@@ -106,7 +106,7 @@
               <div class="col">
 
                 <p class="mb-0 text-xs text-uppercase">
-                  Share the post:
+                  @lang('Share the post:')
                 </p>
 
               </div>

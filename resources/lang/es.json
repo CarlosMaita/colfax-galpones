@@ -9,13 +9,119 @@
     "lenguage" : "ES",
     "Our team" : "Nuestro equipo",
     "Purchase now" : "Comprar ahora",
-    "Tailor a space that suits all your needs" : "Diseña un espacio que se adapte a todas tus necesidades",
-    "Convenient and" : "Espacios",
-    "Flexible" :  "Flexibles",
-    "spaces" : "y convenientes",
-    "FOR RENT OR SALE" : "PARA VENTA O ALQUILER",
-    "The best strategic location for your business" : "La mejor ubicación estratégica para tu negocio",
+    "Tailor a space that suits all your needs" : "Diseña un espacio adaptado a tus necesidades",
+    "Brand new strategically located state-of-the-art" : "Nuevo desarrollo de almacen",
+    "WAREHOUSE DEVELOPMENT" : "Estrategicamente Ubicado",
+
     "An Investment within your reach" : "Una Inversión a tu alcance",
+    "Medley Business Park is": "Medley Business Park es <span class='font-weight-bold'>el espacio perfecto para desarrollar su negocio.</span> La modernidad y el lujo son solo algunos de los elementos clave que nos definen, ofrecemos a nuestros clientes  <span class='font-weight-bold'>oportunidades FLEXIBLE</span> para espacios a la medida que se adapten específicamente a sus necesidades.",
+    
+    "Convenient and Flexible spaces" : "Espacios <span class='text-primary'>Flexibles</span> y convenientes",
+    "Thanks to its" :"Gracias a  <span class='font-weight-bold'>diseño exclusivo y detalles únicos</span>, es posible desarrollar cualquier tipo de negocio como showrooms, espacios de almacenamiento, coworking o incluso pequeñas fábricas.",
+    "get in touch with us":"Ponte en contacto con nosotros",
+    "FOR RENT OR SALE" : "PARA VENTA O ALQUILER",
+    "Range from": "Van desde 4.500 SF y hasta 14 unidades con oficina, baño acondicionados, y puerta grande de garaje industrial.",
+
+
+    "The best strategic location for your business" : "La mejor ubicación estratégica para tu negocio",
+    "Medley is one of the four cities": "Medley es una de las cuatro ciudades con mayor <span class='font-weight-bold'>crecimiento comercial en el estado de Florida</span>, debido a su proximidad al Aeropuerto Internacional de Miami, Port Miami y las principales carreteras de la región. <br> El desarrollo comercial está ubicado a lo largo de  <span class='font-weight-bold'>Okeechobee Road. La ubicación ofrece acceso inmediato a Palmetto Expressway, NW 74 St. St. y NW 75 St.</span>",
+
+    "Vacancy rates less":"Tasas de vacantes inferiores al 4% durante los últimos 10 años.", 
+    "The Miami-Dade industrial market":"El mercado industrial de Miami-Dade tiene el 96,2% de tasa de ocupación y el submercado Medley Industrial tiene el 97,1% <br>El mercado industrial del sur de Florida es  <span class='font-weight-bold'>uno de los mercados más sólidos del país </span> y se proyecta un crecimiento continuo durante los próximos años.",
+
+    "schedule an appointment":"Agendar una cita",
+    
+    "Meet the Team": "Conoce al <span class='text-primary'>Equipo</span>",
+    "7265 Medley Corp":"7265 Medley Corp es una firma de desarrollo innovadora que se compromete a crear una experiencia excepcional, con más de 30 años de experiencia en desarrollo y bienes raíces.",
+    "We achieve maximum sustainability":"Logramos la máxima sustentabilidad, con una arquitectura hermosa y moderna, al mismo tiempo que protegemos el entorno y aumentamos el valor del área.",
+
+
+    "Rukan is an architecture company":"Rukan es una empresa de arquitectura con más de 2 millones de pies cuadrados de espacio completado en un espectro de sectores a gran escala que incluyen edificios industriales, comerciales y residenciales.",
+    "By instilling our core value":"Al inculcar nuestro valor central de creatividad práctica en cada paso del proceso de construcción, ofrecemos un enfoque pragmático que no termina con el diseño.",
+    "It includes permitting":"Incluye servicios de permisos, pruebas, topografía e inspección para que nuestro trabajo nunca se detenga antes o durante la construcción.",
+
+    "Medley is one of the four cities 2":"Medley es una de las cuatro ciudades con mayor <span class='font-weight-bold'>crecimiento comercial en el estado de Florida</span>, debido a su proximidad al Aeropuerto Internacional de Miami, Port Miami y las principales carreteras de la región..",
+
+
+    
+    "Proximity to Miami International Airport":"Proximidad al Aeropuerto Internacional de Miami, Puerto de Miami y las principales carreteras de la región.",
+    "Located along Okeechobee Road.":"Ubicado a lo largo de Okeechobee Road. ",
+    "Immediate access to Palmetto Expressway":"La ubicación ofrece acceso inmediato a Palmetto Expressway, NW 74 St., St. y NW 75 St.",
+
+    "10 minutes from Miami":"<b>10 minutos</b> del Aeropuerto Internacional de Miami",
+    "offers more flights to Latin America":"ofrece más vuelos a América Latina y el Caribe que cualquier otro aeropuerto de Estados Unidos. Maneja la mayor cantidad de toneladas de carga internacional en los Estados Unidos.",
+    "20 minutes from the port":"<b>20 minutos</b> del puerto",
+    "The Port of Miami receives":"El Puerto de Miami recibe contenedores de gran tamaño, está adaptado para buques (Pos Panamá / Mega-buques) lo que lo ha convertido en un foco para la logística comercial.",
+    "5 minutes from Hialeah":"<b>5 minutos</b> desde Hialeah",
+    "which is the 11th":"Que es la undécima ciudad más densamente poblada de los EE. UU.",
+    "5 minutes from Doral":"<b>5 minutos</b> de Doral",
+    "which is one of the 10 fastest growing":"Que es una de las 10 ciudades residenciales y comerciales de más rápido crecimiento en los EE. UU.",
+    
+    "Location on Google Map":"Ubicación en Google Map",
+
+    "SITE PLAN":"PLANO DEL SITIO",
+    "Scaled diagram of project viewed from above":"Diagrama a escala del proyecto visto desde arriba",
+    "TYPICAL UNIT PLAN":"PLANO DE UNIDAD TÍPICA",
+    "Scaled diagram of typical unit viewed from above":"Diagrama a escala de la unidad típica vista desde arriba",
+    "See":"Ver",
+
+    "Site Plan":"Plano del sitio",
+    "Typical Unit Plan":"Plano de unidad típica",
+    "TYPICAL UNIT":"UNIDAD TÍPICA",
+    
+    "Office":"Oficina",
+    "Mezzanine":"Mezzanina",
+    "Warehouse":"Bodega",
+    
+    "Each unit include":"Cada unidad incluye",
+    "Finished flooring, air conditioning & bathroom":"Pisos terminados, aire acondicionado y baño",
+    "Good for extra storage":"Bueno para almacenamiento adicional",
+    "Roll up doors & 20-24 ceiling hight":"Puertas enrollables y altura de techo 20-24",
+    "Back":"Atrás",
+
+    "Download the pdf drawing below":"Descargue el plano en PDF abajo",
+    "Download Now":"Descargar Ahora",
+    "Parking Provided":"Estacionamiento ofrecido",
+    "Total SF":"SF Total",
+    "Trees Provided":"Árboles ofrecidos",
+    "Spaces":"Espacios",
+    "Trees":"Árboles",
+    
+    "Use our home loan calculator":"Utilice nuestra calculadora de préstamos hipotecarios para calcular el pago de su hipoteca. Simplemente ingrese el precio de la propiedad, su pago inicial y detalles sobre el préstamo hipotecario para calcular el desglose del pago de la hipoteca.",
+    "Home price (USD)":"Precio de la propiedad (USD)",
+    "Down Payment (USD)":"Pago inicial (USD)",
+    "Loan program (Years)":"Programa de préstamos (Años)",
+    "30-year fixed":"30-Años fijo",
+    "15-year fixed":"15-Años fijo",
+    "Interes rate (%)":"Tasa de interés (%)",
+    "Breakdown":"Desglose",
+    "share":"Compartir",
+    "Your payment is":"Tu pago es",
+
+
+    "Additional resources":"Recursos adicionales",
+    "Still confused?":"¿Dudas en su planificación de pagos?",
+    "Our mortgage payments calculator":"Nuestra calculadora de pagos hipotecarios puede ayudarlo a estimar rápidamente los pagos hipotecarios mensuales de su nueva casa. Aquí está la información que necesitará ingresar en la calculadora de hipotecas:",
+    "Home Price":"Precio de la propiedad",
+    "Enter the purchase price":"Ingrese el precio de compra de la propiedad que desea comprar. También puede ingresar la cantidad que cree que ofrecerá.",
+    "Down Payment":"Pago inicial",
+    "Most home loans require":"La mayoría de los préstamos hipotecarios requieren un pago inicial de al menos el 3%. Un pago inicial más alto reducirá su pago mensual.",
+    "Loan Program":"Programa de préstamos",
+    "Your loan program can affect":"Su programa de préstamos puede afectar su tasa de interés y sus pagos mensuales. Elija entre fijo de 30 años y fijo de 15 años en la calculadora.",
+    "Interest Rate":"Tasa de interés",
+    "This is pre-filled with the current":"Esto está precargado con la tasa hipotecaria promedio actual. Su tasa real variará según factores como el puntaje crediticio y el pago inicial.",
+    "Property Tax":"Impuesto sobre la propiedad",
+    "The mortgage payment calculator includes":"La calculadora de pagos hipotecarios incluye impuestos prediales estimados basados en el valor de la vivienda. Puede editar esto en las opciones avanzadas.",
+    "Home Insurance":"Seguro de hogar",
+    "Home insurance or homeowners":"Los prestamistas suelen exigir un seguro de vivienda o un seguro de vivienda. Puede editar este número en las opciones avanzadas de la calculadora de hipotecas.",
+    
+    "Categories":"Categorias",
+    "Share the post:":"Compartir el articulo:",
+
+    "Address":"Dirección",
+    "All rights reserved.":"Todos los derechos reservados.",
+
+
     "TWO WORDS ABOUT OUR COMPANY" : "Unas palabras acerca de nuestra compañia",
     "Choose the plane you want to see" : "Escoge los planos que te gustaría ver",
     "Look at" : "Mirar",
@@ -32,8 +138,8 @@
     "Reset form" : "Resetear formulario",
     "Want to talk" : "¿Quieres hablar",
     "in person" : "en persona",
-    "? Call us or visit us" : "? LLamanos o visita nuestras oficinas",
-    "Call us": "Llamanos",
+    "? Call us or visit us" : "? LLámanos o visítanos",
+    "Call us": "Llámanos",
     "Our offices" : "Nuestras oficinas",
     "Email" : "Correo electrónico",
     "sign up" : "Suscribirse",
@@ -42,6 +148,6 @@
     "text-newsletter" : "Suscribete a nuestro Boletín informativo",
     "Florida Real Estate Broker" : "Agente de bienes raíces",
     "Real Estate Agent" : "Agente inmobiliario",
-    "text-contact-01":"Investing in a warehouse requires knowing all the benefits and advantages that your negotiation will have for the growth of your business. Leave it in the hands of professionals with more than 20 years in the real estate and industrial market to guarantee you a large-scale investment.",
-    "text-contact-02":"Our offices are fully available to provide smart solutions for businesses. Contact us and we will provide you with personalized attention."
+    "text-contact-01":"Invertir en un almacén requiere conocer todos los beneficios y ventajas que tendrá su negociación para el crecimiento de su negocio. Déjelo en manos de profesionales con más de 20 años en el mercado inmobiliario e industrial para garantizarle una inversión a gran escala.",
+    "text-contact-02":"Nuestras oficinas están completamente disponibles para brindar soluciones inteligentes para empresas. Contáctanos y te brindaremos una atención personalizada."
 }

@@ -99,87 +99,38 @@ Mortgage calculator - Medley Business Park
    	<div class="row">
       <div class="col-md-11">
         <h1>@lang('Mortgage Calculator')</h1>
-        <p>Use our home loan calculator to estimate your mortgage payment. 
-          Simply enter the price of the home, your down payment, and details about the home loan to calculate your mortgage payment breakdown.</p>
+        <p>
+          @lang('Use our home loan calculator')
+        </p>
       </div>
    		<div class="col-md-4">
    			<div class="form-group">
-   				<h6>Home price (USD)</h6>
+   				<h6>@lang('Home price (USD)')</h6>
    				<input class="form-control input-number" id="home_price" type="number" name="" value=100000>
    			</div>
    			<div class="form-group">
-   				<h6>Down Payment (USD)</h6>
+   				<h6>@lang('Down Payment (USD)')</h6>
    				<input class="form-control input-number" id="down_payment" type="number" name="" value=20000>
    			</div>
    			<div class="form-group">
-   				<h6>Loan program (Years)</h6>
+   				<h6>@lang('Loan program (Years)')</h6>
    				<select class="form-control" id="loan_program">
-            <option value=30 >30-year fixed</option>
-            <option value=15 >15-year fixed</option>
+            <option value=30 >@lang('30-year fixed')</option>
+            <option value=15 >@lang('15-year fixed')</option>
    				</select>
    			</div>
    			<div class="form-group">
-   				<h6>Interes rate (%)</h6>
+   				<h6>@lang('Interes rate (%)')</h6>
    				<input class="form-control input-number" id="Interes_rate" type="number" name="" value='3.5' step="0.01">
    			</div>
-        <!-- <div class="form-group">
-          <a class="option_view" id="advanced_option" href="#">Advanced</a>
-        </div>
-        <div class="option_advance hide" id="advance">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" name="">
-            <label class="form-check-label">
-              Include PMI 
-              <i class="fas fa-question-circle" title="Private Mortgage Insurance
-Mortgage insurance is required primarily for borrowers with a down payment of less than 20% of the home's purchase price. It protects lenders against some or most of the losses that can occur when a borrower defaults on a mortgage loan."></i>
-            </label>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" name="">
-            <label class="form-check-label">Include taxes/insurange</label>
-          </div>
-          <div class="form-group">
-            <h6>
-              Property tax 
-              <i class="fas fa-question-circle" title="Property Tax
-The mortgage payment calculator includes estimated property taxes. The value represents an annual tax on homeowners' property and the tax amount is based on the home's value. To convert an annual property tax in dollars to a percentage, divide the property tax by your home value and then multiply by 100."></i>
-            </h6>
-            <div class="d-flex">
-              <div>
-                <input class="form-control" type="number" name="">
-              </div>
-              <div>
-                <input class="form-control" type="number" name="">
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <h6>
-              Home isurance 
-              <i class="fas fa-question-circle" title="Homeowners Insurance
-Commonly known as hazard insurance, most lenders require insurance to provide damage protection for your home and personal property from a variety of events, including fire, lightning, burglary, vandalism, storms, explosions, and more. All homeowner's insurance policies contain personal liability coverage, which protects against lawsuits involving injuries that occur on and off your property."></i>
-            </h6>
-            <input class="form-control" type="number" name="">
-          </div>
-          <div class="form-group">
-            <h6>
-              HOA dues 
-              <i class="fas fa-question-circle" title="Homeowners Association Dues
-Typically, owners of condos or townhomes are required to pay homeowners association dues (known as HOA fees), to cover common amenities or services within the property such as garbage collection, landscaping, snow removal, pool maintenance, and hazard insurance."></i>
-            </h6>
-            <input class="form-control" type="number" name="">
-          </div>
-          <div class="form-group">
-            <a class="option_view hide" id="simple_option" href="#">Simple</a>
-          </div> -->
-        <!-- </div> -->
+   
    		</div>
    		<div class="col-md-7">
    			<div class="d-flex justify-content-between align-items-center">
           <ul class=" p-0 m-0 d-flex justify-content-around align-items-center">
             <li class="mr-4">
               <p class="m-0 p-0">
-                <a href="#" class=" chart_button" data-chart="donutchart">Breakdown</a>
+                {{-- <a href="#" class=" chart_button" data-chart="donutchart">@lang('Breakdown')</a> --}}
               </p>
             </li>
             <!-- <li class="mr-4">
@@ -191,7 +142,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
           </ul>
           <div class="dropdown">
             <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              share
+              @lang('share')
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">
@@ -208,7 +159,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
               </a>
               <a class="dropdown-item" href="#">
                 <i class="fas share-icon fa-envelope-square"></i>
-                Email
+                @lang('Email')
               </a>
             </div>
           </div>  
@@ -217,7 +168,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
         <div>
           <canvas id="myChart-donut" class="chart"></canvas>
           <canvas id="myChart-line" class="chart" style="display: none;"></canvas>
-          <h5 class="text-center p-4 h2" id="your_payment"></h5>
+          <h5 class="text-center p-4 h2" id="">@lang('Your payment is') <span id="your_payment"></span></h5>
         </div>
    		</div>
    	</div>
@@ -232,7 +183,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
            
            <!-- Title -->
            <h6 class="title">
-             Additional resources
+             @lang('Additional resources')
            </h6>
 
          </div>
@@ -240,12 +191,12 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
            
            <!-- Heading -->
            <h3 class="mb-4">
-             Still confused?
+             @lang('Still confused?')
            </h3>
 
            <!-- Subheading -->
            <p class="text-muted mb-5">
-            Our mortgage payments calculator can help you quickly estimate the monthly mortgage payments for your new home.  Here’s the info you’ll need to enter into the mortgage calculator:
+            @lang('Our mortgage payments calculator')
            </p>
 
            <!-- Items -->
@@ -258,19 +209,16 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   {{-- <!-- Icon -->
-                   <div class="card-icon text-primary">
-                     <span class="icon icon-price"></span>
-                   </div> --}}
+              
                    
                    <!-- Title -->
                    <h5 class="card-title">
-                     Home Price
+                     @lang('Home Price')
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     Enter the purchase price of the home you want to buy. You can also enter the amount that you think you will offer.
+                     @lang('Enter the purchase price')
                    </p>
                  
                  </div>
@@ -286,48 +234,16 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   <!-- Icon -->
-                   {{-- <div class="card-icon text-primary">
-                     <span class="icon icon-edit"></span>
-                   </div> --}}
-                   
-                   <!-- Title -->
-                   <h5 class="card-title">
-                     Down Payment
-                   </h5>
-
-                   <!-- Text -->
-                   <p class="card-text text-muted">
-                     Most home loans require a down payment of at least 3%. A higher down payment will lower your monthly payment.
-                   </p>
-                 
-                 </div>
-
-               </a> <!-- / .card -->
-
-             </div>
-
-             <div class="col-md-4 mb-3">
                
-               <!-- Card -->
-               <a href="#" class="card">
-                 
-                 <!-- Body -->
-                 <div class="card-body">
-
-                   {{-- <!-- Icon -->
-                   <div class="card-icon text-primary">
-                     <span class="icon icon-edit"></span>
-                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
-                     Loan Program
+                     @lang('Down Payment')
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     Your loan program can affect your interest rate and monthly payments. Choose from 30-year fixed & 15-year fixed in the calculator.
+                    @lang('Most home loans require')
                    </p>
                  
                  </div>
@@ -344,19 +260,15 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   {{-- <!-- Icon -->
-                   <div class="card-icon text-primary">
-                     <span class="icon icon-edit"></span>
-                   </div> --}}
                    
                    <!-- Title -->
                    <h5 class="card-title">
-                     Interest Rate
+                     @lang('Loan Program')
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     This is pre-filled with the current average mortgage rate. Your actual rate will vary based on factors like credit score and down payment.
+                     @lang('Your loan program can affect')
                    </p>
                  
                  </div>
@@ -373,19 +285,15 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   {{-- <!-- Icon -->
-                   <div class="card-icon text-primary">
-                     <span class="icon icon-edit"></span>
-                   </div>
-                    --}}
+          
                    <!-- Title -->
                    <h5 class="card-title">
-                     Property Tax
+                     @lang('Interest Rate')
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     The mortgage payment calculator includes estimated property taxes based on the home's value. You can edit this in the advanced options.
+                     @lang('This is pre-filled with the current')
                    </p>
                  
                  </div>
@@ -402,19 +310,39 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
                  <!-- Body -->
                  <div class="card-body">
 
-                   <!-- Icon -->
-                   {{-- <div class="card-icon text-primary">
-                     <span class="icon icon-edit"></span>
-                   </div> --}}
-                   
                    <!-- Title -->
                    <h5 class="card-title">
-                     Home Insurance
+                     @lang('Property Tax')
                    </h5>
 
                    <!-- Text -->
                    <p class="card-text text-muted">
-                     Home insurance or homeowners insurance is typically required by lenders. You can edit this number in the mortgage calculator advanced options.
+                     @lang('The mortgage payment calculator includes')
+                   </p>
+                 
+                 </div>
+
+               </a> <!-- / .card -->
+
+             </div>
+
+             <div class="col-md-4 mb-3">
+               
+               <!-- Card -->
+               <a href="#" class="card">
+                 
+                 <!-- Body -->
+                 <div class="card-body">
+
+             
+                   <!-- Title -->
+                   <h5 class="card-title">
+                     @lang('Home Insurance')
+                   </h5>
+
+                   <!-- Text -->
+                   <p class="card-text text-muted">
+                     @lang('Home insurance or homeowners')
                    </p>
                  
                  </div>
@@ -537,7 +465,7 @@ Typically, owners of condos or townhomes are required to pay homeowners associat
               pago_total = pago_total >= 0 ? pago_total : 0 ; 
 
               your_payment.textContent = `
-                Your payment is  $ ${pago_total}
+                  $ ${pago_total}
               `
               grafico_value = [pago_total]
               donutChart(grafico_value)

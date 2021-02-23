@@ -60,7 +60,7 @@
       <div class="order-4 col-12 text-center col-md-4 text-md-left order-md-1">
         <p class="text-white text-muted">
           <small>
-            &copy; Copyright <span class="current-year"></span> Medley Business Park. All rights reserved.
+            &copy; Copyright <span class="current-year"></span> Medley Business Park. @lang('All rights reserved.')
           </small>
         </p>
       </div>

@@ -10,12 +10,117 @@
     "Our team" : "OUR TEAM",
     "Purchase now" : "Purchase now",
     "Tailor a space that suits all your needs" : "Tailor a space that suits all your needs",
-    "Convenient and" : "Convenient and",
-    "Flexible" :  "Flexible",
-    "spaces" : "spaces",
-    "FOR RENT OR SALE" : "FOR RENT OR SALE",
-    "The best strategic location for your business" : "The best strategic location for your business",
+    "Brand new strategically located state-of-the-art" : "Brand new strategically located state-of-the-art",
+    "WAREHOUSE DEVELOPMENT" : "WAREHOUSE DEVELOPMENT",
+
     "An Investment within your reach" : "An Investment within your reach",
+    "Medley Business Park is": "Medley Business Park is <span class='font-weight-bold'>the perfect space to develop your business.</span> Modernity and luxury are just some of the key elements that define us, we offer our clients <span class='font-weight-bold'>FLEXIBLE opportunities</span> for tailored spaces to specifically suit your needs.",
+    
+    "Convenient and Flexible spaces" : "Convenient and <span class='text-primary'>Flexible</span> spaces",
+    "Thanks to its" :"Thanks to its <span class='font-weight-bold'>exclusive design and unique details</span>, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.",
+    "get in touch with us":"Get in touch with us",
+    "FOR RENT OR SALE" : "FOR RENT OR SALE",
+    "Range from": "Range from 4.500 SF and up 14 units with conditioned office and bathroom, large industrial garage door.",
+
+
+    "The best strategic location for your business" : "The best strategic location for your business",
+    "Medley is one of the four cities": "Medley is one of the four cities with the highest <span class='font-weight-bold'>commercial growth in the state of Florida</span>, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region. <br> The commercial development is located along <span class='font-weight-bold'>Okeechobee Road. The location offers immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</span>",
+
+    "Vacancy rates less":"Vacancy rates less than 4% for the past 10 years", 
+    "The Miami-Dade industrial market":"The Miami-Dade industrial market has 96.2%  of occupancy rate and the Medley Industrial submarket has 97.1% <br>The South Florida industrial market is <span class='font-weight-bold'>one of the strongest markets in the country</span> with continued growth projected over the next few years.",
+    
+    "schedule an appointment":"Schedule an appointment",
+
+    "Meet the Team": "Meet the <span class='text-primary'>Team</span>",
+    "7265 Medley Corp":"7265 Medley Corp is an innovative development firm that is committed to creating an exceptional experience, with over 30 years of background in development and real estate.",
+    "We achieve maximum sustainability":"We achieve maximum sustainability, with beautiful and modern architecture, while protecting the surroundings and increasing the value of the area.",
+
+    "Rukan is an architecture company":"Rukan is an architecture company with over 2 million square feet of space completed in a large-scale spectrum of sectors that include industrial, commercial, and residential buildings.",
+    "By instilling our core value":"By instilling our core value of practical creativity into each step of the building process, we offer a pragmatic approach that does not end with design.",
+    "It includes permitting":"It includes permitting, testing, surveying, and inspection services so that our work never stopped before or during construction.",
+
+    "Medley is one of the four cities 2":"Medley is one of the four cities with the highest commercial growth in the state of Florida, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region.",
+
+
+    "Proximity to Miami International Airport":"Proximity to Miami International Airport, Port Miami, and the main highways of the region.",
+    "Located along Okeechobee Road.":"Located along Okeechobee Road.",
+    "Immediate access to Palmetto Expressway":"Immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.",
+
+
+    "10 minutes from Miami":"<b>10 minutes</b> from Miami International Airport",
+    "offers more flights to Latin America":"offers more flights to Latin America and the Caribbean than any other airport in the USA. It handles the most tons of international cargo in the United States.",
+    "20 minutes from the port":"<b>20 minutes</b> from the port",
+    "The Port of Miami receives":"The Port of Miami receives very large containers, is adapted for ships (Pos Panama / Mega-vessels) which has made it a focus for trade logistics.",
+    "5 minutes from Hialeah":"<b>5 minutes</b> from Hialeah",
+    "which is the 11th":"which is the 11th most densely populated city in the USA.",
+    "5 minutes from Doral":"<b>5 minutes</b> from Doral",
+    "which is one of the 10 fastest growing":"which is one of the 10 fastest growing residential and commercial cities in the USA.",
+    
+    "Location on Google Map":"Location on Google Map",
+    
+    
+    "SITE PLAN":"SITE PLAN",
+    "Scaled diagram of project viewed from above":"Scaled diagram of project viewed from above",
+    "TYPICAL UNIT PLAN":"TYPICAL UNIT PLAN",
+    "Scaled diagram of typical unit viewed from above":"Scaled diagram of typical unit viewed from above",
+    "See":"See",
+    
+    "Site Plan":"Site plan",
+    "Typical Unit Plan":"Typical Unit Plan",
+    "TYPICAL UNIT":"TYPICAL UNIT",
+    "Office":"Office",
+    "Mezzanine":"Mezzanine",
+    "Warehouse":"Warehouse",
+
+    "Each unit include":"Each unit include",
+    "Finished flooring, air conditioning & bathroom":"Finished flooring, air conditioning & bathroom",
+    "Good for extra storage":"Good for extra storage",
+    "Roll up doors & 20-24 ceiling hight":"Roll up doors & 20-24 ceiling hight",
+    "Back":"Back",
+
+    "Download the pdf drawing below":"Download the pdf drawing below",
+    "Download Now":"Download Now",
+    "Parking Provided":"Parking Provided",
+    "Total SF":"Total SF",
+    "Trees Provided":"Trees Provided",
+    "Spaces":"Spaces",
+    "Trees":"Trees",
+
+    "Use our home loan calculator":"Use our home loan calculator to estimate your mortgage payment. Simply enter the price of the home, your down payment, and details about the home loan to calculate your mortgage payment breakdown.",
+    "Home price (USD)":"Home price (USD)",
+    "Down Payment (USD)":"Property price (USD)",
+    "Loan program (Years)":"Loan program (Years)",
+    "30-year fixed":"30-year fixed",
+    "15-year fixed":"15-year fixed",
+    "Interes rate (%)":"Interes rate (%)",
+    "Breakdown":"Breakdown",
+    "share":"share",
+    "Your payment is":"Your payment is",
+    
+    
+    "Additional resources":"Additional resources",
+    "Still confused?":"Still confused?",
+    "Our mortgage payments calculator":"Our mortgage payments calculator can help you quickly estimate the monthly mortgage payments for your new home.  Here’s the info you’ll need to enter into the mortgage calculator:",
+    "Home Price":"Home Price",
+    "Enter the purchase price":"Enter the purchase price of the property you want to buy. You can also enter the amount that you think you will offer.",
+    "Down Payment":"Down Payment",
+    "Most home loans require":"Most home loans require a down payment of at least 3%. A higher down payment will lower your monthly payment.",
+    "Loan Program":"Loan Program",
+    "Your loan program can affect":"Your loan program can affect your interest rate and monthly payments. Choose from 30-year fixed & 15-year fixed in the calculator.",
+    "Interest Rate":"Interest Rate",
+    "This is pre-filled with the current":"This is pre-filled with the current average mortgage rate. Your actual rate will vary based on factors like credit score and down payment.",
+    "Property Tax":"Property Tax",
+    "The mortgage payment calculator includes":"The mortgage payment calculator includes estimated property taxes based on the home's value. You can edit this in the advanced options.",
+    "Home Insurance":"Home Insurance",
+    "Home insurance or homeowners":"Home insurance or homeowners insurance is typically required by lenders. You can edit this number in the mortgage calculator advanced options.",
+    
+    "Categories":"Categories",
+    "Share the post:":"Share the post:",
+
+    "Address":"Address",
+    "All rights reserved.":"All rights reserved.",
+    
+    
     "TWO WORDS ABOUT OUR COMPANY" : "TWO WORDS ABOUT OUR COMPANY",
     "Choose the plane you want to see" : "Choose the plane you want to see",
     "Look at" : "Look at",

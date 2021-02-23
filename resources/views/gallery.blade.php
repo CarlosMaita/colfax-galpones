@@ -76,7 +76,7 @@ Gallery - galpones
 
             <!-- Subheading -->
             <p class="text-center text-muted mb-5">
-              Medley Business Park is <b>the perfect space to develop your business</b>. Modernity and luxury are just some of the key elements that define us, we offer our clients <b>FLEXIBLE opportunities</b> for tailored spaces that specifically suit your needs. 
+              @lang('Medley Business Park is')
             </p>
 
           </div>

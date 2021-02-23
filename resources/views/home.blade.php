@@ -55,7 +55,6 @@ Home - galpones
     right:0;
     top: 265px;
     width: 75vw;
-    
 
     font-style: normal;
     font-weight: bold;
@@ -110,7 +109,7 @@ Home - galpones
   }
   .title-main > h1{
     font-family: Playfair Display;
-    font-size: 2.45rem;
+    font-size: 2.1rem;
     letter-spacing: 0.02em;
     top: 160px;
     font-weight: 400;
@@ -125,13 +124,13 @@ Home - galpones
     color:white;
     position: absolute;
     z-index: 300;
-    top: 580px;
+    top: 85vh;
     right: calc(100% - 60vw);
   }
     .main-btn {
     padding: 1rem 1.5rem 0.95rem;
     color:white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
 
@@ -176,7 +175,7 @@ Home - galpones
       <div class="subtitle-main">
         <!-- Subheading -->
         <h3 class="text-white text-left py-2 pl-5">
-          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse"><br>Warehouse development</span> 
+          @lang('Brand new strategically located state-of-the-art') <span class="subtitle-main_warehouse"><br>@lang('WAREHOUSE DEVELOPMENT')</span> 
           </h3>
       </div>
       <!-- Button -->
@@ -276,7 +275,8 @@ Home - galpones
             </h2>
            
             <!-- Subheading -->
-            <p class="text-muted text-center mb-5"> Medley Business Park is <span class="font-weight-bold">the perfect space to develop your business.</span> Modernity and luxury are just some of the key elements that define us, we offer our clients <span class="font-weight-bold">FLEXIBLE opportunities</span> for tailored spaces to specifically suit your needs.
+            <p class="text-muted text-center mb-5">
+              @lang('Medley Business Park is')
             </p>
 
           </div>
@@ -388,7 +388,7 @@ Home - galpones
               
               <!-- Heading -->
               <h2 class="mb-4">
-              @lang('Convenient and') <span class="text-primary">@lang('Flexible')</span> @lang('spaces') 
+                @lang('Convenient and Flexible spaces')
               </h2>
 
   
@@ -399,11 +399,12 @@ Home - galpones
   
               <!-- Subheading -->
               <p class="text-muted">
-              Thanks to its <span class="font-weight-bold">exclusive design and unique details</span>, it is possible to develop any type of business such as showrooms, storage spaces, coworking facilities or even small factories.</p>
+                @lang('Thanks to its')
+             </p>
 
               <p class="mb-5 mb-md-0">
                 <a href="{{route('contact')}}" class="btn btn-outline-primary">
-                  Get in touch with us
+                  @lang('get in touch with us')
                 </a>
               </p>
   
@@ -414,8 +415,7 @@ Home - galpones
               <blockquote class="blockquote">
               <h4>@lang('FOR RENT OR SALE')</h4>
                 <p>
-                Range from 4.500 SF and up
-                14 units with conditioned office and bathroom, large industrial garage door.
+                  @lang('Range from')
                 </p>
               </blockquote>
   
@@ -439,16 +439,13 @@ Home - galpones
   
               <!-- Heading -->
               <h2 class="text-center mb-4">
-              @lang('The best strategic location for your business')
+                @lang('The best strategic location for your business')
               </h2>
              
               <!-- Subheading -->
               <p class="text-muted mb-5">
-              Medley is one of the four cities with the highest <span class="font-weight-bold">commercial growth in the state of Florida</span>, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region. <br>
-              The commercial development is located along <span class="font-weight-bold">Okeechobee Road. The location offers immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</span>
+                @lang('Medley is one of the four cities')
               </p>
-
-  
             </div>
           </div> <!-- / .row -->
         <div class="row">
@@ -569,21 +566,19 @@ Home - galpones
                     
                     <!-- Heading -->
                     <h3 class="text-center mb-4">
-                      Vacancy rates less than 4% for the past 10 years
+                     @lang('Vacancy rates less')
                     </h3>
                     
                     <!-- Content -->
                     <p class="text-muted">
-                     The Miami-Dade industrial market has 96.2%  of occupancy rate and the Medley Industrial submarket has 97.1% <br>
-                     
-                    The South Florida industrial market is <span class="font-weight-bold">one of the strongest markets in the country</span> with continued growth projected over the next few years. 
+                      @lang('The Miami-Dade industrial market')
                     </p> 
                     
 
   
                     <!-- Button -->
                     <a href="{{route('contact')}}" class="btn btn-outline-primary">
-                      Schedule an appointment
+                      @lang('schedule an appointment')
                     </a>
   
                   </div>
@@ -598,26 +593,6 @@ Home - galpones
       </section>
 
 
-    <!-- HEADER
-    ================================================== -->
-   <!-- <section class="section pb-0">
-
-        <!-- Content 
-      <!-- Content 
-        <!-- Content 
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              
-              <!-- Header --
-              <div class="header bg-cover" style="background-image: url(assets/img/15.jpg);"></div>
-
-            </div>
-          </div> <!-- / .row --
-        </div> <!-- / .container --
-
-   </section>
-
     <!-- ABOUT
     ================================================== -->
     <section class="section pt-6 pb-0">
@@ -627,26 +602,21 @@ Home - galpones
         <div class="row">
           <div class="col-md-2">
             
-            <!-- Title -->
-            {{-- <h6 class="title">
-              @lang('TWO WORDS ABOUT OUR COMPANY')
-            </h6> --}}
-
           </div>
           <div class="col-md-5">
             
             <!-- Heading -->
             <h3 class="mb-4">
-              Meet the <span class="text-primary">Team</span>
+              @lang('Meet the Team')
             </h3>
 
             <!-- Content -->
             <blockquote class="blockquote">
               <p class="mb-3">
-              7265 Medley Corp is an innovative development firm that is committed to creating an exceptional experience, with over 30 years of background in development and real estate.
+               @lang('7265 Medley Corp')
               </p>
               <p>
-                We achieve maximum sustainability, with beautiful and modern architecture, while protecting the surroundings and increasing the value of the area.
+                @lang('We achieve maximum sustainability')
               </p>
             </blockquote>
 
@@ -655,13 +625,13 @@ Home - galpones
             
             <!-- Content -->
             <p class="text-muted">
-              Rukan is an architecture company with over 2 million square feet of space completed in a large-scale spectrum of sectors that include industrial, commercial, and residential buildings.
+              @lang('Rukan is an architecture company')
             </p>
             <p class="text-muted">
-              By instilling our core value of practical creativity into each step of the building process, we offer a pragmatic approach that does not end with design.
+              @lang('By instilling our core value')
             </p>
             <p class="text-muted">
-              It includes permitting, testing, surveying, and inspection services so that our work never stopped before or during construction.
+              @lang('It includes permitting')
             </p>
             
 

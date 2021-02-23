@@ -77,19 +77,19 @@
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Floorplants
+              @lang('Floorplants')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item">
-              <a href="{{route('floorplants')}}">Floorplants</a>
+              <a href="{{route('floorplants')}}">@lang('Floorplants')</a>
             </span> 
             <span class="breadcrumb-item active">
-              Site Plan
+              @lang('Site Plan')
            </span> 
           </div>
 
@@ -110,13 +110,13 @@
         </svg>  
       </span>
       <a href="{{route('floorplants')}}">
-        <span class="ml-2">Back</span>
+        <span class="ml-2">@lang('Back')</span>
       </a>
     </div>
     <div class="text-center">
-      <h2>SITE PLAN</h2>
-      <p class="floorplant__secondaryBodyMain-subtitle mb-2">Download the pdf drawing below</p>
-      <a href="{{asset('pdf/a005-site-plan.pdf')}}" class="btn btn-outline-primary" target="_blank">Download Now</a>
+      <h2>@lang('SITE PLAN')</h2>
+      <p class="floorplant__secondaryBodyMain-subtitle mb-2">@lang('Download the pdf drawing below')</p>
+      <a href="{{asset('pdf/a005-site-plan.pdf')}}" class="btn btn-outline-primary" target="_blank">@lang('Download Now')</a>
     </div>
     <div class="row mb-5">
       <div class="col-md-10 offset-1 d-flex justify-content-center">
@@ -132,8 +132,8 @@
           <div class="floorplant__thirdIconsMain-icons">
               <img src="{{asset('image/icon/car.svg')}}" alt="">
           </div>
-          <h3 class="floorplant__thirdIconsMain-title ">74 Spaces</h3>
-          <p class="floorplant__secondaryComponent-subtitle">Parking Provided</p>
+          <h3 class="floorplant__thirdIconsMain-title ">74 @lang('Spaces')</h3>
+          <p class="floorplant__secondaryComponent-subtitle">@lang('Parking Provided')</p>
         </div>
 
         <div class="text-center col-md-4 p-2 order-1 order-md-2">
@@ -141,15 +141,15 @@
               <img src="{{asset('image/icon/plans.svg')}}" alt="">
           </div>
           <h3 class="floorplant__thirdIconsMain-title second text-center">72483,90 SF</h3>
-          <p class="text-center floorplant__secondaryComponent-subtitle"><b>Total SF</b></p>
+          <p class="text-center floorplant__secondaryComponent-subtitle"><b>@lang('Total SF')</b></p>
         </div>
 
         <div class="text-center col-md-4 p-2 order-3">
           <div class="floorplant__thirdIconsMain-icons">
               <img src="{{asset('image/icon/tree.svg')}}" alt="">
           </div>
-          <h3 class="floorplant__thirdIconsMain-title third text-center">36 Trees</h3>
-          <p class="text-center floorplant__secondaryComponent-subtitle">Trees Provided</p>
+          <h3 class="floorplant__thirdIconsMain-title third text-center">36 @lang('Trees')</h3>
+          <p class="text-center floorplant__secondaryComponent-subtitle">@lang('Trees Provided')</p>
         </div>
     </div>
     
