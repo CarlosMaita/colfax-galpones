@@ -186,8 +186,13 @@ Home - galpones
       </div>
       <div class="subtitle-main">
         <!-- Subheading -->
+<<<<<<< HEAD
         <h3 class="home__textBanner text-white text-left py-2 pl-5">
           Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse home__textBanner2">Warehouse development</span> 
+=======
+        <h3 class="text-white text-left py-2 pl-5">
+          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse"><br>Warehouse development</span> 
+>>>>>>> 59413221c601949daec15fdcb1cdffb580f8bce7
           </h3>
       </div>
       <!-- Button -->
