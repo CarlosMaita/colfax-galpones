@@ -21,11 +21,6 @@
 <meta property="twitter:image" content= "{{asset('image/front.png')}}">
 @endsection
 
-
-@section('title')
-Contacto - galpones     
-@endsection
-
 @section('captcha')
     {!! htmlScriptTagJsApi([
         'action' => 'homepage'
@@ -245,7 +240,7 @@ Contacto - galpones
             
             <!-- Heading -->
             <h5>
-            @lang('Location'):
+            @lang('Address'):
             </h5>
             
             <!-- Address -->

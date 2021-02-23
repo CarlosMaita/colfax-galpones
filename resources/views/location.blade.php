@@ -60,8 +60,8 @@
           <div class="col-md-8 col-offset-2 text-center">
              <h2 class="">@lang('The best strategic location for your business')</h2>
              <p class="text-center text-muted text-sm">
-              Medley is one of the four cities with the highest commercial growth in the state of Florida, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region.          
-              </p>
+               @lang('Medley is one of the four cities 2')
+             </p>
             <!-- /Content-top -->
 </section>
 
@@ -88,9 +88,9 @@
           <div class="col-md-8 col-offset-2 text-center">
             <p class="text-muted text-sm">
               <ul class="text-left text-muted">
-                <li>Proximity to Miami International Airport, Port Miami, and the main highways of the region</li>
-                <li>Located along Okeechobee Road.</li>
-                <li>Immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</li>
+                <li>@lang('Proximity to Miami International Airport')</li>
+                <li>@lang('Located along Okeechobee Road.')</li>
+                <li>@lang('Immediate access to Palmetto Expressway')</li>
               </ul>
             </p>
             <!-- /Content-top -->
@@ -152,8 +152,8 @@
         </svg>
       </div>
       <div class="col-12 col-md-5">
-        <h3 class="text-distance-title"><b>10 minutes</b> from Miami International Airport</h3>
-        <p class="text-distance-subtitle">offers more flights to Latin America and the Caribbean than any other airport in the USA. It handles the most tons of international cargo in the United States.</p>
+        <h3 class="text-distance-title">@lang('10 minutes from Miami')</h3>
+        <p class="text-distance-subtitle">@lang('offers more flights to Latin America')</p>
       </div>
       
       {{-- 2do icono --}}
@@ -168,8 +168,8 @@
           
      </div>
      <div class="col-12 col-md-5">
-       <h3 class="text-distance-title"><b>20 minutes</b> from the port</h3>
-       <p class="text-distance-subtitle">The Port of Miami receives very large containers, is adapted for ships (Pos Panama / Mega-vessels) which has made it a focus for trade logistics.</p>
+       <h3 class="text-distance-title">@lang('20 minutes from the port')</h3>
+       <p class="text-distance-subtitle">@lang('The Port of Miami receives')</p>
      </div>
 
     </div>
@@ -182,9 +182,9 @@
           <path d="M3 0H0V77.09H3V0Z" fill="#333333"/>
           </svg>
       </div>
-      <div class="col-12 col-md-3">
-        <h3 class="text-distance-title"><b>5 minutes</b> from Hialeah</h3>
-        <p class="text-distance-subtitle">which is the 11th most densely populated city in the USA.</p>
+      <div class="col-12 col-md-5">
+        <h3 class="text-distance-title">@lang('5 minutes from Hialeah')</h3>
+        <p class="text-distance-subtitle">@lang('which is the 11th')</p>
       </div>
       {{-- 2do icono --}}
       <div class="col-12 col-md-1">
@@ -194,22 +194,12 @@
           <path d="M3 0H0V77.09H3V0Z" fill="#333333"/>
           </svg>
       </div>
-      <div class="col-12 col-md-3">
-        <h3 class="text-distance-title"><b>5 minutes</b> from Doral</h3>
-        <p class="text-distance-subtitle">which is one of the 10 fastest growing residential and commercial cities in the USA.</p>
+      <div class="col-12 col-md-5">
+        <h3 class="text-distance-title">@lang('5 minutes from Doral')</h3>
+        <p class="text-distance-subtitle">@lang('which is one of the 10 fastest growing')</p>
       </div>
       {{-- 3re icono --}}
-      <div class="col-12 col-md-1">
-        <svg width="89" height="78" viewBox="0 0 89 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M88.09 0H11V77.09H88.09V0Z" fill="#9F876E"/>
-          <path d="M49.17 62.5C48.8 62.2 48.37 61.96 48.07 61.6C43.44 56.23 39.24 50.55 35.94 44.24C34.41 41.31 33.08 38.28 32.51 34.99C31.48 29.07 33.11 23.92 37.32 19.67C40.89 16.05 45.32 14.4 50.39 14.61C58.82 14.96 65.85 21.59 66.79 29.97C67.15 33.18 66.51 36.23 65.4 39.21C63.64 43.95 61.06 48.24 58.2 52.38C56.02 55.54 53.68 58.57 51.15 61.46C50.8 61.86 50.34 62.15 49.92 62.5C49.67 62.5 49.42 62.5 49.17 62.5ZM40.83 31.9401C40.83 36.7501 44.72 40.66 49.53 40.68C54.34 40.7 58.27 36.7701 58.27 31.9401C58.27 27.1301 54.37 23.22 49.57 23.21C44.75 23.19 40.83 27.1101 40.83 31.9401Z" fill="white"/>
-          <path d="M3 0H0V77.09H3V0Z" fill="#333333"/>
-          </svg>
-      </div>
-      <div class="col-12 col-md-3">
-        <h3 class="text-distance-title"><b>Bank</b> of America and Burger King</h3>
-        <p class="text-distance-subtitle">Within walking distance.</p>
-      </div>
+     
     </div>
 
   </div>
@@ -217,7 +207,7 @@
 
 <section>
   <div class="container">
-    <h2 class="text-center p-3">Location on Google Map</h2>
+    <h2 class="text-center p-3">@lang('Location on Google Map')</h2>
     <iframe class="m-3" src="https://www.google.com/maps/d/u/1/embed?mid=1sA6k4zBw9zCOPz4-ALfP7m3plw6mRrJd" width="100%" height="480"></iframe>
   </div>
 </section>

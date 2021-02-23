@@ -62,19 +62,19 @@
           <div class="col">
             <!-- Heading -->
             <h5 class="breadcrumb-heading">
-              Floorplants
+              @lang('Floorplants')
             </h5>
           </div>
           <div class="col-auto d-flex">
              <!-- Breadcrumb -->
             <span class="breadcrumb-item">
-              <a href="{{route('home')}}">Home</a>
+              <a href="{{route('home')}}">@lang('Home')</a>
             </span>
             <span class="breadcrumb-item">
-              <a href="{{route('floorplants')}}">Floorplants</a>
+              <a href="{{route('floorplants')}}">@lang('Floorplants')</a>
             </span> 
             <span class="breadcrumb-item active">
-              Typical Unit
+              @lang('Typical Unit Plan')
            </span> 
           </div>
 
@@ -95,7 +95,7 @@
       </svg>  
     </span>
     <a href="{{route('floorplants')}}">
-      <span class="ml-2">Back</span>
+      <span class="ml-2">@lang('Back')</span>
     </a>
   </div>
     <div class="row my-5">
@@ -103,7 +103,7 @@
         <img class="img-fluid " src="{{asset('image/floorplants_secundaria.jpg')}}" alt="" style="max-height:80vh">
       </div>
       <div class="col-md-6 offset-1 floorplant__secondaryBodyMain order-1 order-md-2">
-        <h1 class="floorplant__secondaryBodyMain-title text-center h1 p-5">TYPICAL UNIT</h1>
+        <h1 class="floorplant__secondaryBodyMain-title text-center h1 p-5">@lang('TYPICAL UNIT')</h1>
         {{-- <p class="floorplant__secondaryBodyMain-subtitle text-center">u</p> --}}
         
 
@@ -116,7 +116,7 @@
             </div>
             <!-- Title -->
             <p class="stats-item-title text-muted">
-              Office
+              @lang('Office')
             </p>
           </div>
 
@@ -127,7 +127,7 @@
             </div>
             <!-- Title -->
             <p class="stats-item-title text-muted">
-              Mezzanine
+              @lang('Mezzanine')
             </p>
           </div>
 
@@ -138,16 +138,16 @@
             </div>
             <!-- Title -->
             <p class="stats-item-title text-muted">
-              Warehouse
+              @lang('Warehouse')
             </p>
           </div>
 
           <div class="col-12 mt-4 pt-4">
-            <h2 class="text-primary py-2">Each unit include</h2>
+            <h2 class="text-primary py-2">@lang('Each unit include')</h2>
             <ul class="text-left">
-              <li><span class="font-weight-bold text-muted">Office: </span>Finished flooring, air conditioning & bathroom</li>
-              <li><span class="font-weight-bold text-muted">Mezzanine: </span>Good for extra storage</li>
-              <li><span class="font-weight-bold text-muted">Warehouse: </span>Roll up doors & 20-24 ceiling hight</li>
+              <li><span class="font-weight-bold text-muted">@lang('Office'): </span>@lang('Finished flooring, air conditioning & bathroom')</li>
+              <li><span class="font-weight-bold text-muted">@lang('Mezzanine'): </span>@lang('Good for extra storage')</li>
+              <li><span class="font-weight-bold text-muted">@lang('Warehouse'): </span>@lang('Roll up doors & 20-24 ceiling hight')</li>
             </ul>
           </div>
           

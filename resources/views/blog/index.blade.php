@@ -180,7 +180,7 @@
             
             <!-- Title -->
             <h6 class="title">
-              Categories
+              @lang('Categories')
             </h6>
 
             <!-- Sidenav -->
@@ -210,7 +210,7 @@
                   
                   <!-- Meta -->
                   <p class="mb-2 text-xs text-muted">
-                    by <strong class="text-body">{{$random_post->author->name}}</strong> {{$random_post->created_at->diffForHumans()}}
+                    @lang('by') <strong class="text-body">{{$random_post->author->name}}</strong> {{$random_post->created_at->diffForHumans()}}
                   </p>
                   
                   <!-- Heading -->

@@ -92,13 +92,13 @@
         <div class=" floorplants__menu">
           <div class="d-flex justify-content-between">
             <div>
-              <h4>SITE PLAN</h4>
-              <p>Scaled diagram of project viewed from above</p>
+              <h4>@lang('SITE PLAN')</h4>
+              <p>@lang('Scaled diagram of project viewed from above')</p>
             </div>
             <div class=" floorplants__optionMain">
               <a href="{{ route('floorplants.third')}}" class=" d-flex justify-content-between align-items-center">
                 <span class="mr-3">
-                  See
+                  @lang('See')
                 </span>
                 <span class="floorplant__optionIcon">
                   <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,13 +110,13 @@
           </div>
           <div class="d-flex justify-content-between">
             <div>
-              <h4>TYPICAL UNIT PLAN</h4>
-              <p>Scaled diagram of typical unit viewed from above</p>
+              <h4>@lang('TYPICAL UNIT PLAN')</h4>
+              <p>@lang('Scaled diagram of typical unit viewed from above')</p>
             </div>
             <div class=" floorplants__optionMain">
               <a href="{{ route('floorplants.secondary')}}" class=" d-flex justify-content-between align-items-center">
                 <span class="mr-3">
-                  See
+                  @lang('See')
                 </span>
                 <span class="floorplant__optionIcon">
                   <svg width="20" height="29" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
