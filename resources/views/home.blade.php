@@ -98,7 +98,7 @@ Home - galpones
     font-family: Raleway;
   }
   .subtitle-main > h3{
-    font-size: 1.45rem;
+    font-size: 1rem;
     margin: 0;
     font-family: Raleway;
     letter-spacing: 0.21em;
@@ -110,14 +110,14 @@ Home - galpones
   }
   .title-main > h1{
     font-family: Playfair Display;
-    font-size: 2.45rem;
+    font-size: 2rem;
     letter-spacing: 0.02em;
     top: 160px;
     font-weight: 400;
   }
   .title-main{
     padding: 20px;
-    width: 65vw;
+    width: 60vw;
     padding-right:3.5rem;
   }
   .main-btn_compra {
@@ -133,8 +133,19 @@ Home - galpones
     color:white;
     font-size: 1.5rem;
   }
+  .home__textBanner2 {
+    font-size:1.4rem;
+  }
 
+}
 
+@media (min-width:1300px){
+  .subtitle-main > h3 {
+    font-size:1.3rem;
+  }
+  .home__textBanner2 {
+    font-size:1.8rem;
+  }
 }
 
 
@@ -175,8 +186,8 @@ Home - galpones
       </div>
       <div class="subtitle-main">
         <!-- Subheading -->
-        <h3 class="text-white text-left py-2 pl-5">
-          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse">Warehouse development</span> 
+        <h3 class="home__textBanner text-white text-left py-2 pl-5">
+          Brand new strategically located state-of-the-art <span class="subtitle-main_warehouse home__textBanner2">Warehouse development</span> 
           </h3>
       </div>
       <!-- Button -->
@@ -443,8 +454,8 @@ Home - galpones
               </h2>
              
               <!-- Subheading -->
-              <p class="text-muted mb-5">
-              Medley is one of the four cities with the highest <span class="font-weight-bold">commercial growth in the state of Florida</span>, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region. <br>
+              <p class="text-muted text-center mb-5">
+              Medley is one of the four cities with the highest <span class="font-weight-bold">commercial growth in the state of Florida</span>, due to its proximity to Miami International Airport, Port Miami, and the main highways of the region.
               The commercial development is located along <span class="font-weight-bold">Okeechobee Road. The location offers immediate access to Palmetto Expressway, NW 74 St. St. & NW 75 St.</span>
               </p>
 
@@ -476,16 +487,7 @@ Home - galpones
               </div>
               <div class="slider-item">                
                 <img src="{{ asset('image/gallery/interior2.jpg')}}" alt="..." class="img-fluid" >
-              </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/warehouse.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/satelital-zona.png')}}" alt="..." class="img-fluid">
-              </div>             
+              </div>            
             </div> 
           </div>
         </div> 
@@ -515,17 +517,6 @@ Home - galpones
               </div>
               <div class="slider-item col-6 col-md-3">
                 <img src="{{ asset('image/gallery/interior2.jpg')}}" alt="..." class="img-fluid" >
-              </div>
-              <div class="slider-item col-6 col-md-3">
-                <img src="{{ asset('image/images/warehouse.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item col-6 col-md-3">
-               <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item col-6 col-md-3">
-                <img src="{{ asset('image/images/satelital-zona.png')}}" alt="..." class="img-fluid">
-              </div>
-
               </div>
             </div> 
 
