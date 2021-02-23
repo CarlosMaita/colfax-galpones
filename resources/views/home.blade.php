@@ -34,7 +34,7 @@ Home - galpones
   .title-main{
     background:#8a7365;
     position: absolute;
-    top: 135px;
+    top: 150px;
     z-index: 200;
     left: 0;
     padding: 8px;
@@ -53,7 +53,7 @@ Home - galpones
     position: absolute;
     z-index: 100;
     right:0;
-    top: 265px;
+    top: 272px;
     width: 75vw;
     
 
