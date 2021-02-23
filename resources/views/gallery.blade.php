@@ -86,10 +86,7 @@ Gallery - galpones
           <div class="col">
             <!-- Slider -->
             <div class="slider slider-no-controls mb-3" data-bind="slider" data-target="#sliderGallerySmall" id="sliderGalleryLarge">
-             
-              <div class="slider-item">                
-                <img src="{{ asset('image/images/front.png')}}" alt="..." class="img-fluid" >
-              </div>
+            
               <div class="slider-item">                
                 <img src="{{ asset('image/gallery/exterior1.jpg')}}" alt="..." class="img-fluid" >
               </div>
@@ -102,21 +99,9 @@ Gallery - galpones
               <div class="slider-item">                
                 <img src="{{ asset('image/gallery/interior3.jpg')}}" alt="..." class="img-fluid" >
               </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/oficina.png')}}" alt="..." class="img-fluid">
-              </div>
               <div class="slider-item">                
                 <img src="{{ asset('image/gallery/interior2.jpg')}}" alt="..." class="img-fluid" >
-              </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/warehouse.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item">
-                <img src="{{ asset('image/images/satelital-zona.png')}}" alt="..." class="img-fluid">
-              </div>             
+              </div>            
             </div> 
           </div>
         </div> 
@@ -124,11 +109,7 @@ Gallery - galpones
         <div class="row">
           <div class="col">
             <!-- Slider -->
-            <div class="slider slider-highlight" data-bind="slider" data-target="#sliderGalleryLarge" id="sliderGallerySmall">
-              
-              <div class="slider-item col-6 col-md-3">
-                <img src="{{ asset('image/images/front.png')}}" alt="..." class="img-fluid">
-              </div>
+            <div class="slider slider-highlight" data-bind="slider" data-target="#sliderGalleryLarge" id="sliderGallerySmall">                         
               <div class="slider-item col-6 col-md-3">
                 <img src="{{ asset('image/gallery/exterior1.jpg')}}" alt="..." class="img-fluid" >
               </div>
@@ -142,21 +123,7 @@ Gallery - galpones
                 <img src="{{ asset('image/gallery/interior3.jpg')}}" alt="..." class="img-fluid" >
               </div>
               <div class="slider-item col-6 col-md-3">
-                <img src="{{ asset('image/images/oficina.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item col-6 col-md-3">
                 <img src="{{ asset('image/gallery/interior2.jpg')}}" alt="..." class="img-fluid" >
-              </div>
-              <div class="slider-item col-6 col-md-3">
-                <img src="{{ asset('image/images/warehouse.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item col-6 col-md-3">
-               <img src="{{ asset('image/images/mezzanine.png')}}" alt="..." class="img-fluid">
-              </div>
-              <div class="slider-item col-6 col-md-3">
-                <img src="{{ asset('image/images/satelital-zona.png')}}" alt="..." class="img-fluid">
-              </div>
-
               </div>
             </div> 
 
