@@ -1,10 +1,10 @@
 {
     "Home" : "Inicio",
     "Location" : "Ubicación",
-    "Floorplants" : "Planos de planta",
+    "Floorplants" : "Planos",
     "Gallery" : "Galeria",
     "Calculator" : "Calculadora",
-    "Contact" : "Contactanos",
+    "Contact" : "Contáctanos",
     "About us" : "Nosotros",
     "lenguage" : "ES",
     "Our team" : "Nuestro equipo",
@@ -14,7 +14,7 @@
     "WAREHOUSE DEVELOPMENT" : "Estrategicamente Ubicado",
 
     "An Investment within your reach" : "Una Inversión a tu alcance",
-    "Medley Business Park is": "Medley Business Park es <span class='font-weight-bold'>el espacio perfecto para desarrollar su negocio.</span> La modernidad y el lujo son solo algunos de los elementos clave que nos definen, ofrecemos a nuestros clientes  <span class='font-weight-bold'>oportunidades FLEXIBLE</span> para espacios a la medida que se adapten específicamente a sus necesidades.",
+    "Medley Business Park is": "Medley Business Park es <span class='font-weight-bold'>el espacio perfecto para desarrollar su negocio.</span> La modernidad y el lujo son solo algunos de los elementos clave que nos definen, ofrecemos a nuestros clientes  <span class='font-weight-bold'>oportunidades FLEXIBLES</span> para espacios a la medida que se adapten específicamente a sus necesidades.",
     
     "Convenient and Flexible spaces" : "Espacios <span class='text-primary'>Flexibles</span> y convenientes",
     "Thanks to its" :"Gracias a  <span class='font-weight-bold'>diseño exclusivo y detalles únicos</span>, es posible desarrollar cualquier tipo de negocio como showrooms, espacios de almacenamiento, coworking o incluso pequeñas fábricas.",
@@ -24,10 +24,10 @@
 
 
     "The best strategic location for your business" : "La mejor ubicación estratégica para tu negocio",
-    "Medley is one of the four cities": "Medley es una de las cuatro ciudades con mayor <span class='font-weight-bold'>crecimiento comercial en el estado de Florida</span>, debido a su proximidad al Aeropuerto Internacional de Miami, Port Miami y las principales carreteras de la región. El desarrollo comercial está ubicado a lo largo de  <span class='font-weight-bold'>Okeechobee Road. La ubicación ofrece acceso inmediato a Palmetto Expressway, NW 74 St. St. y NW 75 St.</span>",
+    "Medley is one of the four cities": "Medley es una de las cuatro ciudades con mayor <span class='font-weight-bold'>crecimiento comercial en el estado de Florida</span>, debido a su proximidad al Aeropuerto Internacional y Puerto de Miami, así como las principales carreteras de la región. El desarrollo comercial está ubicado a lo largo de  <span class='font-weight-bold'>Okeechobee Road. La ubicación ofrece acceso inmediato a Palmetto Expressway, NW 74 St. St. y NW 75 St.</span>",
 
     "Vacancy rates less":"Tasas de vacantes inferiores al 4% durante los últimos 10 años.", 
-    "The Miami-Dade industrial market":"El mercado industrial de Miami-Dade tiene el 96,2% de tasa de ocupación y el submercado Medley Industrial tiene el 97,1% <br>El mercado industrial del sur de Florida es  <span class='font-weight-bold'>uno de los mercados más sólidos del país </span> y se proyecta un crecimiento continuo durante los próximos años.",
+    "The Miami-Dade industrial market":"El mercado industrial de Miami-Dade tiene el 96,2% de tasa de ocupación y el submercado Medley Industrial tiene el 97,1% <br>El sur de la Florida es  <span class='font-weight-bold'>uno de los mercados más sólidos del país </span> y se proyecta un crecimiento continuo durante los próximos años.",
 
     "schedule an appointment":"Agendar una cita",
     
@@ -44,7 +44,7 @@
 
 
     
-    "Proximity to Miami International Airport":"Proximidad al Aeropuerto Internacional de Miami, Puerto de Miami y las principales carreteras de la región.",
+    "Proximity to Miami International Airport":"Proximidad al Aeropuerto Internacional y Puerto de Miami, así como las principales carreteras de la región",
     "Located along Okeechobee Road.":"Ubicado a lo largo de Okeechobee Road. ",
     "Immediate access to Palmetto Expressway":"La ubicación ofrece acceso inmediato a Palmetto Expressway, NW 74 St., St. y NW 75 St.",
 
@@ -146,7 +146,7 @@
     "by" : "Por",
     "Read more" : "Leer más",
     "text-newsletter" : "Suscribete a nuestro Boletín informativo",
-    "Florida Real Estate Broker" : "Agente de bienes raíces",
+    "Florida Real Estate Broker" : "Broker de bienes raíces",
     "Real Estate Agent" : "Agente inmobiliario",
     "text-contact-01":"Invertir en un almacén requiere conocer todos los beneficios y ventajas que tendrá su negociación para el crecimiento de su negocio. Déjelo en manos de profesionales con más de 20 años en el mercado inmobiliario e industrial para garantizarle una inversión a gran escala.",
     "text-contact-02":"Nuestras oficinas están completamente disponibles para brindar soluciones inteligentes para empresas. Contáctanos y te brindaremos una atención personalizada."
