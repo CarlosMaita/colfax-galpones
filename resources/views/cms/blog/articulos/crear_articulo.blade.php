@@ -66,6 +66,22 @@
 			<input class="form-control" type="date" id="date" required name="date">
 		</div>
 
+		<div class="form-group col-4">
+			<h5>language</h5>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="language" value="english" checked>
+				<label class="form-check-label" for="language">
+					English
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="language" value="spanish">
+				<label class="form-check-label" for="language">
+					Spanish
+				</label>
+			</div>
+		</div>
+
 		<div class="form-group col-12">
 			<h5>Category</h5>
 			<select class="form-control" id="categoria" required name="category_id">

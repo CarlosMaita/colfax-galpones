@@ -63,6 +63,22 @@
 			<input class="form-control" type="date" id="date" value="{{$articulo->date}}" name="date">
 		</div>
 
+		<div class="form-group col-4">
+			<h5>language</h5>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="language" value="english" {{ $articulo->language == 'english' ? 'checked' : '' }}>
+				<label class="form-check-label" for="language">
+					English
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="language" value="spanish" {{ $articulo->language == 'spanish' ? 'checked' : '' }}>
+				<label class="form-check-label" for="language">
+					Spanish
+				</label>
+			</div>
+		</div>
+
 		<div class="form-group col-12">
 			<h5>Category</h5>
 			<select class="form-control" id="categoria" name="category_id">

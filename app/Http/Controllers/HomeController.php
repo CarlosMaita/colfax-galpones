@@ -33,16 +33,17 @@ class HomeController extends Controller
 
     public function blog()
     {
-        $recent_post = BlogArticle::orderBy('id', 'DESC')->first();
+
+        $recent_post = BlogArticle::orderBy('id', 'DESC')->where('language', session('locale') == 'en' ? 'english' : 'spanish')->first();
 
         if(isset($recent_post))
         {
-            $posts = BlogArticle::where('id', '!=', $recent_post->id)->orderBy('id', 'DESC')->paginate(3);
+            $posts = BlogArticle::where('id', '!=', $recent_post->id)->where('language', session('locale') == 'en' ? 'english' : 'spanish')->orderBy('id', 'DESC')->paginate(3);
         }else {
-            $posts = BlogArticle::orderBy('id', 'DESC')->paginate(3);
+            $posts = BlogArticle::orderBy('id', 'DESC')->where('language', session('locale') == 'en' ? 'english' : 'spanish')->paginate(3);
         }
         
-        $all_posts = BlogArticle::inRandomOrder()->get();
+        $all_posts = BlogArticle::inRandomOrder()->where('language', session('locale') == 'en' ? 'english' : 'spanish')->get();
 
         $categorias = BlogCategorie::all();
         $keywords = Keyword::all();
