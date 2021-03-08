@@ -111,6 +111,7 @@ Mortgage calculator - Medley Business Park
    			<div class="form-group">
    				<h6>@lang('Down Payment (USD)')</h6>
    				<input class="form-control input-number" id="down_payment" type="number" name="" value=20000>
+   				<input class="form-control input-number" id="down_payment_percentage" type="number" name="" step=0.1 value=50 min=0 max=100>
    			</div>
    			<div class="form-group">
    				<h6>@lang('Loan program (Years)')</h6>
