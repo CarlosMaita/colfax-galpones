@@ -113,9 +113,14 @@ Mortgage calculator - Medley Business Park
    				<input class="form-control input-number" id="home_price" type="number" name="" value=100000>
    			</div>
    			<div class="form-group">
-   				<h6>@lang('Down Payment (USD)')</h6>
-   				<input class="form-control input-number" id="down_payment" type="number" name="" value=20000>
-   				<input class="form-control input-number" id="down_payment_percentage" type="number" name="" step=0.1 value=50 min=0 max=100>
+           <div class="d-flex">
+             <h6 class="col-8 p-0">@lang('Down Payment (USD)')</h6>
+             <h6 class="col-4 p-0 text-right">%</h6>
+           </div>
+           <div class="d-flex">
+             <input class="form-control input-number col-8" id="down_payment" type="number" name="" value=20000>
+             <input class="form-control input-number col-4" id="down_payment_percentage" type="number" name="" step=1 value=50 min=0 max=100>
+          </div>
    			</div>
    			<div class="form-group">
    				<h6>@lang('Loan program (Years)')</h6>
@@ -147,30 +152,33 @@ Mortgage calculator - Medley Business Park
           </div>
 
           <div class="form-group">
-            <h6>
-              property tax
-              <i class="fas fa-question-circle"></i>
-            </h6>
             <div class="d-flex">
-              <input type="number" class="form-control col-8">
-              <input type="number" class="form-control col-4">
+              <h6 class="col-8 p-0 ">
+                Property tax(USD/Year)
+                {{-- <i class="fas fa-question-circle"></i> --}}
+              </h6>
+              <h6 class="col-4 p-0 text-right">%</h6>
+            </div>
+            <div class="d-flex">
+              <input type="number" class="form-control col-8" value=1800 >
+              <input type="number" class="form-control col-4"  value=1.8 step=0.1 min=0 max=100>
             </div>
           </div>
 
           <div class="form-group">
             <h6>
-              Home insurance
-              <i class="fas fa-question-circle"></i>
+              Home insurance(USD/Year)
+              {{-- <i class="fas fa-question-circle"></i> --}}
             </h6>
-            <input type="text" class="form-control">
+            <input type="number" class="form-control" value=420 step=0.1 min=0>
           </div>
 
           <div class="form-group">
             <h6>
-              HOA dues
-              <i title="@lang('Hoa dues')" class="fas fa-question-circle"></i>
+              HOA dues(USD/month)
+              {{-- <i title="@lang('Hoa dues')" class="fas fa-question-circle"></i> --}}
             </h6>
-            <input type="text" class="form-control">
+            <input type="number" class="form-control"  value=0 step=0.1 min=0 >
           </div>
         </div>
         <div>
@@ -532,12 +540,12 @@ Mortgage calculator - Medley Business Park
      function init(){
       function showAdvanceMenu(){
         const advanceMenu = document.getElementById('calculatorAdvanceSection');
-        let text= 'advanced';
+        let text= 'Advanced';
         
         advanceMenu.classList.toggle('hideSection');
 
         if(!advanceMenu.classList.contains('hideSection')) {
-          text= 'simple';
+          text= 'Simple';
           console.log(text)
         }
 
