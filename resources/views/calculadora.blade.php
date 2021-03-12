@@ -431,7 +431,7 @@ Mortgage calculator - Medley Business Park
             data: {
               datasets: [{
                 data: value ? [...value] : [1],
-                backgroundColor: ['#ab967d', '#333'],
+                backgroundColor: ['#ab967d', '#333', '#dc3545', '#ec6b39'],
                 borderWidth:['5'],
                 weight: ['1'],
               }],
@@ -439,7 +439,8 @@ Mortgage calculator - Medley Business Park
               labels: [
                   'Principal & Interest',
                   'HOA',
-                  // 'Blue'
+                  'Home Insurance',
+                  'property Tax'
               ],
               
               
@@ -495,9 +496,7 @@ Mortgage calculator - Medley Business Park
       }
 
       //calcular payment
-      function cuotas(interes_anual, anos, house_value, down_payment, hoa_dues, propertyTax){
-          const homeInsurance = document.getElementById('homeInsurance');
-          let homeInsurancePrice = parseFloat(homeInsurance.value) / 12;
+      function cuotas(interes_anual, anos, house_value, down_payment, hoa_dues, propertyTax, homeInsurancePrice){
 
           //vars
           let r = interes_anual/(100*12);
@@ -526,15 +525,19 @@ Mortgage calculator - Medley Business Park
               Interes_rate_number  =       parseFloat(Interes_rate.value)
               hoa_dues_number      =       parseFloat(hoa_dues.value) >= 0 ? parseFloat(hoa_dues.value) : 0
               
+
+              const homeInsurance = document.getElementById('homeInsurance');
+              let homeInsurancePrice = parseFloat(homeInsurance.value) / 12;
+              
               propertyTax = calcularTax();
 
-              pago_total = cuotas(Interes_rate_number, loan_program_number, home_price_number, down_payment_number, hoa_dues_number, propertyTax);
+              pago_total = cuotas(Interes_rate_number, loan_program_number, home_price_number, down_payment_number, hoa_dues_number, propertyTax, homeInsurancePrice);
               pago_total = pago_total >= 0 ? pago_total : 0 ; 
 
               your_payment.textContent = `
                   $ ${pago_total}
               `
-              grafico_value = [pago_total, hoa_dues_number]
+              grafico_value = [pago_total, hoa_dues_number, homeInsurancePrice, propertyTax]
               donutChart(grafico_value)
             
           
@@ -549,7 +552,7 @@ Mortgage calculator - Medley Business Park
         const propertyTax = document.getElementById('propertyTax');
         const propertyTaxPercentage = document.getElementById('propertyTaxPercentage');
 
-        const valueTax = Math.ceil((parseFloat(home_price.value) * parseFloat(propertyTaxPercentage.value)) / 100);
+        const valueTax = Math.ceil(((parseFloat(home_price.value) * parseFloat(propertyTaxPercentage.value)) / 100) / 12);
         propertyTax.value = valueTax;
 
         return valueTax
