@@ -73,6 +73,7 @@ class ArticleController extends Controller
     		'category_id' => $request->category_id,
     		'autor_id' => auth()->user()->id,
     		'date' => $request->date,
+            'language' => $request->language,
             'description' => $request->description,
     		'picture' => $file,
     	]);
@@ -152,6 +153,7 @@ class ArticleController extends Controller
     				'date' => $request->date,
                     'description' => $request->description,
     				'picture' => $file,
+                    'language' => $request->language,
     			]);
     		}else {
     			return back()->with('error', 'Article could not be updated');
@@ -166,6 +168,7 @@ class ArticleController extends Controller
     			'date' => $request->date,
                 'description' => $request->description,
     			'keywords' => 'vacio',
+                'language' => $request->language,
     		]);
     	}
 

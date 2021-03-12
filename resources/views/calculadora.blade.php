@@ -61,6 +61,10 @@ Mortgage calculator - Medley Business Park
     width: 60%;
     height: 100%;
   }
+
+  .hideSection {
+    display: none;
+  }
 </style>
 <!-- BREADCRUMB
    ================================================== -->
@@ -124,7 +128,54 @@ Mortgage calculator - Medley Business Park
    				<h6>@lang('Interes rate (%)')</h6>
    				<input class="form-control input-number" id="Interes_rate" type="number" name="" value='3.5' step="0.01">
    			</div>
-   
+        <div class="hideSection" id="calculatorAdvanceSection" >
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Include PMI 
+                <i class="fas fa-question-circle"></i>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Include Taxes/insurance 
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <h6>
+              property tax
+              <i class="fas fa-question-circle"></i>
+            </h6>
+            <div class="d-flex">
+              <input type="number" class="form-control col-8">
+              <input type="number" class="form-control col-4">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <h6>
+              Home insurance
+              <i class="fas fa-question-circle"></i>
+            </h6>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <h6>
+              HOA dues
+              <i title="@lang('Hoa dues')" class="fas fa-question-circle"></i>
+            </h6>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div>
+          <a href="#" id="openCloseAdvanceOptions">Advance</a> 
+        </div>
    		</div>
    		<div class="col-md-7">
    			<div class="d-flex justify-content-between align-items-center">
@@ -479,26 +530,31 @@ Mortgage calculator - Medley Business Park
       }
 
      function init(){
+      function showAdvanceMenu(){
+        const advanceMenu = document.getElementById('calculatorAdvanceSection');
+        let text= 'advanced';
+        
+        advanceMenu.classList.toggle('hideSection');
 
-      // function showAdvanceMenu(){
-      //   advancedOption.classList.toggle('hide')
-      //   simpleOption.classList.toggle('hide')
-      //   menuAdvance.classList.toggle('hide')
-      // }
+        if(!advanceMenu.classList.contains('hideSection')) {
+          text= 'simple';
+          console.log(text)
+        }
+
+        
+        advanceButton.textContent = text;
+      }
 
       const chartButtons   = document.querySelectorAll('.chart_button')
             inputNumbers   = document.querySelectorAll('.input-number')
             loanP          = document.getElementById('loan_program')
+      
+      const advanceButton = document.getElementById('openCloseAdvanceOptions');
 
-      // advancedOption.addEventListener('click', e => {
-      //   e.preventDefault()
-      //   showAdvanceMenu()
-      // })
-
-      // simpleOption.addEventListener('click', e => {
-      //   e.preventDefault()
-      //   showAdvanceMenu()
-      // })
+      advanceButton.addEventListener('click', e => {
+        e.preventDefault()
+        showAdvanceMenu()
+      })
       
       if(inputNumbers) {
         inputNumbers.forEach(input => {

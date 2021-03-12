@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BlogArticle extends Model
 {
-    protected $fillable = ['title', 'content', 'picture', 'autor_id', 'category_id', 'date', 'slug', 'description'];
+    protected $fillable = ['title', 'content', 'picture', 'autor_id', 'category_id', 'date', 'slug', 'description', 'language'];
 
 
     public function author()
