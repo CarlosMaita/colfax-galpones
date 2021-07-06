@@ -50,20 +50,35 @@
               + (305) 333-7899
             </small>
           </p>
+          <p class="text-white text-muted">
+            <small>
+              Tammy Roitman <br>
+              +1 (786) 678-1052
+            </small>
+          </p>
       </div>
 
     </div> <!-- / .row -->
-
+    <div class="row  align-items-center">
+       {{-- direccion --}}
+       <div class="order-4 col-12 text-center col-md-12 order-md-2">
+        <p class="text-muted"><span>Address:</span> <br>
+            7265 NW 74th Street Miami, Miami-Dade County, FL 33166
+        </p>
+      </div>
+    </div>
     <div class="row align-items-center">
 
       <!-- Copyright -->
-      <div class="order-4 col-12 text-center col-md-4 text-md-left order-md-1">
+      <div class="order-5 col-12 text-center col-md-4 text-md-left order-md-1">
         <p class="text-white text-muted">
           <small>
             &copy; Copyright <span class="current-year"></span> Medley Business Park. @lang('All rights reserved.')
           </small>
         </p>
       </div>
+
+     
 
       <!-- Social links -->
       <div class="order-3 col-12 text-center col-md-4 order-md-2">
@@ -91,27 +106,16 @@
         </ul>
       </div>
 
-      <!-- Contacto -->
-      <div class="order-1 col-12 text-center col-md-4 text-md-right order-md-3">
-        <p class="text-white text-muted">
-          <small>
-            Tammy Roitman <br>
-            +1 (786) 678-1052
-          </small>
-        </p>
-      </div>
-
-    
-
-     <!-- Contacto -->
-     <div class="order-2 col-12 text-center col-md-12 order-md-3 text-md-right">
+<!-- Contacto -->
+     <div class="order-2 col-12 text-center col-md-4 order-md-3 text-md-right">
         <p class="text-white text-muted">
           <small>
             Administration <br>
-            (305) 677-9833
+            +(305) 677-9833
           </small>
         </p>
       </div>
+     
     
     </div>
     

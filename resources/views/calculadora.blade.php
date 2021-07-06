@@ -138,15 +138,16 @@ Mortgage calculator - Medley Business Park
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
-                Include PMI 
+                @lang('Include PMI')
                 <i class="fas fa-question-circle"></i>
               </label>
             </div>
-
+            
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
-                Include Taxes/insurance 
+                @lang('Include Taxes/insurance')
+                 
               </label>
             </div>
           </div>
@@ -154,7 +155,7 @@ Mortgage calculator - Medley Business Park
           <div class="form-group">
             <div class="d-flex">
               <h6 class="col-8 p-0 ">
-                Property tax(USD/Year)
+                @lang('Property tax(USD/Year)')
                 {{-- <i class="fas fa-question-circle"></i> --}}
               </h6>
               <h6 class="col-4 p-0 text-right">%</h6>
@@ -167,7 +168,8 @@ Mortgage calculator - Medley Business Park
 
           <div class="form-group">
             <h6>
-              Home insurance(USD/Year)
+              @lang('Home Insurance(USD/Year)')
+            
               {{-- <i class="fas fa-question-circle"></i> --}}
             </h6>
             <input type="number" class="form-control" value=420 step=0.1 min=0>
@@ -175,14 +177,15 @@ Mortgage calculator - Medley Business Park
 
           <div class="form-group">
             <h6>
-              HOA dues(USD/month)
+              @lang('HOA dues(USD/month)')
+              
               {{-- <i title="@lang('Hoa dues')" class="fas fa-question-circle"></i> --}}
             </h6>
             <input type="number" class="form-control"  value=0 step=0.1 min=0 >
           </div>
         </div>
         <div>
-          <a href="#" id="openCloseAdvanceOptions">Advance</a> 
+          <a href="#" id="openCloseAdvanceOptions">@lang('Advance')</a> 
         </div>
    		</div>
    		<div class="col-md-7">
@@ -411,6 +414,31 @@ Mortgage calculator - Medley Business Park
 
              </div>
 
+             <div class="col-md-4 mb-3">
+               
+              <!-- Card -->
+              <a href="#" class="card">
+                
+                <!-- Body -->
+                <div class="card-body">
+
+            
+                  <!-- Title -->
+                  <h5 class="card-title">
+                    @lang('Homeowner association(HOA)')
+                  </h5>
+
+                  <!-- Text -->
+                  <p class="card-text text-muted">
+                    @lang('Hoa dues')
+                  </p>
+                
+                </div>
+
+              </a> <!-- / .card -->
+
+            </div>
+
            </div> <!-- / .row -->
 
          </div>
@@ -540,7 +568,7 @@ Mortgage calculator - Medley Business Park
      function init(){
       function showAdvanceMenu(){
         const advanceMenu = document.getElementById('calculatorAdvanceSection');
-        let text= 'Advanced';
+        let text= 'Advance';
         
         advanceMenu.classList.toggle('hideSection');
 
