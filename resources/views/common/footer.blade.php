@@ -62,7 +62,7 @@
     <div class="row  align-items-center">
        {{-- direccion --}}
        <div class="order-4 col-12 text-center col-md-12 order-md-2">
-        <p class="text-muted"><span>Address:</span> <br>
+        <p class="text-muted"><span>@lang('Address:')</span> <br>
             7265 NW 74th Street Miami, Miami-Dade County, FL 33166
         </p>
       </div>
@@ -110,7 +110,7 @@
      <div class="order-2 col-12 text-center col-md-4 order-md-3 text-md-right">
         <p class="text-white text-muted">
           <small>
-            Administration <br>
+            @lang('Administration') <br>
             +(305) 677-9833
           </small>
         </p>

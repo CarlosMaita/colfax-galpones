@@ -157,5 +157,7 @@
     "Property tax(USD/Year)":"Impuesto a la propiedad(USD/Año)",
     "Home Insurance(USD/Year)":"Seguro a la propiedad(USD/Año)",
     "HOA dues(USD/month)":"Cuotas HOA(USD/mes)",
-    "Advanced":"Avanzado"
+    "Advanced":"Avanzado",
+    "Administration": "Administración",
+    "Address:": "Dirección:"
 }

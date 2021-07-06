@@ -156,5 +156,7 @@
     "Property tax(USD/Year)":"Property tax(USD/Year)",
     "Home Insurance(USD/Year)":"Property Insurance(USD/Year)",
     "HOA dues(USD/month)":"HOA dues(USD/month)",
-    "Advanced":"Advanced"
+    "Advanced":"Advanced",
+    "Administration": "Administration",
+    "Address:": "Address:"
 }
