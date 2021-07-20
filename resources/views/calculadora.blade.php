@@ -570,13 +570,10 @@
 
               your_payment.textContent = `
                   $ ${pago_total}
-              `
+              `;
 
               let PMI = (0.0008166 * home_price_number) - (31.254 * down_payment_percentage);
-
-
-              // grafico_value = [pago_total, hoa_dues_number, homeInsurancePrice, propertyTax, PMI]
-              grafico_value = [100, 100, 100, 100, 100];
+              grafico_value = [pago_total, hoa_dues_number, homeInsurancePrice, propertyTax, PMI]
 
               donutChart(grafico_value);
               return true;
