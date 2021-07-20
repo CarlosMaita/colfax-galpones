@@ -554,7 +554,7 @@
 
             let home_price_number  =       parseFloat(home_price.value)
               down_payment_number  =       parseFloat(down_payment.value) >= 0 ? parseFloat(down_payment.value) : 0
-              down_payment_percentage = parseFloat(down_payment_percentage.value) >= 0 ? parseFloat(down_payment_percentage.value) : 0
+              down_payment_percentage_number = parseFloat(down_payment_percentage.value) >= 0 ? parseFloat(down_payment_percentage.value) : 0
               loan_program_number  =       parseFloat(loan_program.value)
               Interes_rate_number  =       parseFloat(Interes_rate.value)
               hoa_dues_number      =       parseFloat(hoa_dues.value) >= 0 ? parseFloat(hoa_dues.value) : 0
@@ -572,7 +572,7 @@
                   $ ${pago_total}
               `;
 
-              let PMI = (0.0008166 * home_price_number) - (31.254 * down_payment_percentage);
+              let PMI = (0.0008166 * home_price_number) - (31.254 * down_payment_percentage_number);
               grafico_value = [pago_total, hoa_dues_number, homeInsurancePrice, propertyTax, PMI]
 
               donutChart(grafico_value);
