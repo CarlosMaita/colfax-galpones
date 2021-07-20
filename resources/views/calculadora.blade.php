@@ -242,8 +242,7 @@
         </div>
       </section>
 
-      <!-- LINKS
-             ================================================== -->
+      <!-- LINKS  ================================================== -->
       <section class="container section p-4">
           <div class="">
               <div class="row">
@@ -450,11 +449,9 @@
               </div> <!-- / .row -->
           </div> <!-- / .container -->
       </section>
-  
-       
-
-   <script type="text/javascript" src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
-   <script type="text/javascript">
+      
+      <script type="text/javascript" src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
+      <script type="text/javascript">
 
       function donutChart(value){
 
@@ -475,7 +472,7 @@
                   'HOA',
                   'Home Insurance',
                   'property Tax',
-                  'PMI'
+                  'PMI',
               ],
               
               
@@ -502,7 +499,7 @@
                   '50s',
                   '70s',
                   '30s',
-                  '60s'
+                  '60s',
               ],
             },
         });
@@ -574,18 +571,19 @@
               your_payment.textContent = `
                   $ ${pago_total}
               `
-              grafico_value = [pago_total, hoa_dues_number, homeInsurancePrice, propertyTax]
-              donutChart(grafico_value)
 
-              console.log(down_payment_percentage);
               let PMI = (0.0008166 * home_price_number) - (31.254 * down_payment_percentage);
-                grafico_value = [pago_total, PMI]
-                donutChart(grafico_value)
-            
-          
+
+
+              // grafico_value = [pago_total, hoa_dues_number, homeInsurancePrice, propertyTax, PMI]
+              grafico_value = [100, 100, 100, 100, 100];
+
+              donutChart(grafico_value);
+              return true;
+
           } else {
             console.log('vacio')
-            return false;
+            return false
           }
       }
 
@@ -610,22 +608,8 @@
 
       }
 
-     function init(){
-      function showAdvanceMenu(){
-        const advanceMenu = document.getElementById('calculatorAdvanceSection');
-        let text= 'Advanced';
-        
-        advanceMenu.classList.toggle('hideSection');
+      function init() {
 
-        if(!advanceMenu.classList.contains('hideSection')) {
-          text= 'Simple';
-        }
-
-        function ajustar_valores(event) {
-
-        }
-
-        function init() {
             function showAdvanceMenu() {
                 const advanceMenu = document.getElementById('calculatorAdvanceSection');
                 let text = 'Advanced';
@@ -636,8 +620,6 @@
                     text = 'Simple';
                     console.log(text)
                 }
-
-
                 advanceButton.textContent = text;
             }
 
@@ -649,8 +631,8 @@
 
             const downPayment = document.querySelectorAll('.input-down-payment');
             const downPaymentInput = document.getElementById('down_payment'),
-                downPaymentPorcentageInput = document.getElementById('down_payment_percentage'),
-                homePriceInput = document.getElementById('home_price');
+                  downPaymentPorcentageInput = document.getElementById('down_payment_percentage'),
+                  homePriceInput = document.getElementById('home_price');
 
             advanceButton.addEventListener('click', e => {
                 e.preventDefault()
@@ -704,15 +686,16 @@
                 })
             }
 
-
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             init()
             loadCharts()
             calcularPrecio()
-            cargarPorcentaje();
-          })
+            cargarPorcentaje()
         })
+
+  
+
     </script>
 @endsection
