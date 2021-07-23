@@ -19,7 +19,6 @@ class CreateBlogArticlesTable extends Migration
             $table->string('slug')->unique();
             $table->text('content');
             $table->string('description');
-            $table->string('language');
             $table->string('picture');
             $table->date('date');
             $table->foreignId('autor_id');
