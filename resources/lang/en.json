@@ -59,14 +59,14 @@
     "Location on Google Map":"Location on Google Map",
     
     
-    "SITE PLAN":"SITE PLAN",
+    "SITE PLAN":"SITE FLOORPLAN",
     "Scaled diagram of project viewed from above":"Scaled diagram of project viewed from above",
-    "TYPICAL UNIT PLAN":"TYPICAL UNIT PLAN",
+    "TYPICAL UNIT PLAN":"TYPICAL UNIT FLOORPLAN",
     "Scaled diagram of typical unit viewed from above":"Scaled diagram of typical unit viewed from above",
     "See":"See",
     
-    "Site Plan":"Site plan",
-    "Typical Unit Plan":"Typical Unit Plan",
+    "Site Plan":"Site floorplan",
+    "Typical Unit Plan":"Typical Unit Floorplan",
     "TYPICAL UNIT":"TYPICAL UNIT",
     "Office":"Office",
     "Mezzanine":"Mezzanine",
@@ -122,9 +122,9 @@
     
     
     "TWO WORDS ABOUT OUR COMPANY" : "TWO WORDS ABOUT OUR COMPANY",
-    "Choose the plane you want to see" : "Choose the plane you want to see",
+    "Choose the plane you want to see" : "Choose the floorplan you want to see",
     "Look at" : "Look at",
-    "THE PLANS" : "THE PLANS",
+    "THE PLANS" : "THE FLOORPLANS",
     "Mortgage Calculator" : "Mortgage Calculator",
     "CONTACT FORM AND INFORMATION" : "CONTACT FORM AND INFORMATION",
     "Do you want to contact us?" : "Do you want to <span class='text-primary'>contact us</span>?",
