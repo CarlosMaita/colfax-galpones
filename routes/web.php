@@ -28,15 +28,15 @@ Route::middleware('lang')->group(function () {
 		 return view('about-us');
 	} )->name('about-us');
 	// floorplants
-	Route::get('/floorplants', function(){
+	Route::get('/floorplans', function(){
 		return view('floorplants');
 	} )->name('floorplants');
 
-	Route::get('/floorplants/typical-unit-plan', function(){
+	Route::get('/floorplans/typical-unit-plan', function(){
 		return view('floorplants_secundaria');
 	} )->name('floorplants.secondary');
 
-	Route::get('/floorplants/site-plan', function(){
+	Route::get('/floorplans/site-plan', function(){
 		return view('floorplants_tercera');
 	} )->name('floorplants.third');
 

@@ -2,21 +2,21 @@
 
 @section('metas')
 <!-- Primary Meta Tags -->
-<title>Floorplants — An Investment within your reach</title>
-<meta name="title" content="Floorplants — An Investment within your reach">
+<title>Floorplans — An Investment within your reach</title>
+<meta name="title" content="Floorplans — An Investment within your reach">
 <meta name="description" content="Don’t miss out on this opportunity to buy your warehouse space in the heart of Miami. Each unit includes: Office area with finished flooring, painted walls, air conditioning and bathroom. Each warehouse includes one mezzanine.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://metatags.io/">
-<meta property="og:title" content="Floorplants — An Investment within your reach">
+<meta property="og:title" content="Floorplans — An Investment within your reach">
 <meta property="og:description" content="Don’t miss out on this opportunity to buy your warehouse space in the heart of Miami. Each unit includes: Office area with finished flooring, painted walls, air conditioning and bathroom. Each warehouse includes one mezzanine.">
 <meta property="og:image" content="">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://metatags.io/">
-<meta property="twitter:title" content="Floorplants — An Investment within your reach">
+<meta property="twitter:title" content="Floorplans — An Investment within your reach">
 <meta property="twitter:description" content="Don’t miss out on this opportunity to buy your warehouse space in the heart of Miami. Each unit includes: Office area with finished flooring, painted walls, air conditioning and bathroom. Each warehouse includes one mezzanine.">
 <meta property="twitter:image" content="">
 @endsection
